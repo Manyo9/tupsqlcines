@@ -1,0 +1,8 @@
+insert into promociones (promocion,descuento)
+values ('2x1',0.5)
+insert into promociones (promocion,descuento)
+values ('descuento a jubilados',0.3)
+insert into promociones (promocion,descuento)
+values ('descuento a estudiantes',0.2)
+insert into promociones (promocion,descuento)
+values ('descuento día miercoles',0.4)
