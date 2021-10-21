@@ -163,7 +163,7 @@ constraint fk_clientes foreign key (id_cliente)
 references clientes (id_cliente) 
 )
 create table reservas_butaca 
-(id_resev_but int identity,
+(id_resev_but int,
 id_butaca int
 constraint pk_reservas_butaca primary key (id_resev_but,id_butaca),
 constraint fk_reservas foreign key (id_resev_but)
