@@ -18,3 +18,4 @@
 9 - insert_butacas.sql
 10 - insert_reservas.sql
 11 - insert_reservas_butaca.sql
+12 - insert_ticket.sql
