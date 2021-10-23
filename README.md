@@ -7,14 +7,14 @@
 - generar las consultas de reporte
 
 # Orden de carga:
-1 - crear_tablas.sql
-2 - insert_auxiliares.sql
-3 - insert_cajeros.sql
-4 - insert_clientes.sql
-5 - insert_promociones.sql
-6 - insert_salas.sql
-7 - insert_tarjetas.sql
-8 - insert_funciones.sql
-9 - insert_butacas.sql
-10 - insert_reservas.sql
-11 - insert_reservas_butaca.sql
+1 - crear_tablas.sql</br>
+2 - insert_auxiliares.sql</br>
+3 - insert_cajeros.sql</br>
+4 - insert_clientes.sql</br>
+5 - insert_promociones.sql</br>
+6 - insert_salas.sql</br>
+7 - insert_tarjetas.sql</br>
+8 - insert_funciones.sql</br>
+9 - insert_butacas.sql</br>
+10 - insert_reservas.sql</br>
+11 - insert_reservas_butaca.sql</br>
