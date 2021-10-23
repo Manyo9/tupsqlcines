@@ -7,7 +7,6 @@
 - generar las consultas de reporte
 
 # Orden de carga:
-<<<<<<< HEAD
 1 - crear_tablas.sql</br>
 2 - insert_auxiliares.sql</br>
 3 - insert_cajeros.sql</br>
