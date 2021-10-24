@@ -29,5 +29,5 @@
 11 - insert_reservas_butaca.sql</br>
 12 - insert_ticket.sql</br>
 13 - insert_pagos_detalles.sql</br>
-14 - insert_promos_detalle.sql</br>
+14 - NO AGREGAR!! insert_promos_detalle.sql</br>
 15 - funciones_y_sps.sql</br>

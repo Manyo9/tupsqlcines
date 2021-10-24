@@ -3,23 +3,23 @@ go
 
 --para reserva 8
 insert into pagos (id_metodo, id_tarjeta) values (2, 1)
-insert into detalles_ticket (nro_ticket,id_sucursal,id_butaca,id_pago,precio,id_funcion)
-values (1,1,51,1,530.00,2)
-insert into detalles_ticket (nro_ticket,id_sucursal,id_butaca,id_pago,precio,id_funcion)
-values (1,1,52,1,530.00,2)
-insert into detalles_ticket (nro_ticket,id_sucursal,id_butaca,id_pago,precio,id_funcion)
-values (1,1,53,1,530.00,2)
-insert into detalles_ticket (nro_ticket,id_sucursal,id_butaca,id_pago,precio,id_funcion)
-values (1,1,54,1,530.00,2)
+insert into detalles_ticket (nro_ticket,id_sucursal,id_butaca,id_pago,precio,id_funcion,id_promocion)
+values (1,1,51,1,530.00,2,1)
+insert into detalles_ticket (nro_ticket,id_sucursal,id_butaca,id_pago,precio,id_funcion,id_promocion)
+values (1,1,52,1,530.00,2,1)
+insert into detalles_ticket (nro_ticket,id_sucursal,id_butaca,id_pago,precio,id_funcion,id_promocion)
+values (1,1,53,1,530.00,2,1)
+insert into detalles_ticket (nro_ticket,id_sucursal,id_butaca,id_pago,precio,id_funcion,id_promocion)
+values (1,1,54,1,530.00,2,1)
 
 --para reserva 1
 insert into pagos (id_metodo, id_tarjeta) values (1, null)
-insert into detalles_ticket (nro_ticket,id_sucursal,id_butaca,id_pago,precio,id_funcion)
-values (1,2,870,2,780.00,18)
+insert into detalles_ticket (nro_ticket,id_sucursal,id_butaca,id_pago,precio,id_funcion,id_promocion)
+values (1,2,870,2,780.00,18,3)
 insert into detalles_ticket (nro_ticket,id_sucursal,id_butaca,id_pago,precio,id_funcion)
 values (1,2,871,2,780.00,18)
-insert into detalles_ticket (nro_ticket,id_sucursal,id_butaca,id_pago,precio,id_funcion)
-values (1,2,872,2,780.00,18)
+insert into detalles_ticket (nro_ticket,id_sucursal,id_butaca,id_pago,precio,id_funcion,id_promocion)
+values (1,2,872,2,780.00,18,2)
 insert into detalles_ticket (nro_ticket,id_sucursal,id_butaca,id_pago,precio,id_funcion)
 values (1,2,873,2,780.00,18)
 
@@ -39,10 +39,10 @@ values (2,1,67,4,500.00,2)
 
 --para reserva 2
 insert into pagos (id_metodo, id_tarjeta) values (2, 16)
-insert into detalles_ticket (nro_ticket,id_sucursal,id_butaca,id_pago,precio,id_funcion)
-values (2,2,811,5,750.00,18)
-insert into detalles_ticket (nro_ticket,id_sucursal,id_butaca,id_pago,precio,id_funcion)
-values (2,2,812,5,750.00,18)
+insert into detalles_ticket (nro_ticket,id_sucursal,id_butaca,id_pago,precio,id_funcion,id_promocion)
+values (2,2,811,5,750.00,18,1)
+insert into detalles_ticket (nro_ticket,id_sucursal,id_butaca,id_pago,precio,id_funcion,id_promocion)
+values (2,2,812,5,750.00,18,1)
 
 --para reserva 17
 insert into pagos (id_metodo, id_tarjeta) values (1, null)
@@ -70,10 +70,10 @@ values (3,3,1051,9,500.00,22)
 
 --para reserva 12
 insert into pagos (id_metodo, id_tarjeta) values (1, null)
-insert into detalles_ticket (nro_ticket,id_sucursal,id_butaca,id_pago,precio,id_funcion)
-values (4,1,155,10,490.00,4)
-insert into detalles_ticket (nro_ticket,id_sucursal,id_butaca,id_pago,precio,id_funcion)
-values (4,1,156,10,490.00,4)
+insert into detalles_ticket (nro_ticket,id_sucursal,id_butaca,id_pago,precio,id_funcion,id_promocion)
+values (4,1,155,10,490.00,4,4)
+insert into detalles_ticket (nro_ticket,id_sucursal,id_butaca,id_pago,precio,id_funcion,id_promocion)
+values (4,1,156,10,490.00,4,4)
 
 --para reserva 5
 insert into pagos (id_metodo, id_tarjeta) values (4, 3)
@@ -124,8 +124,8 @@ values (6,2,564,17,490.00,12)
 
 --para reserva 16
 insert into pagos (id_metodo, id_tarjeta) values (4, 6)
-insert into detalles_ticket (nro_ticket,id_sucursal,id_butaca,id_pago,precio,id_funcion)
-values (7,2,502,18,490.00,12)
+insert into detalles_ticket (nro_ticket,id_sucursal,id_butaca,id_pago,precio,id_funcion,id_promocion)
+values (7,2,502,18,490.00,12,2)
 insert into detalles_ticket (nro_ticket,id_sucursal,id_butaca,id_pago,precio,id_funcion)
 values (7,2,503,18,490.00,12)
 insert into detalles_ticket (nro_ticket,id_sucursal,id_butaca,id_pago,precio,id_funcion)
@@ -160,8 +160,8 @@ insert into detalles_ticket (nro_ticket,id_sucursal,id_butaca,id_pago,precio,id_
 values (8,1,953,22,780.00,19)
 
 insert into pagos (id_metodo, id_tarjeta) values (1, null)
-insert into detalles_ticket (nro_ticket,id_sucursal,id_butaca,id_pago,precio,id_funcion)
-values (8,2,1070,23,530.00,21)
+insert into detalles_ticket (nro_ticket,id_sucursal,id_butaca,id_pago,precio,id_funcion,id_promocion)
+values (8,2,1070,23,530.00,21,3)
 
 insert into pagos (id_metodo, id_tarjeta) values (1, null)
 insert into detalles_ticket (nro_ticket,id_sucursal,id_butaca,id_pago,precio,id_funcion)
@@ -178,18 +178,18 @@ insert into detalles_ticket (nro_ticket,id_sucursal,id_butaca,id_pago,precio,id_
 values (9,2,1044,26,530.00,22)
 
 insert into pagos (id_metodo, id_tarjeta) values (1, null)
-insert into detalles_ticket (nro_ticket,id_sucursal,id_butaca,id_pago,precio,id_funcion)
-values (10,1,1132,27,780.00,23)
-insert into detalles_ticket (nro_ticket,id_sucursal,id_butaca,id_pago,precio,id_funcion)
-values (10,1,1133,27,780.00,23)
-insert into detalles_ticket (nro_ticket,id_sucursal,id_butaca,id_pago,precio,id_funcion)
-values (10,1,1561,27,780.00,32)
-insert into detalles_ticket (nro_ticket,id_sucursal,id_butaca,id_pago,precio,id_funcion)
-values (10,1,1562,27,780.00,32)
+insert into detalles_ticket (nro_ticket,id_sucursal,id_butaca,id_pago,precio,id_funcion,id_promocion)
+values (10,1,1132,27,780.00,23,1)
+insert into detalles_ticket (nro_ticket,id_sucursal,id_butaca,id_pago,precio,id_funcion,id_promocion)
+values (10,1,1133,27,780.00,23,1)
+insert into detalles_ticket (nro_ticket,id_sucursal,id_butaca,id_pago,precio,id_funcion,id_promocion)
+values (10,1,1561,27,780.00,32,1)
+insert into detalles_ticket (nro_ticket,id_sucursal,id_butaca,id_pago,precio,id_funcion,id_promocion)
+values (10,1,1562,27,780.00,32,1)
 
 insert into pagos (id_metodo, id_tarjeta) values (1, null)
-insert into detalles_ticket (nro_ticket,id_sucursal,id_butaca,id_pago,precio,id_funcion)
-values (10,2,956,28,780.00,19)
+insert into detalles_ticket (nro_ticket,id_sucursal,id_butaca,id_pago,precio,id_funcion,id_promocion)
+values (10,2,956,28,780.00,19,4)
 
 insert into pagos (id_metodo, id_tarjeta) values (1, null)
 insert into detalles_ticket (nro_ticket,id_sucursal,id_butaca,id_pago,precio,id_funcion)
