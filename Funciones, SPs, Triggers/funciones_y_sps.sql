@@ -89,3 +89,61 @@ as
 		where fu.dia between @fecha1 and @fecha2)
     end
 go
+
+--Reporte:Peliculas mas vistas dentro de un periodo de tiempo, con filtrado minimo
+create procedure pa_pelicula_mas_vista
+@fecha1 date='01/01/1900',
+@fecha2 date='31/12/2500', 
+@cant_min int
+as
+begin
+	select p.nombre 'Nombre de la Pelicula', COUNT (dt.id_detalle) 'Cantidad de Butacas vendidas'
+	from detalles_ticket dt join funciones f on dt.id_funcion=f.id_funcion
+	join peliculas p on f.id_pelicula=p.id_pelicula
+	where f.dia between @fecha1 and @fecha2
+	group by p.nombre
+	having COUNT(dt.id_detalle) > @cant_min 	
+	order by 2 desc
+end
+go
+
+--calcula el subtotal de un detalle teniendo en cuenta el descuento
+create function f_calcular_subtotal
+(@detalle int)
+returns money
+as
+begin
+	declare @total money
+	declare @variabletest int
+	select @variabletest=dt.id_promocion from ticket t 
+	join detalles_ticket dt on dt.id_detalle = @detalle
+	if @variabletest is not null
+		begin
+			select @total=dt.precio*(1-pro.descuento) 
+			from detalles_ticket dt 
+			join promociones pro on pro.id_promocion = dt.id_promocion
+			where @detalle = dt.id_detalle
+		end
+	else
+		begin
+			select @total=dt.precio
+			from detalles_ticket dt
+			where @detalle = dt.id_detalle
+		end
+	return @total
+end
+
+--calcula el total a pagar con descuentos aplicados de un ticket
+create function f_calcular_total
+(@nroticket int, @sucursal int)
+returns money
+as
+begin
+	declare @total money
+
+	select @total=sum(dbo.f_calcular_subtotal(dt.id_detalle)) from ticket t
+	join detalles_ticket dt on t.nro_ticket=dt.nro_ticket and t.id_sucursal=dt.id_sucursal
+	where @nroticket=t.nro_ticket and @sucursal=t.id_sucursal
+	return @total
+end
+go

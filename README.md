@@ -6,9 +6,9 @@
 # Consultas a desarrollar: (los trigger van si o si, el resto elegir cuales)
 - Butacas desocupadas por funcion (HECHO)</br>
 - Películas pasadas que no vendieron ninguna entrada (HECHO)</br>
-- Películas más vistas</br>
+- Películas más vistas</br> (HECHO)
 - SP que saque la vigencia de todas las reservas que no hayan sido pagadas o sea que no tengan ticket (HECHO)</br>
-- Reporte de entradas vendidas por sucursal en un período definido</br>
+- Reporte de cantidad de entradas vendidas por sucursal en un período definido</br>
 - Reporte de ganancias mensuales de un año (o sea genera 12 valores)</br>
 - Reporte de ventas promedio por mes por cajero, mostrando cantidad de entradas e importe, teniendo en cuenta los descuentos</br>
 - Reporte de sucursales con más visitas, siempre y cuando el valor sea mayor a un número ingresado por parámetro</br>
