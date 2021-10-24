@@ -12,7 +12,7 @@
 - Reporte de ganancias mensuales de un año (o sea genera 12 valores)</br>
 - Reporte de ventas promedio por mes por cajero, mostrando cantidad de entradas e importe, teniendo en cuenta los descuentos</br>
 - Reporte de sucursales con más visitas, siempre y cuando el valor sea mayor a un número ingresado por parámetro</br>
-- Trigger que no permita cargar una reserva si la butaca ya está ocupada (HECHO)</br>
+- Trigger que no permita cargar una reserva si la butaca ya está ocupada</br>
 - Trigger que no permita cargar un detalle si la butaca ya está ocupada</br>
 
 # Orden de carga:
