@@ -1,8 +1,6 @@
 # Repo scrits LCII
 
 # Falta hacer:
-- agregat tickets
-- agregar detalle_tickets y pagos
 - agregar promos_detalles
 - generar las consultas de reporte
 
@@ -19,3 +17,4 @@
 10 - insert_reservas.sql</br>
 11 - insert_reservas_butaca.sql</br>
 12 - insert_ticket.sql</br>
+13 - insert_pagos_detalles.sql</br>
