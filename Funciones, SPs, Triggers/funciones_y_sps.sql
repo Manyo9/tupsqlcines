@@ -34,3 +34,56 @@ as
 		and bu.id_butaca not in
 		(select * from dbo.f_butacas_ocupadas(@funcion)) --llama la funcion que devuelve butacas ocupadas
 	end
+	
+--Devuelve las reservas sin pagar
+create function f_reservas_sin_pagar
+(@funcion int)
+returns table
+as
+return(
+	select re.id_reserva from ticket ti
+	right join reservas re on re.id_reserva = ti.id_reserva
+	where nro_ticket is null and re.id_funcion = @funcion
+	)
+
+--Pone vigencia 0 en las reservas que estén sin pagar
+--Usa la funcion que retorna dichas reservas
+--Se llamaría por aplicación 2 horas antes de la función
+create procedure pa_expirar_reservas
+(@funcion int)
+as
+begin
+	update reservas set vigencia = 0 where id_reserva in (select * from dbo.f_reservas_sin_pagar(@funcion))
+end
+
+--Contar entradas segun número de ticket e id_sucursal
+create function f_contar_entradas
+(@nroticket int,@sucursal int)
+returns int
+as
+begin
+	declare @cantidad int
+	select @cantidad=count(id_detalle) from ticket t
+	join detalles_ticket dt on t.nro_ticket=dt.nro_ticket and t.id_sucursal=dt.id_sucursal
+	where t.nro_ticket = @nroticket and @sucursal = t.id_sucursal
+	group by t.nro_ticket, t.id_sucursal
+	return @cantidad
+end 
+
+--Reporte: Funciones pasadas que no vendieron ninguna entrada (entre un periodo de tiempo)
+create procedure pa_peliculas_sin_ventas
+@fecha1 date = '01/01/1900',
+@fecha2 date= '01/01/2500'
+as
+    begin
+	select p.id_pelicula as 'ID Pelicula',
+	p.nombre as 'Nombre de la pelicula',
+	g.genero as 'Genero',
+	ltrim(str(p.duracion)+' minutos') as 'Duracion' 
+	from peliculas p
+	join generos g on p.id_genero = g.id_genero
+	where id_pelicula not in (select distinct pe.id_pelicula from detalles_ticket dt
+		join funciones fu on dt.id_funcion = dt.id_funcion
+		join peliculas pe on fu.id_pelicula = pe.id_pelicula
+		where fu.dia between @fecha1 and @fecha2)
+    end
