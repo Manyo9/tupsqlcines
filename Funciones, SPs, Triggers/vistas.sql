@@ -20,7 +20,11 @@ as
 	join peliculas pe on fun.id_pelicula = pe.id_pelicula
 	join butacas bu on bu.id_butaca = dt.id_butaca
 	join salas sa on fun.id_sala = sa.id_sala
-	
+
+--no se puede incluir funcion ni tipo de sala ni pelicula en un ticket
+--porque un ticket contiene datos sobre la compra de entradas
+--que pueden ser para distintas peliculas y por lo tanto de distintas funciones
+
 --vista de datos para ayudar a imprimir un ticket/comprobante de pago
 create view vista_comprobante
 as 

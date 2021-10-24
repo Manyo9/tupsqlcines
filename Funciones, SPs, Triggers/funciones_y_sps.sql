@@ -1,4 +1,5 @@
 use cine
+go
 --Trae las butacas ocupadas
 --Para una funcion llamada por parámetro
 --Se ejecuta así: select * from dbo.f_butacas_ocupadas(id_funcion)
@@ -18,7 +19,7 @@ as
 			where id_funcion = @funcion
 		return
 	end
-
+go
 --Trae las butacas disponibles
 --Para una funcion llamada por parámetro
 --Usa la funcion que devuelve las butacas ocupadas
@@ -34,7 +35,7 @@ as
 		and bu.id_butaca not in
 		(select * from dbo.f_butacas_ocupadas(@funcion)) --llama la funcion que devuelve butacas ocupadas
 	end
-	
+go	
 --Devuelve las reservas sin pagar
 create function f_reservas_sin_pagar
 (@funcion int)
@@ -45,7 +46,7 @@ return(
 	right join reservas re on re.id_reserva = ti.id_reserva
 	where nro_ticket is null and re.id_funcion = @funcion
 	)
-
+go
 --Pone vigencia 0 en las reservas que estén sin pagar
 --Usa la funcion que retorna dichas reservas
 --Se llamaría por aplicación 2 horas antes de la función
@@ -55,7 +56,7 @@ as
 begin
 	update reservas set vigencia = 0 where id_reserva in (select * from dbo.f_reservas_sin_pagar(@funcion))
 end
-
+go
 --Contar entradas segun número de ticket e id_sucursal
 create function f_contar_entradas
 (@nroticket int,@sucursal int)
@@ -69,7 +70,7 @@ begin
 	group by t.nro_ticket, t.id_sucursal
 	return @cantidad
 end 
-
+go
 --Reporte: Funciones pasadas que no vendieron ninguna entrada (entre un periodo de tiempo)
 create procedure pa_peliculas_sin_ventas
 @fecha1 date = '01/01/1900',
@@ -87,3 +88,4 @@ as
 		join peliculas pe on fu.id_pelicula = pe.id_pelicula
 		where fu.dia between @fecha1 and @fecha2)
     end
+go
