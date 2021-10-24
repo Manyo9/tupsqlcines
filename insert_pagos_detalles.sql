@@ -127,3 +127,69 @@ insert into detalles_ticket (nro_ticket,id_sucursal,id_butaca,id_pago,precio,id_
 values (7,2,503,18,490.00,12)
 insert into detalles_ticket (nro_ticket,id_sucursal,id_butaca,id_pago,precio,id_funcion)
 values (7,2,504,18,490.00,12)
+
+--inserts para compras sin reservas
+
+insert into pagos (id_metodo, id_tarjeta) values (1, null)
+insert into detalles_ticket (nro_ticket,id_sucursal,id_butaca,id_pago,precio,id_funcion)
+values (6,3,422,19,530.00,9)
+insert into detalles_ticket (nro_ticket,id_sucursal,id_butaca,id_pago,precio,id_funcion)
+values (6,3,423,19,530.00,9)
+insert into detalles_ticket (nro_ticket,id_sucursal,id_butaca,id_pago,precio,id_funcion)
+values (6,3,424,19,530.00,9)
+
+insert into pagos (id_metodo, id_tarjeta) values (1, null)
+insert into detalles_ticket (nro_ticket,id_sucursal,id_butaca,id_pago,precio,id_funcion)
+values (7,1,925,20,780.00,19)
+
+insert into pagos (id_metodo, id_tarjeta) values (1, null)
+insert into detalles_ticket (nro_ticket,id_sucursal,id_butaca,id_pago,precio,id_funcion)
+values (7,3,930,21,780.00,19)
+insert into detalles_ticket (nro_ticket,id_sucursal,id_butaca,id_pago,precio,id_funcion)
+values (7,3,931,21,780.00,19)
+
+insert into pagos (id_metodo, id_tarjeta) values (1, null)
+insert into detalles_ticket (nro_ticket,id_sucursal,id_butaca,id_pago,precio,id_funcion)
+values (8,1,960,22,780.00,20)
+insert into detalles_ticket (nro_ticket,id_sucursal,id_butaca,id_pago,precio,id_funcion)
+values (8,1,952,22,780.00,19)
+insert into detalles_ticket (nro_ticket,id_sucursal,id_butaca,id_pago,precio,id_funcion)
+values (8,1,953,22,780.00,19)
+
+insert into pagos (id_metodo, id_tarjeta) values (1, null)
+insert into detalles_ticket (nro_ticket,id_sucursal,id_butaca,id_pago,precio,id_funcion)
+values (8,2,1070,23,530.00,21)
+
+insert into pagos (id_metodo, id_tarjeta) values (1, null)
+insert into detalles_ticket (nro_ticket,id_sucursal,id_butaca,id_pago,precio,id_funcion)
+values (8,3,1067,24,530.00,21)
+
+insert into pagos (id_metodo, id_tarjeta) values (1, null)
+insert into detalles_ticket (nro_ticket,id_sucursal,id_butaca,id_pago,precio,id_funcion)
+values (9,1,1014,25,530.00,22)
+insert into detalles_ticket (nro_ticket,id_sucursal,id_butaca,id_pago,precio,id_funcion)
+values (9,1,1039,25,530.00,21)
+
+insert into pagos (id_metodo, id_tarjeta) values (1, null)
+insert into detalles_ticket (nro_ticket,id_sucursal,id_butaca,id_pago,precio,id_funcion)
+values (9,2,1044,26,530.00,22)
+
+insert into pagos (id_metodo, id_tarjeta) values (1, null)
+insert into detalles_ticket (nro_ticket,id_sucursal,id_butaca,id_pago,precio,id_funcion)
+values (10,1,1132,27,780.00,23)
+insert into detalles_ticket (nro_ticket,id_sucursal,id_butaca,id_pago,precio,id_funcion)
+values (10,1,1133,27,780.00,23)
+insert into detalles_ticket (nro_ticket,id_sucursal,id_butaca,id_pago,precio,id_funcion)
+values (10,1,1561,27,780.00,32)
+insert into detalles_ticket (nro_ticket,id_sucursal,id_butaca,id_pago,precio,id_funcion)
+values (10,1,1562,27,780.00,32)
+
+insert into pagos (id_metodo, id_tarjeta) values (1, null)
+insert into detalles_ticket (nro_ticket,id_sucursal,id_butaca,id_pago,precio,id_funcion)
+values (10,2,956,28,780.00,19)
+
+insert into pagos (id_metodo, id_tarjeta) values (1, null)
+insert into detalles_ticket (nro_ticket,id_sucursal,id_butaca,id_pago,precio,id_funcion)
+values (11,1,1598,29,780.00,32)
+insert into detalles_ticket (nro_ticket,id_sucursal,id_butaca,id_pago,precio,id_funcion)
+values (11,1,1599,29,780.00,32)
