@@ -1,4 +1,4 @@
-
+use cine
 --Trae las butacas ocupadas
 --Para una funcion llamada por parámetro
 --Se ejecuta así: select * from dbo.f_butacas_ocupadas(id_funcion)
@@ -19,7 +19,7 @@ as
 		return
 	end
 
---Trae las butacas ocupadas
+--Trae las butacas disponibles
 --Para una funcion llamada por parámetro
 --Usa la funcion que devuelve las butacas ocupadas
 --se ejecuta así: exec pa_butacas_disp_funcion 1
