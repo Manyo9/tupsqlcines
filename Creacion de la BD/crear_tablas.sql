@@ -198,7 +198,8 @@ id_butaca int,
 id_pago int,
 precio money, 
 id_funcion int,
-id_sucursal smallint 
+id_sucursal smallint,
+id_promocion smallint
 constraint pk_detalles_ticket primary key (id_detalle),
 constraint fk_ticket foreign key (nro_ticket,id_sucursal)
 references ticket (nro_ticket,id_sucursal),
@@ -209,14 +210,16 @@ references butacas (id_butaca),
 constraint fk_pagos foreign key (id_pago)
 references pagos (id_pago),
 constraint fk_funciones_detalles foreign key (id_funcion)
-references funciones (id_funcion)
+references funciones (id_funcion),
+constraint fk_promociones_detalles foreign key (id_promocion)
+references promociones (id_promocion)
 )
-create table promos_detalle
-(id_promocion smallint, 
-id_detalle int
-constraint pk_promos_detalle primary key (id_promocion,id_detalle),
-constraint fk_promociones foreign key (id_promocion)
-references promociones (id_promocion),
-constraint fk_detalles_ticket foreign key (id_detalle)
-references detalles_ticket (id_detalle)
-)
+--create table promos_detalle
+--(id_promocion smallint, 
+--id_detalle int
+--constraint pk_promos_detalle primary key (id_promocion,id_detalle),
+--constraint fk_promociones foreign key (id_promocion)
+--references promociones (id_promocion),
+--constraint fk_detalles_ticket foreign key (id_detalle)
+--references detalles_ticket (id_detalle)
+--)
