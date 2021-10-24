@@ -1,3 +1,6 @@
+use cine
+GO
+
 set dateformat dmy
 insert into tarjetas(num_tarjeta,nom_titular,fec_venc,id_banco)
 values(5206648094392872,'Angela Davis','01/01/2027',1)

@@ -1,3 +1,6 @@
+use cine
+GO
+
 set dateformat dmy
 insert into reservas (id_funcion, id_cliente, fecha_hora, vigencia) values (18, 10, '21/10/2021 15:50',1)
 insert into reservas (id_funcion, id_cliente, fecha_hora, vigencia) values (18, 16, '22/10/2021 13:30',1)

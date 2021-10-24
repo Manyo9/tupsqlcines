@@ -1,4 +1,5 @@
 use cine
+GO
 
 insert into butacas (cod_butaca,id_sala)
 values('A1',1)

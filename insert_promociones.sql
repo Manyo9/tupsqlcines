@@ -1,3 +1,6 @@
+use cine
+GO
+
 insert into promociones (promocion,descuento)
 values ('2x1',0.5)
 insert into promociones (promocion,descuento)

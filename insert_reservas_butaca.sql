@@ -1,3 +1,6 @@
+use cine
+GO
+
 insert into reservas_butaca values (1,870)
 insert into reservas_butaca values (1,871)
 insert into reservas_butaca values (1,872)

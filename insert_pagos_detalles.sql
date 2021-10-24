@@ -1,3 +1,6 @@
+use cine
+go
+
 --para reserva 8
 insert into pagos (id_metodo, id_tarjeta) values (2, 1)
 insert into detalles_ticket (nro_ticket,id_sucursal,id_butaca,id_pago,precio,id_funcion)

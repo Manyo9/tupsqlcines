@@ -1,4 +1,5 @@
 use cine
+go
 
 set dateformat dmy
 insert into clientes (nombre,apellido,fec_nac,id_tipo_doc,num_doc)

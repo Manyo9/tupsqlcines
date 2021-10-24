@@ -1,3 +1,5 @@
+use cine
+GO
 set dateformat dmy
 insert into ticket (nro_ticket, id_sucursal, fecha, id_cajero, id_cliente, id_tipo_compra, id_reserva)
 values (1,2,'21-10-2021 17:01', 4, 10, 1, 1)
