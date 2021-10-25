@@ -31,3 +31,4 @@
 13 - insert_pagos_detalles.sql</br>
 14 - NO AGREGAR!! insert_promos_detalle.sql</br>
 15 - funciones_y_sps.sql</br>
+16 - vistas.sql</br>

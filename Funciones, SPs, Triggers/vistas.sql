@@ -13,7 +13,6 @@ as
 	bu.cod_butaca 'Código butaca',
 	ltrim(str(pe.duracion)+' minutos') as 'Duracion de la película',
 	dt.precio 'Subtotal',
-	--dt.precio*(1-pr.descuento) as 'Subtotal con descuento aplicado'
 	dbo.f_calcular_subtotal(dt.id_detalle) 'Subtotal con descuento aplicado'
 	from ticket t
 	join detalles_ticket dt on dt.nro_ticket = t.nro_ticket and dt.id_sucursal = t.id_sucursal

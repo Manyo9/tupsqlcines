@@ -1,5 +1,6 @@
 use cine
 go
+
 --Trae las butacas ocupadas
 --Para una funcion llamada por parámetro
 --Se ejecuta así: select * from dbo.f_butacas_ocupadas(id_funcion)
@@ -145,5 +146,32 @@ begin
 	join detalles_ticket dt on t.nro_ticket=dt.nro_ticket and t.id_sucursal=dt.id_sucursal
 	where @nroticket=t.nro_ticket and @sucursal=t.id_sucursal
 	return @total
+end
+go
+
+--Reporte de ganancias mensuales de un año (o sea genera un valor por cada mes donde hubo ventas)
+create procedure pa_reporte_ganancias_mensuales
+@año int
+as
+begin
+    select month(t.fecha)'Mes', sum(dbo.f_calcular_total(t.nro_ticket,t.id_sucursal)) 'Ganancias del mes'
+	from ticket t
+    where year(t.fecha)=year(GETDATE())
+    group by month(t.fecha)
+    order by 1 asc
+end
+go
+
+--Reporte: cantidad de entradas vendidas por sucursal en un periodo definido 
+create procedure pa_reporte_entradas_sucursal
+(@fecha_1 datetime,
+@fecha_2 datetime)
+as
+begin 
+    select t.id_sucursal, COUNT (dt.id_detalle) 'Cantidad de entradas vendidas'
+    from ticket t join detalles_ticket dt on dt.nro_ticket=t.nro_ticket
+    where fecha between @fecha_1 and @fecha_2
+    group by t.id_sucursal
+    order by 1 
 end
 go
