@@ -133,6 +133,7 @@ begin
 		end
 	return @total
 end
+go
 
 --calcula el total a pagar con descuentos aplicados de un ticket
 create function f_calcular_total
@@ -174,4 +175,23 @@ begin
     group by t.id_sucursal
     order by 1 
 end
+go
+
+--Reporte de importe promedio de venta (ticket) por mes por cajero,
+--mostrando cantidad de entradas,
+--teniendo en cuenta los descuentos
+--de un año en particular
+create procedure pa_ventas_promedio_por_cajero
+(@año int)
+as
+	select ca.apellido+' '+ca.nombre as 'Cajero',
+	month(t.fecha) as 'Mes del año',
+	avg(distinct dbo.f_calcular_total(t.nro_ticket,t.id_sucursal)) as 'Importe promedio de venta',
+	count(dt.id_detalle) as 'Cantidad de entradas vendidas'
+	from ticket t
+	join cajeros ca on t.id_cajero = ca.id_cajero
+	join detalles_ticket dt on t.nro_ticket=dt.nro_ticket and t.id_sucursal=dt.id_sucursal
+	where year(t.fecha) = @año
+	group by ca.apellido+' '+ca.nombre, month(t.fecha)
+	order by 1
 go

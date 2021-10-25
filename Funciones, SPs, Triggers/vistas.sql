@@ -1,5 +1,5 @@
 use cine
-
+go
 --vista de datos para ayudar a imprimir la entrada
 create view vista_entrada
 as
