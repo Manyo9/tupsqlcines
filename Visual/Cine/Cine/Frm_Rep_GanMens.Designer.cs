@@ -29,20 +29,13 @@ namespace Cine
         /// </summary>
         private void InitializeComponent()
         {
-            this.txtBaño = new System.Windows.Forms.TextBox();
             this.lblAño = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvGananciaMen = new System.Windows.Forms.DataGridView();
             this.Mes = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Ganancia = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.DTPAño = new System.Windows.Forms.DateTimePicker();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvGananciaMen)).BeginInit();
             this.SuspendLayout();
-            // 
-            // txtBaño
-            // 
-            this.txtBaño.Location = new System.Drawing.Point(144, 46);
-            this.txtBaño.Name = "txtBaño";
-            this.txtBaño.Size = new System.Drawing.Size(113, 23);
-            this.txtBaño.TabIndex = 0;
             // 
             // lblAño
             // 
@@ -53,20 +46,20 @@ namespace Cine
             this.lblAño.TabIndex = 1;
             this.lblAño.Text = "Ingrese Año";
             // 
-            // dataGridView1
+            // dgvGananciaMen
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvGananciaMen.AllowUserToAddRows = false;
+            this.dgvGananciaMen.AllowUserToDeleteRows = false;
+            this.dgvGananciaMen.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvGananciaMen.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Mes,
             this.Ganancia});
-            this.dataGridView1.Location = new System.Drawing.Point(55, 161);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.RowTemplate.Height = 25;
-            this.dataGridView1.Size = new System.Drawing.Size(244, 150);
-            this.dataGridView1.TabIndex = 2;
+            this.dgvGananciaMen.Location = new System.Drawing.Point(55, 161);
+            this.dgvGananciaMen.Name = "dgvGananciaMen";
+            this.dgvGananciaMen.ReadOnly = true;
+            this.dgvGananciaMen.RowTemplate.Height = 25;
+            this.dgvGananciaMen.Size = new System.Drawing.Size(244, 150);
+            this.dgvGananciaMen.TabIndex = 2;
             // 
             // Mes
             // 
@@ -80,28 +73,34 @@ namespace Cine
             this.Ganancia.Name = "Ganancia";
             this.Ganancia.ReadOnly = true;
             // 
+            // DTPAño
+            // 
+            this.DTPAño.Location = new System.Drawing.Point(55, 91);
+            this.DTPAño.Name = "DTPAño";
+            this.DTPAño.Size = new System.Drawing.Size(200, 23);
+            this.DTPAño.TabIndex = 3;
+            // 
             // Frm_Rep_GanMens
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(350, 450);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.DTPAño);
+            this.Controls.Add(this.dgvGananciaMen);
             this.Controls.Add(this.lblAño);
-            this.Controls.Add(this.txtBaño);
             this.Name = "Frm_Rep_GanMens";
             this.Text = "Frm_Rep_GanMens";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvGananciaMen)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.TextBox txtBaño;
         private System.Windows.Forms.Label lblAño;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvGananciaMen;
         private System.Windows.Forms.DataGridViewTextBoxColumn Mes;
         private System.Windows.Forms.DataGridViewTextBoxColumn Ganancia;
+        private System.Windows.Forms.DateTimePicker DTPAño;
     }
 }

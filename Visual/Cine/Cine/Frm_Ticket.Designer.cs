@@ -32,15 +32,14 @@ namespace Cine
             this.lblNroTicket = new System.Windows.Forms.Label();
             this.txtNroTicket = new System.Windows.Forms.TextBox();
             this.IdSucursal = new System.Windows.Forms.Label();
-            this.txt = new System.Windows.Forms.TextBox();
+            this.txtID = new System.Windows.Forms.TextBox();
             this.btnImprimirTicket = new System.Windows.Forms.Button();
             this.lblNroTransaccion = new System.Windows.Forms.Label();
             this.lblNombreSuc = new System.Windows.Forms.Label();
             this.lblFormaPago = new System.Windows.Forms.Label();
             this.lblCantidadEntradas = new System.Windows.Forms.Label();
             this.lblTotalPagar = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.lblEntradas = new System.Windows.Forms.Label();
+            this.DGVEntradas = new System.Windows.Forms.DataGridView();
             this.nroTransaccion = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.sucursal = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Sala = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -51,7 +50,8 @@ namespace Cine
             this.subtotal = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.subtotalDescuento = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.accion = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.lblEntradas = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.DGVEntradas)).BeginInit();
             this.SuspendLayout();
             // 
             // lblNroTicket
@@ -79,12 +79,12 @@ namespace Cine
             this.IdSucursal.TabIndex = 2;
             this.IdSucursal.Text = "Id Sucursal";
             // 
-            // txt
+            // txtID
             // 
-            this.txt.Location = new System.Drawing.Point(115, 85);
-            this.txt.Name = "txt";
-            this.txt.Size = new System.Drawing.Size(100, 23);
-            this.txt.TabIndex = 3;
+            this.txtID.Location = new System.Drawing.Point(115, 85);
+            this.txtID.Name = "txtID";
+            this.txtID.Size = new System.Drawing.Size(100, 23);
+            this.txtID.TabIndex = 3;
             // 
             // btnImprimirTicket
             // 
@@ -140,12 +140,12 @@ namespace Cine
             this.lblTotalPagar.TabIndex = 9;
             this.lblTotalPagar.Text = "Total a Pagar";
             // 
-            // dataGridView1
+            // DGVEntradas
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.DGVEntradas.AllowUserToAddRows = false;
+            this.DGVEntradas.AllowUserToDeleteRows = false;
+            this.DGVEntradas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DGVEntradas.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.nroTransaccion,
             this.sucursal,
             this.Sala,
@@ -156,21 +156,12 @@ namespace Cine
             this.subtotal,
             this.subtotalDescuento,
             this.accion});
-            this.dataGridView1.Location = new System.Drawing.Point(37, 354);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.RowTemplate.Height = 25;
-            this.dataGridView1.Size = new System.Drawing.Size(1043, 150);
-            this.dataGridView1.TabIndex = 10;
-            // 
-            // lblEntradas
-            // 
-            this.lblEntradas.AutoSize = true;
-            this.lblEntradas.Location = new System.Drawing.Point(50, 315);
-            this.lblEntradas.Name = "lblEntradas";
-            this.lblEntradas.Size = new System.Drawing.Size(65, 15);
-            this.lblEntradas.TabIndex = 11;
-            this.lblEntradas.Text = "ENTRADAS";
+            this.DGVEntradas.Location = new System.Drawing.Point(37, 354);
+            this.DGVEntradas.Name = "DGVEntradas";
+            this.DGVEntradas.ReadOnly = true;
+            this.DGVEntradas.RowTemplate.Height = 25;
+            this.DGVEntradas.Size = new System.Drawing.Size(1043, 150);
+            this.DGVEntradas.TabIndex = 10;
             // 
             // nroTransaccion
             // 
@@ -232,26 +223,35 @@ namespace Cine
             this.accion.Name = "accion";
             this.accion.ReadOnly = true;
             // 
+            // lblEntradas
+            // 
+            this.lblEntradas.AutoSize = true;
+            this.lblEntradas.Location = new System.Drawing.Point(50, 315);
+            this.lblEntradas.Name = "lblEntradas";
+            this.lblEntradas.Size = new System.Drawing.Size(65, 15);
+            this.lblEntradas.TabIndex = 11;
+            this.lblEntradas.Text = "ENTRADAS";
+            // 
             // Frm_Ticket
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1164, 555);
             this.Controls.Add(this.lblEntradas);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.DGVEntradas);
             this.Controls.Add(this.lblTotalPagar);
             this.Controls.Add(this.lblCantidadEntradas);
             this.Controls.Add(this.lblFormaPago);
             this.Controls.Add(this.lblNombreSuc);
             this.Controls.Add(this.lblNroTransaccion);
             this.Controls.Add(this.btnImprimirTicket);
-            this.Controls.Add(this.txt);
+            this.Controls.Add(this.txtID);
             this.Controls.Add(this.IdSucursal);
             this.Controls.Add(this.txtNroTicket);
             this.Controls.Add(this.lblNroTicket);
             this.Name = "Frm_Ticket";
             this.Text = "Frm_Ticket";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DGVEntradas)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -262,14 +262,14 @@ namespace Cine
         private System.Windows.Forms.Label lblNroTicket;
         private System.Windows.Forms.TextBox txtNroTicket;
         private System.Windows.Forms.Label IdSucursal;
-        private System.Windows.Forms.TextBox txt;
+        private System.Windows.Forms.TextBox txtID;
         private System.Windows.Forms.Button btnImprimirTicket;
         private System.Windows.Forms.Label lblNroTransaccion;
         private System.Windows.Forms.Label lblNombreSuc;
         private System.Windows.Forms.Label lblFormaPago;
         private System.Windows.Forms.Label lblCantidadEntradas;
         private System.Windows.Forms.Label lblTotalPagar;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView DGVEntradas;
         private System.Windows.Forms.Label lblEntradas;
         private System.Windows.Forms.DataGridViewTextBoxColumn nroTransaccion;
         private System.Windows.Forms.DataGridViewTextBoxColumn sucursal;

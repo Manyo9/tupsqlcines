@@ -30,8 +30,8 @@ namespace Cine
         private void InitializeComponent()
         {
             this.lblAño = new System.Windows.Forms.Label();
-            this.txtAño = new System.Windows.Forms.TextBox();
             this.dgvPromCaje = new System.Windows.Forms.DataGridView();
+            this.DTPAño = new System.Windows.Forms.DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPromCaje)).BeginInit();
             this.SuspendLayout();
             // 
@@ -44,13 +44,6 @@ namespace Cine
             this.lblAño.TabIndex = 0;
             this.lblAño.Text = "Año";
             // 
-            // txtAño
-            // 
-            this.txtAño.Location = new System.Drawing.Point(80, 45);
-            this.txtAño.Name = "txtAño";
-            this.txtAño.Size = new System.Drawing.Size(100, 23);
-            this.txtAño.TabIndex = 1;
-            // 
             // dgvPromCaje
             // 
             this.dgvPromCaje.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -60,13 +53,20 @@ namespace Cine
             this.dgvPromCaje.Size = new System.Drawing.Size(481, 150);
             this.dgvPromCaje.TabIndex = 2;
             // 
+            // DTPAño
+            // 
+            this.DTPAño.Location = new System.Drawing.Point(93, 42);
+            this.DTPAño.Name = "DTPAño";
+            this.DTPAño.Size = new System.Drawing.Size(200, 23);
+            this.DTPAño.TabIndex = 3;
+            // 
             // Frm_Rep_PromCaje
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(547, 391);
+            this.Controls.Add(this.DTPAño);
             this.Controls.Add(this.dgvPromCaje);
-            this.Controls.Add(this.txtAño);
             this.Controls.Add(this.lblAño);
             this.Name = "Frm_Rep_PromCaje";
             this.Text = "Frm_Rep_PromCaje";
@@ -79,7 +79,7 @@ namespace Cine
         #endregion
 
         private System.Windows.Forms.Label lblAño;
-        private System.Windows.Forms.TextBox txtAño;
         private System.Windows.Forms.DataGridView dgvPromCaje;
+        private System.Windows.Forms.DateTimePicker DTPAño;
     }
 }

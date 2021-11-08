@@ -35,23 +35,25 @@ namespace Cine
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.lblFechaInicio = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.DGVPelMasVistas = new System.Windows.Forms.DataGridView();
             this.NombrePelicula = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CantButacasVendidas = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label4 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.txtCantMin = new System.Windows.Forms.TextBox();
+            this.lblCantidadMinima = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.DGVPelMasVistas)).BeginInit();
             this.SuspendLayout();
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(158, 59);
+            this.dateTimePicker1.Location = new System.Drawing.Point(122, 59);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(250, 23);
             this.dateTimePicker1.TabIndex = 0;
             // 
             // dateTimePicker2
             // 
-            this.dateTimePicker2.Location = new System.Drawing.Point(158, 106);
+            this.dateTimePicker2.Location = new System.Drawing.Point(122, 103);
             this.dateTimePicker2.Name = "dateTimePicker2";
             this.dateTimePicker2.Size = new System.Drawing.Size(250, 23);
             this.dateTimePicker2.TabIndex = 1;
@@ -68,7 +70,7 @@ namespace Cine
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(64, 106);
+            this.label2.Location = new System.Drawing.Point(64, 108);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(30, 15);
             this.label2.TabIndex = 3;
@@ -83,20 +85,20 @@ namespace Cine
             this.lblFechaInicio.TabIndex = 4;
             this.lblFechaInicio.Text = "inicio";
             // 
-            // dataGridView1
+            // DGVPelMasVistas
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.DGVPelMasVistas.AllowUserToAddRows = false;
+            this.DGVPelMasVistas.AllowUserToDeleteRows = false;
+            this.DGVPelMasVistas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DGVPelMasVistas.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.NombrePelicula,
             this.CantButacasVendidas});
-            this.dataGridView1.Location = new System.Drawing.Point(64, 203);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.RowTemplate.Height = 25;
-            this.dataGridView1.Size = new System.Drawing.Size(511, 150);
-            this.dataGridView1.TabIndex = 5;
+            this.DGVPelMasVistas.Location = new System.Drawing.Point(64, 203);
+            this.DGVPelMasVistas.Name = "DGVPelMasVistas";
+            this.DGVPelMasVistas.ReadOnly = true;
+            this.DGVPelMasVistas.RowTemplate.Height = 25;
+            this.DGVPelMasVistas.Size = new System.Drawing.Size(511, 150);
+            this.DGVPelMasVistas.TabIndex = 5;
             // 
             // NombrePelicula
             // 
@@ -120,13 +122,31 @@ namespace Cine
             this.label4.TabIndex = 6;
             this.label4.Text = "Ingrese Fecha";
             // 
+            // txtCantMin
+            // 
+            this.txtCantMin.Location = new System.Drawing.Point(272, 147);
+            this.txtCantMin.Name = "txtCantMin";
+            this.txtCantMin.Size = new System.Drawing.Size(100, 23);
+            this.txtCantMin.TabIndex = 7;
+            // 
+            // lblCantidadMinima
+            // 
+            this.lblCantidadMinima.AutoSize = true;
+            this.lblCantidadMinima.Location = new System.Drawing.Point(64, 151);
+            this.lblCantidadMinima.Name = "lblCantidadMinima";
+            this.lblCantidadMinima.Size = new System.Drawing.Size(163, 15);
+            this.lblCantidadMinima.TabIndex = 8;
+            this.lblCantidadMinima.Text = "Cantidad minima de entradas";
+            // 
             // Frm_Rep_PelMasVis
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(672, 450);
+            this.Controls.Add(this.lblCantidadMinima);
+            this.Controls.Add(this.txtCantMin);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.DGVPelMasVistas);
             this.Controls.Add(this.lblFechaInicio);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -134,7 +154,7 @@ namespace Cine
             this.Controls.Add(this.dateTimePicker1);
             this.Name = "Frm_Rep_PelMasVis";
             this.Text = "Frm_Rep_PelMasVis";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DGVPelMasVistas)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -147,9 +167,11 @@ namespace Cine
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label lblFechaInicio;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView DGVPelMasVistas;
         private System.Windows.Forms.DataGridViewTextBoxColumn NombrePelicula;
         private System.Windows.Forms.DataGridViewTextBoxColumn CantButacasVendidas;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox txtCantMin;
+        private System.Windows.Forms.Label lblCantidadMinima;
     }
 }

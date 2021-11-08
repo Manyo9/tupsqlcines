@@ -30,10 +30,10 @@ namespace Cine
         private void InitializeComponent()
         {
             this.lblFechaUno = new System.Windows.Forms.Label();
-            this.txtFechaUno = new System.Windows.Forms.TextBox();
             this.lblFechaDos = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.dgvPelSinVentas = new System.Windows.Forms.DataGridView();
+            this.DTPFecha1 = new System.Windows.Forms.DateTimePicker();
+            this.dtpFecha2 = new System.Windows.Forms.DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPelSinVentas)).BeginInit();
             this.SuspendLayout();
             // 
@@ -46,13 +46,6 @@ namespace Cine
             this.lblFechaUno.TabIndex = 0;
             this.lblFechaUno.Text = "Fecha uno";
             // 
-            // txtFechaUno
-            // 
-            this.txtFechaUno.Location = new System.Drawing.Point(107, 51);
-            this.txtFechaUno.Name = "txtFechaUno";
-            this.txtFechaUno.Size = new System.Drawing.Size(100, 23);
-            this.txtFechaUno.TabIndex = 1;
-            // 
             // lblFechaDos
             // 
             this.lblFechaDos.AutoSize = true;
@@ -61,13 +54,6 @@ namespace Cine
             this.lblFechaDos.Size = new System.Drawing.Size(60, 15);
             this.lblFechaDos.TabIndex = 2;
             this.lblFechaDos.Text = "Fecha dos";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(107, 93);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 23);
-            this.textBox1.TabIndex = 3;
             // 
             // dgvPelSinVentas
             // 
@@ -78,15 +64,29 @@ namespace Cine
             this.dgvPelSinVentas.Size = new System.Drawing.Size(485, 150);
             this.dgvPelSinVentas.TabIndex = 4;
             // 
+            // DTPFecha1
+            // 
+            this.DTPFecha1.Location = new System.Drawing.Point(127, 54);
+            this.DTPFecha1.Name = "DTPFecha1";
+            this.DTPFecha1.Size = new System.Drawing.Size(200, 23);
+            this.DTPFecha1.TabIndex = 5;
+            // 
+            // dtpFecha2
+            // 
+            this.dtpFecha2.Location = new System.Drawing.Point(127, 96);
+            this.dtpFecha2.Name = "dtpFecha2";
+            this.dtpFecha2.Size = new System.Drawing.Size(200, 23);
+            this.dtpFecha2.TabIndex = 6;
+            // 
             // Frm_Rep_PelSinVentas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(642, 413);
+            this.Controls.Add(this.dtpFecha2);
+            this.Controls.Add(this.DTPFecha1);
             this.Controls.Add(this.dgvPelSinVentas);
-            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.lblFechaDos);
-            this.Controls.Add(this.txtFechaUno);
             this.Controls.Add(this.lblFechaUno);
             this.Name = "Frm_Rep_PelSinVentas";
             this.Text = "Frm_Rep_PelSinVentas";
@@ -99,9 +99,9 @@ namespace Cine
         #endregion
 
         private System.Windows.Forms.Label lblFechaUno;
-        private System.Windows.Forms.TextBox txtFechaUno;
         private System.Windows.Forms.Label lblFechaDos;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.DataGridView dgvPelSinVentas;
+        private System.Windows.Forms.DateTimePicker DTPFecha1;
+        private System.Windows.Forms.DateTimePicker dtpFecha2;
     }
 }
