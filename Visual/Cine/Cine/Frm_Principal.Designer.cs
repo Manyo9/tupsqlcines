@@ -30,6 +30,7 @@
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.funcionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.butacasVendidasPorFuncionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ticketsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.imprimirTicketToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reportesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -40,7 +41,6 @@
             this.promVentasPorCajeroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.acercaDeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mostrarIntegrantesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.butacasVendidasPorFuncionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -53,7 +53,7 @@
             this.acercaDeToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(800, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(662, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -64,6 +64,12 @@
             this.funcionesToolStripMenuItem.Name = "funcionesToolStripMenuItem";
             this.funcionesToolStripMenuItem.Size = new System.Drawing.Size(73, 20);
             this.funcionesToolStripMenuItem.Text = "Funciones";
+            // 
+            // butacasVendidasPorFuncionToolStripMenuItem
+            // 
+            this.butacasVendidasPorFuncionToolStripMenuItem.Name = "butacasVendidasPorFuncionToolStripMenuItem";
+            this.butacasVendidasPorFuncionToolStripMenuItem.Size = new System.Drawing.Size(230, 22);
+            this.butacasVendidasPorFuncionToolStripMenuItem.Text = "Butacas vendidas por funcion";
             // 
             // ticketsToolStripMenuItem
             // 
@@ -76,7 +82,7 @@
             // imprimirTicketToolStripMenuItem
             // 
             this.imprimirTicketToolStripMenuItem.Name = "imprimirTicketToolStripMenuItem";
-            this.imprimirTicketToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.imprimirTicketToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
             this.imprimirTicketToolStripMenuItem.Text = "Imprimir Ticket";
             // 
             // reportesToolStripMenuItem
@@ -132,20 +138,14 @@
             // mostrarIntegrantesToolStripMenuItem
             // 
             this.mostrarIntegrantesToolStripMenuItem.Name = "mostrarIntegrantesToolStripMenuItem";
-            this.mostrarIntegrantesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.mostrarIntegrantesToolStripMenuItem.Size = new System.Drawing.Size(177, 22);
             this.mostrarIntegrantesToolStripMenuItem.Text = "Mostrar integrantes";
-            // 
-            // butacasVendidasPorFuncionToolStripMenuItem
-            // 
-            this.butacasVendidasPorFuncionToolStripMenuItem.Name = "butacasVendidasPorFuncionToolStripMenuItem";
-            this.butacasVendidasPorFuncionToolStripMenuItem.Size = new System.Drawing.Size(230, 22);
-            this.butacasVendidasPorFuncionToolStripMenuItem.Text = "Butacas vendidas por funcion";
             // 
             // Frm_Principal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(662, 351);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Frm_Principal";

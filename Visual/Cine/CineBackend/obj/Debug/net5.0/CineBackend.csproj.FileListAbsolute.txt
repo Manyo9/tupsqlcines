@@ -1,0 +1,12 @@
+C:\Sofia\PROGRAMACIÓN UTN\PRIMER AÑO\Segundo cuatrimestre\Laboratorio de computacion II\TP INTEGRADOR\TP CINE\Visual\Cine\CineBackend\bin\Debug\net5.0\CineBackend.deps.json
+C:\Sofia\PROGRAMACIÓN UTN\PRIMER AÑO\Segundo cuatrimestre\Laboratorio de computacion II\TP INTEGRADOR\TP CINE\Visual\Cine\CineBackend\bin\Debug\net5.0\CineBackend.dll
+C:\Sofia\PROGRAMACIÓN UTN\PRIMER AÑO\Segundo cuatrimestre\Laboratorio de computacion II\TP INTEGRADOR\TP CINE\Visual\Cine\CineBackend\bin\Debug\net5.0\ref\CineBackend.dll
+C:\Sofia\PROGRAMACIÓN UTN\PRIMER AÑO\Segundo cuatrimestre\Laboratorio de computacion II\TP INTEGRADOR\TP CINE\Visual\Cine\CineBackend\bin\Debug\net5.0\CineBackend.pdb
+C:\Sofia\PROGRAMACIÓN UTN\PRIMER AÑO\Segundo cuatrimestre\Laboratorio de computacion II\TP INTEGRADOR\TP CINE\Visual\Cine\CineBackend\obj\Debug\net5.0\CineBackend.csprojAssemblyReference.cache
+C:\Sofia\PROGRAMACIÓN UTN\PRIMER AÑO\Segundo cuatrimestre\Laboratorio de computacion II\TP INTEGRADOR\TP CINE\Visual\Cine\CineBackend\obj\Debug\net5.0\CineBackend.GeneratedMSBuildEditorConfig.editorconfig
+C:\Sofia\PROGRAMACIÓN UTN\PRIMER AÑO\Segundo cuatrimestre\Laboratorio de computacion II\TP INTEGRADOR\TP CINE\Visual\Cine\CineBackend\obj\Debug\net5.0\CineBackend.AssemblyInfoInputs.cache
+C:\Sofia\PROGRAMACIÓN UTN\PRIMER AÑO\Segundo cuatrimestre\Laboratorio de computacion II\TP INTEGRADOR\TP CINE\Visual\Cine\CineBackend\obj\Debug\net5.0\CineBackend.AssemblyInfo.cs
+C:\Sofia\PROGRAMACIÓN UTN\PRIMER AÑO\Segundo cuatrimestre\Laboratorio de computacion II\TP INTEGRADOR\TP CINE\Visual\Cine\CineBackend\obj\Debug\net5.0\CineBackend.csproj.CoreCompileInputs.cache
+C:\Sofia\PROGRAMACIÓN UTN\PRIMER AÑO\Segundo cuatrimestre\Laboratorio de computacion II\TP INTEGRADOR\TP CINE\Visual\Cine\CineBackend\obj\Debug\net5.0\CineBackend.dll
+C:\Sofia\PROGRAMACIÓN UTN\PRIMER AÑO\Segundo cuatrimestre\Laboratorio de computacion II\TP INTEGRADOR\TP CINE\Visual\Cine\CineBackend\obj\Debug\net5.0\ref\CineBackend.dll
+C:\Sofia\PROGRAMACIÓN UTN\PRIMER AÑO\Segundo cuatrimestre\Laboratorio de computacion II\TP INTEGRADOR\TP CINE\Visual\Cine\CineBackend\obj\Debug\net5.0\CineBackend.pdb

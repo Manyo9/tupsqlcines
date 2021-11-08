@@ -1,20 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\archivos\\TUP\\2do Cuatri\\TPI\\labo\\scriptscineLCII\\Visual\\Cine\\CineBackend\\CineBackend.csproj": {}
+    "C:\\Sofia\\PROGRAMACIÓN UTN\\PRIMER AÑO\\Segundo cuatrimestre\\Laboratorio de computacion II\\TP INTEGRADOR\\TP CINE\\Visual\\Cine\\CineBackend\\CineBackend.csproj": {}
   },
   "projects": {
-    "D:\\archivos\\TUP\\2do Cuatri\\TPI\\labo\\scriptscineLCII\\Visual\\Cine\\CineBackend\\CineBackend.csproj": {
+    "C:\\Sofia\\PROGRAMACIÓN UTN\\PRIMER AÑO\\Segundo cuatrimestre\\Laboratorio de computacion II\\TP INTEGRADOR\\TP CINE\\Visual\\Cine\\CineBackend\\CineBackend.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\archivos\\TUP\\2do Cuatri\\TPI\\labo\\scriptscineLCII\\Visual\\Cine\\CineBackend\\CineBackend.csproj",
+        "projectUniqueName": "C:\\Sofia\\PROGRAMACIÓN UTN\\PRIMER AÑO\\Segundo cuatrimestre\\Laboratorio de computacion II\\TP INTEGRADOR\\TP CINE\\Visual\\Cine\\CineBackend\\CineBackend.csproj",
         "projectName": "CineBackend",
-        "projectPath": "D:\\archivos\\TUP\\2do Cuatri\\TPI\\labo\\scriptscineLCII\\Visual\\Cine\\CineBackend\\CineBackend.csproj",
-        "packagesPath": "C:\\Users\\agusm\\.nuget\\packages\\",
-        "outputPath": "D:\\archivos\\TUP\\2do Cuatri\\TPI\\labo\\scriptscineLCII\\Visual\\Cine\\CineBackend\\obj\\",
+        "projectPath": "C:\\Sofia\\PROGRAMACIÓN UTN\\PRIMER AÑO\\Segundo cuatrimestre\\Laboratorio de computacion II\\TP INTEGRADOR\\TP CINE\\Visual\\Cine\\CineBackend\\CineBackend.csproj",
+        "packagesPath": "C:\\Users\\sofia\\.nuget\\packages\\",
+        "outputPath": "C:\\Sofia\\PROGRAMACIÓN UTN\\PRIMER AÑO\\Segundo cuatrimestre\\Laboratorio de computacion II\\TP INTEGRADOR\\TP CINE\\Visual\\Cine\\CineBackend\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\agusm\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\sofia\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -54,7 +57,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }
