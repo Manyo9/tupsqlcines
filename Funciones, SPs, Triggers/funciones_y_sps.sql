@@ -195,3 +195,23 @@ as
 	group by ca.apellido+' '+ca.nombre, month(t.fecha)
 	order by 1
 go
+
+-- SP para imprimir entrada
+create procedure pa_entradas_por_ticket
+(@nro_ticket int,
+@id_sucursal int)
+as
+	select *
+	from vista_entrada
+	where id_sucursal=@id_sucursal and [Nro de transacción] = @nro_ticket
+go
+
+--SP para imprimir un ticket (no trae detalles)
+create procedure pa_imprimir_ticket
+(@nro_ticket int,
+@id_sucursal int)
+as
+	select *
+	from vista_comprobante
+	where [Id sucursal]=@id_sucursal and [Nro de transacción] = @nro_ticket
+go
