@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "d:\\Escritorio\\LCII TP\\scriptscineLCII\\Visual\\Cine\\CineBackend\\CineBackend.csproj": {}
+    "C:\\Users\\matid\\Source\\Repos\\scriptscineLCII\\Visual\\Cine\\CineBackend\\CineBackend.csproj": {}
   },
   "projects": {
-    "d:\\Escritorio\\LCII TP\\scriptscineLCII\\Visual\\Cine\\CineBackend\\CineBackend.csproj": {
+    "C:\\Users\\matid\\Source\\Repos\\scriptscineLCII\\Visual\\Cine\\CineBackend\\CineBackend.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "d:\\Escritorio\\LCII TP\\scriptscineLCII\\Visual\\Cine\\CineBackend\\CineBackend.csproj",
+        "projectUniqueName": "C:\\Users\\matid\\Source\\Repos\\scriptscineLCII\\Visual\\Cine\\CineBackend\\CineBackend.csproj",
         "projectName": "CineBackend",
-        "projectPath": "d:\\Escritorio\\LCII TP\\scriptscineLCII\\Visual\\Cine\\CineBackend\\CineBackend.csproj",
-        "packagesPath": "C:\\Users\\Julieta\\.nuget\\packages\\",
-        "outputPath": "d:\\Escritorio\\LCII TP\\scriptscineLCII\\Visual\\Cine\\CineBackend\\obj\\",
+        "projectPath": "C:\\Users\\matid\\Source\\Repos\\scriptscineLCII\\Visual\\Cine\\CineBackend\\CineBackend.csproj",
+        "packagesPath": "C:\\Users\\matid\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\matid\\Source\\Repos\\scriptscineLCII\\Visual\\Cine\\CineBackend\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Julieta\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\matid\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -39,6 +39,12 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
+          "dependencies": {
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.3, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

@@ -1,7 +1,7 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\matid\\Source\\Repos\\scriptscineLCII\\Visual\\Cine\\Cine\\Cine.csproj": {}
+    "C:\\Users\\matid\\Source\\Repos\\scriptscineLCII\\Visual\\Cine\\Cine\\CineFrontend.csproj": {}
   },
   "projects": {
     "C:\\Users\\matid\\Source\\Repos\\scriptscineLCII\\Visual\\Cine\\CineBackend\\CineBackend.csproj": {
@@ -39,6 +39,12 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
+          "dependencies": {
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.3, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -58,12 +64,12 @@
         }
       }
     },
-    "C:\\Users\\matid\\Source\\Repos\\scriptscineLCII\\Visual\\Cine\\Cine\\Cine.csproj": {
+    "C:\\Users\\matid\\Source\\Repos\\scriptscineLCII\\Visual\\Cine\\Cine\\CineFrontend.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\matid\\Source\\Repos\\scriptscineLCII\\Visual\\Cine\\Cine\\Cine.csproj",
-        "projectName": "Cine",
-        "projectPath": "C:\\Users\\matid\\Source\\Repos\\scriptscineLCII\\Visual\\Cine\\Cine\\Cine.csproj",
+        "projectUniqueName": "C:\\Users\\matid\\Source\\Repos\\scriptscineLCII\\Visual\\Cine\\Cine\\CineFrontend.csproj",
+        "projectName": "CineFrontend",
+        "projectPath": "C:\\Users\\matid\\Source\\Repos\\scriptscineLCII\\Visual\\Cine\\Cine\\CineFrontend.csproj",
         "packagesPath": "C:\\Users\\matid\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\matid\\Source\\Repos\\scriptscineLCII\\Visual\\Cine\\Cine\\obj\\",
         "projectStyle": "PackageReference",
