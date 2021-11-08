@@ -51,7 +51,6 @@ d:\Escritorio\LCII TP\scriptscineLCII\Visual\Cine\Cine\obj\Debug\net5.0-windows\
 d:\Escritorio\LCII TP\scriptscineLCII\Visual\Cine\Cine\obj\Debug\net5.0-windows\Cine.AssemblyInfoInputs.cache
 d:\Escritorio\LCII TP\scriptscineLCII\Visual\Cine\Cine\obj\Debug\net5.0-windows\Cine.AssemblyInfo.cs
 d:\Escritorio\LCII TP\scriptscineLCII\Visual\Cine\Cine\obj\Debug\net5.0-windows\Cine.csproj.CoreCompileInputs.cache
-d:\Escritorio\LCII TP\scriptscineLCII\Visual\Cine\Cine\obj\Debug\net5.0-windows\Cine.csproj.CopyComplete
 d:\Escritorio\LCII TP\scriptscineLCII\Visual\Cine\Cine\obj\Debug\net5.0-windows\Cine.dll
 d:\Escritorio\LCII TP\scriptscineLCII\Visual\Cine\Cine\obj\Debug\net5.0-windows\ref\Cine.dll
 d:\Escritorio\LCII TP\scriptscineLCII\Visual\Cine\Cine\obj\Debug\net5.0-windows\Cine.pdb

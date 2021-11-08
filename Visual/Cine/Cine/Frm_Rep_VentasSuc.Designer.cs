@@ -31,9 +31,9 @@ namespace Cine
         {
             this.lblFechaUno = new System.Windows.Forms.Label();
             this.lblFechaDos = new System.Windows.Forms.Label();
-            this.txtFechaUno = new System.Windows.Forms.TextBox();
-            this.txtFechaDos = new System.Windows.Forms.TextBox();
             this.dgvVentasSuc = new System.Windows.Forms.DataGridView();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.dgvVentasSuc)).BeginInit();
             this.SuspendLayout();
             // 
@@ -55,20 +55,6 @@ namespace Cine
             this.lblFechaDos.TabIndex = 1;
             this.lblFechaDos.Text = "Fecha Dos";
             // 
-            // txtFechaUno
-            // 
-            this.txtFechaUno.Location = new System.Drawing.Point(136, 61);
-            this.txtFechaUno.Name = "txtFechaUno";
-            this.txtFechaUno.Size = new System.Drawing.Size(100, 23);
-            this.txtFechaUno.TabIndex = 2;
-            // 
-            // txtFechaDos
-            // 
-            this.txtFechaDos.Location = new System.Drawing.Point(136, 99);
-            this.txtFechaDos.Name = "txtFechaDos";
-            this.txtFechaDos.Size = new System.Drawing.Size(100, 23);
-            this.txtFechaDos.TabIndex = 3;
-            // 
             // dgvVentasSuc
             // 
             this.dgvVentasSuc.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -78,14 +64,28 @@ namespace Cine
             this.dgvVentasSuc.Size = new System.Drawing.Size(467, 150);
             this.dgvVentasSuc.TabIndex = 4;
             // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Location = new System.Drawing.Point(156, 61);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(200, 23);
+            this.dateTimePicker1.TabIndex = 5;
+            // 
+            // dateTimePicker2
+            // 
+            this.dateTimePicker2.Location = new System.Drawing.Point(156, 99);
+            this.dateTimePicker2.Name = "dateTimePicker2";
+            this.dateTimePicker2.Size = new System.Drawing.Size(200, 23);
+            this.dateTimePicker2.TabIndex = 6;
+            // 
             // Frm_Rep_VentasSuc
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(556, 416);
+            this.Controls.Add(this.dateTimePicker2);
+            this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.dgvVentasSuc);
-            this.Controls.Add(this.txtFechaDos);
-            this.Controls.Add(this.txtFechaUno);
             this.Controls.Add(this.lblFechaDos);
             this.Controls.Add(this.lblFechaUno);
             this.Name = "Frm_Rep_VentasSuc";
@@ -100,8 +100,8 @@ namespace Cine
 
         private System.Windows.Forms.Label lblFechaUno;
         private System.Windows.Forms.Label lblFechaDos;
-        private System.Windows.Forms.TextBox txtFechaUno;
-        private System.Windows.Forms.TextBox txtFechaDos;
         private System.Windows.Forms.DataGridView dgvVentasSuc;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker dateTimePicker2;
     }
 }
