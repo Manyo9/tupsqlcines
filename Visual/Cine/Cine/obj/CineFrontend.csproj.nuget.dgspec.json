@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\matid\\Source\\Repos\\scriptscineLCII\\Visual\\Cine\\Cine\\Cine.csproj": {}
+    "C:\\Users\\franc\\Documents\\Coding Related\\TPI_LCII\\scriptscineLCII\\Visual\\Cine\\Cine\\CineFrontend.csproj": {}
   },
   "projects": {
-    "C:\\Users\\matid\\Source\\Repos\\scriptscineLCII\\Visual\\Cine\\CineBackend\\CineBackend.csproj": {
+    "C:\\Users\\franc\\Documents\\Coding Related\\TPI_LCII\\scriptscineLCII\\Visual\\Cine\\CineBackend\\CineBackend.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\matid\\Source\\Repos\\scriptscineLCII\\Visual\\Cine\\CineBackend\\CineBackend.csproj",
+        "projectUniqueName": "C:\\Users\\franc\\Documents\\Coding Related\\TPI_LCII\\scriptscineLCII\\Visual\\Cine\\CineBackend\\CineBackend.csproj",
         "projectName": "CineBackend",
-        "projectPath": "C:\\Users\\matid\\Source\\Repos\\scriptscineLCII\\Visual\\Cine\\CineBackend\\CineBackend.csproj",
-        "packagesPath": "C:\\Users\\matid\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\matid\\Source\\Repos\\scriptscineLCII\\Visual\\Cine\\CineBackend\\obj\\",
+        "projectPath": "C:\\Users\\franc\\Documents\\Coding Related\\TPI_LCII\\scriptscineLCII\\Visual\\Cine\\CineBackend\\CineBackend.csproj",
+        "packagesPath": "C:\\Users\\franc\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\franc\\Documents\\Coding Related\\TPI_LCII\\scriptscineLCII\\Visual\\Cine\\CineBackend\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\matid\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\franc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -39,6 +43,12 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
+          "dependencies": {
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.3, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -58,17 +68,21 @@
         }
       }
     },
-    "C:\\Users\\matid\\Source\\Repos\\scriptscineLCII\\Visual\\Cine\\Cine\\Cine.csproj": {
+    "C:\\Users\\franc\\Documents\\Coding Related\\TPI_LCII\\scriptscineLCII\\Visual\\Cine\\Cine\\CineFrontend.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\matid\\Source\\Repos\\scriptscineLCII\\Visual\\Cine\\Cine\\Cine.csproj",
-        "projectName": "Cine",
-        "projectPath": "C:\\Users\\matid\\Source\\Repos\\scriptscineLCII\\Visual\\Cine\\Cine\\Cine.csproj",
-        "packagesPath": "C:\\Users\\matid\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\matid\\Source\\Repos\\scriptscineLCII\\Visual\\Cine\\Cine\\obj\\",
+        "projectUniqueName": "C:\\Users\\franc\\Documents\\Coding Related\\TPI_LCII\\scriptscineLCII\\Visual\\Cine\\Cine\\CineFrontend.csproj",
+        "projectName": "CineFrontend",
+        "projectPath": "C:\\Users\\franc\\Documents\\Coding Related\\TPI_LCII\\scriptscineLCII\\Visual\\Cine\\Cine\\CineFrontend.csproj",
+        "packagesPath": "C:\\Users\\franc\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\franc\\Documents\\Coding Related\\TPI_LCII\\scriptscineLCII\\Visual\\Cine\\Cine\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\matid\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\franc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -82,8 +96,8 @@
           "net5.0-windows7.0": {
             "targetAlias": "net5.0-windows",
             "projectReferences": {
-              "C:\\Users\\matid\\Source\\Repos\\scriptscineLCII\\Visual\\Cine\\CineBackend\\CineBackend.csproj": {
-                "projectPath": "C:\\Users\\matid\\Source\\Repos\\scriptscineLCII\\Visual\\Cine\\CineBackend\\CineBackend.csproj"
+              "C:\\Users\\franc\\Documents\\Coding Related\\TPI_LCII\\scriptscineLCII\\Visual\\Cine\\CineBackend\\CineBackend.csproj": {
+                "projectPath": "C:\\Users\\franc\\Documents\\Coding Related\\TPI_LCII\\scriptscineLCII\\Visual\\Cine\\CineBackend\\CineBackend.csproj"
               }
             }
           }
