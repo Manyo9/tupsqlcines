@@ -10,3 +10,15 @@ C:\Sofia\PROGRAMACIÓN UTN\PRIMER AÑO\Segundo cuatrimestre\Laboratorio de compu
 C:\Sofia\PROGRAMACIÓN UTN\PRIMER AÑO\Segundo cuatrimestre\Laboratorio de computacion II\TP INTEGRADOR\TP CINE\Visual\Cine\CineBackend\obj\Debug\net5.0\CineBackend.dll
 C:\Sofia\PROGRAMACIÓN UTN\PRIMER AÑO\Segundo cuatrimestre\Laboratorio de computacion II\TP INTEGRADOR\TP CINE\Visual\Cine\CineBackend\obj\Debug\net5.0\ref\CineBackend.dll
 C:\Sofia\PROGRAMACIÓN UTN\PRIMER AÑO\Segundo cuatrimestre\Laboratorio de computacion II\TP INTEGRADOR\TP CINE\Visual\Cine\CineBackend\obj\Debug\net5.0\CineBackend.pdb
+d:\Escritorio\LCII TP\scriptscineLCII\Visual\Cine\CineBackend\bin\Debug\net5.0\CineBackend.deps.json
+d:\Escritorio\LCII TP\scriptscineLCII\Visual\Cine\CineBackend\bin\Debug\net5.0\CineBackend.dll
+d:\Escritorio\LCII TP\scriptscineLCII\Visual\Cine\CineBackend\bin\Debug\net5.0\ref\CineBackend.dll
+d:\Escritorio\LCII TP\scriptscineLCII\Visual\Cine\CineBackend\bin\Debug\net5.0\CineBackend.pdb
+d:\Escritorio\LCII TP\scriptscineLCII\Visual\Cine\CineBackend\obj\Debug\net5.0\CineBackend.csproj.AssemblyReference.cache
+d:\Escritorio\LCII TP\scriptscineLCII\Visual\Cine\CineBackend\obj\Debug\net5.0\CineBackend.GeneratedMSBuildEditorConfig.editorconfig
+d:\Escritorio\LCII TP\scriptscineLCII\Visual\Cine\CineBackend\obj\Debug\net5.0\CineBackend.AssemblyInfoInputs.cache
+d:\Escritorio\LCII TP\scriptscineLCII\Visual\Cine\CineBackend\obj\Debug\net5.0\CineBackend.AssemblyInfo.cs
+d:\Escritorio\LCII TP\scriptscineLCII\Visual\Cine\CineBackend\obj\Debug\net5.0\CineBackend.csproj.CoreCompileInputs.cache
+d:\Escritorio\LCII TP\scriptscineLCII\Visual\Cine\CineBackend\obj\Debug\net5.0\CineBackend.dll
+d:\Escritorio\LCII TP\scriptscineLCII\Visual\Cine\CineBackend\obj\Debug\net5.0\ref\CineBackend.dll
+d:\Escritorio\LCII TP\scriptscineLCII\Visual\Cine\CineBackend\obj\Debug\net5.0\CineBackend.pdb

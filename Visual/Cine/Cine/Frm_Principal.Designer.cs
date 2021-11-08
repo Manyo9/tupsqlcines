@@ -70,6 +70,7 @@
             this.butacasVendidasPorFuncionToolStripMenuItem.Name = "butacasVendidasPorFuncionToolStripMenuItem";
             this.butacasVendidasPorFuncionToolStripMenuItem.Size = new System.Drawing.Size(230, 22);
             this.butacasVendidasPorFuncionToolStripMenuItem.Text = "Butacas vendidas por funcion";
+            this.butacasVendidasPorFuncionToolStripMenuItem.Click += new System.EventHandler(this.butacasVendidasPorFuncionToolStripMenuItem_Click);
             // 
             // ticketsToolStripMenuItem
             // 
@@ -82,8 +83,9 @@
             // imprimirTicketToolStripMenuItem
             // 
             this.imprimirTicketToolStripMenuItem.Name = "imprimirTicketToolStripMenuItem";
-            this.imprimirTicketToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
+            this.imprimirTicketToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.imprimirTicketToolStripMenuItem.Text = "Imprimir Ticket";
+            this.imprimirTicketToolStripMenuItem.Click += new System.EventHandler(this.imprimirTicketToolStripMenuItem_Click);
             // 
             // reportesToolStripMenuItem
             // 
@@ -102,30 +104,35 @@
             this.peliculasSinVentasToolStripMenuItem.Name = "peliculasSinVentasToolStripMenuItem";
             this.peliculasSinVentasToolStripMenuItem.Size = new System.Drawing.Size(199, 22);
             this.peliculasSinVentasToolStripMenuItem.Text = "Peliculas sin ventas";
+            this.peliculasSinVentasToolStripMenuItem.Click += new System.EventHandler(this.peliculasSinVentasToolStripMenuItem_Click);
             // 
             // peliculasMásVistasToolStripMenuItem
             // 
             this.peliculasMásVistasToolStripMenuItem.Name = "peliculasMásVistasToolStripMenuItem";
             this.peliculasMásVistasToolStripMenuItem.Size = new System.Drawing.Size(199, 22);
             this.peliculasMásVistasToolStripMenuItem.Text = "Peliculas más vistas";
+            this.peliculasMásVistasToolStripMenuItem.Click += new System.EventHandler(this.peliculasMásVistasToolStripMenuItem_Click);
             // 
             // gananciasMensualesToolStripMenuItem
             // 
             this.gananciasMensualesToolStripMenuItem.Name = "gananciasMensualesToolStripMenuItem";
             this.gananciasMensualesToolStripMenuItem.Size = new System.Drawing.Size(199, 22);
             this.gananciasMensualesToolStripMenuItem.Text = "Ganancias mensuales";
+            this.gananciasMensualesToolStripMenuItem.Click += new System.EventHandler(this.gananciasMensualesToolStripMenuItem_Click);
             // 
             // ventasPorSucursalToolStripMenuItem
             // 
             this.ventasPorSucursalToolStripMenuItem.Name = "ventasPorSucursalToolStripMenuItem";
             this.ventasPorSucursalToolStripMenuItem.Size = new System.Drawing.Size(199, 22);
             this.ventasPorSucursalToolStripMenuItem.Text = "Ventas por sucursal";
+            this.ventasPorSucursalToolStripMenuItem.Click += new System.EventHandler(this.ventasPorSucursalToolStripMenuItem_Click);
             // 
             // promVentasPorCajeroToolStripMenuItem
             // 
             this.promVentasPorCajeroToolStripMenuItem.Name = "promVentasPorCajeroToolStripMenuItem";
             this.promVentasPorCajeroToolStripMenuItem.Size = new System.Drawing.Size(199, 22);
             this.promVentasPorCajeroToolStripMenuItem.Text = "Prom. ventas por cajero";
+            this.promVentasPorCajeroToolStripMenuItem.Click += new System.EventHandler(this.promVentasPorCajeroToolStripMenuItem_Click);
             // 
             // acercaDeToolStripMenuItem
             // 

@@ -41,6 +41,16 @@ namespace Cine
             this.lblTotalPagar = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.lblEntradas = new System.Windows.Forms.Label();
+            this.nroTransaccion = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.sucursal = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Sala = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Pelicula = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.diaFuncion = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CodButaca = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.duracionPelicula = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.subtotal = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.subtotalDescuento = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.accion = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -132,11 +142,25 @@ namespace Cine
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(50, 336);
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.nroTransaccion,
+            this.sucursal,
+            this.Sala,
+            this.Pelicula,
+            this.diaFuncion,
+            this.CodButaca,
+            this.duracionPelicula,
+            this.subtotal,
+            this.subtotalDescuento,
+            this.accion});
+            this.dataGridView1.Location = new System.Drawing.Point(37, 354);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowTemplate.Height = 25;
-            this.dataGridView1.Size = new System.Drawing.Size(492, 150);
+            this.dataGridView1.Size = new System.Drawing.Size(1043, 150);
             this.dataGridView1.TabIndex = 10;
             // 
             // lblEntradas
@@ -148,11 +172,71 @@ namespace Cine
             this.lblEntradas.TabIndex = 11;
             this.lblEntradas.Text = "ENTRADAS";
             // 
+            // nroTransaccion
+            // 
+            this.nroTransaccion.HeaderText = "Transaccion";
+            this.nroTransaccion.Name = "nroTransaccion";
+            this.nroTransaccion.ReadOnly = true;
+            // 
+            // sucursal
+            // 
+            this.sucursal.HeaderText = "Sucursal";
+            this.sucursal.Name = "sucursal";
+            this.sucursal.ReadOnly = true;
+            // 
+            // Sala
+            // 
+            this.Sala.HeaderText = "Sala";
+            this.Sala.Name = "Sala";
+            this.Sala.ReadOnly = true;
+            // 
+            // Pelicula
+            // 
+            this.Pelicula.HeaderText = "Pelicula";
+            this.Pelicula.Name = "Pelicula";
+            this.Pelicula.ReadOnly = true;
+            // 
+            // diaFuncion
+            // 
+            this.diaFuncion.HeaderText = "Dia de la Funcion";
+            this.diaFuncion.Name = "diaFuncion";
+            this.diaFuncion.ReadOnly = true;
+            // 
+            // CodButaca
+            // 
+            this.CodButaca.HeaderText = "Butaca";
+            this.CodButaca.Name = "CodButaca";
+            this.CodButaca.ReadOnly = true;
+            // 
+            // duracionPelicula
+            // 
+            this.duracionPelicula.HeaderText = "Duracion pelicula";
+            this.duracionPelicula.Name = "duracionPelicula";
+            this.duracionPelicula.ReadOnly = true;
+            // 
+            // subtotal
+            // 
+            this.subtotal.HeaderText = "Subtotal";
+            this.subtotal.Name = "subtotal";
+            this.subtotal.ReadOnly = true;
+            // 
+            // subtotalDescuento
+            // 
+            this.subtotalDescuento.HeaderText = "Subtotal Descuento";
+            this.subtotalDescuento.Name = "subtotalDescuento";
+            this.subtotalDescuento.ReadOnly = true;
+            // 
+            // accion
+            // 
+            this.accion.HeaderText = "accion";
+            this.accion.Name = "accion";
+            this.accion.ReadOnly = true;
+            // 
             // Frm_Ticket
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(590, 555);
+            this.ClientSize = new System.Drawing.Size(1164, 555);
             this.Controls.Add(this.lblEntradas);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.lblTotalPagar);
@@ -187,5 +271,15 @@ namespace Cine
         private System.Windows.Forms.Label lblTotalPagar;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label lblEntradas;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nroTransaccion;
+        private System.Windows.Forms.DataGridViewTextBoxColumn sucursal;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Sala;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Pelicula;
+        private System.Windows.Forms.DataGridViewTextBoxColumn diaFuncion;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CodButaca;
+        private System.Windows.Forms.DataGridViewTextBoxColumn duracionPelicula;
+        private System.Windows.Forms.DataGridViewTextBoxColumn subtotal;
+        private System.Windows.Forms.DataGridViewTextBoxColumn subtotalDescuento;
+        private System.Windows.Forms.DataGridViewTextBoxColumn accion;
     }
 }
