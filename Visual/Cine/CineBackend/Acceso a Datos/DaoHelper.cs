@@ -13,13 +13,11 @@ namespace CineBackend.Acceso_a_Datos
         private string cadenaConexion;
         private SqlConnection conexion;
         private SqlCommand comando;
-
         public DaoHelper()
         {
             cadenaConexion = @"";
             conexion = new SqlConnection(cadenaConexion);
         }
-
         public DataTable ConsultarDB(string nombreSP)
         {
             DataTable tabla = new DataTable();
@@ -39,14 +37,19 @@ namespace CineBackend.Acceso_a_Datos
             }
             return tabla;
         }
-        public DataTable ConsultarConParametro(string nombreSP, Parametro parametro)
+        public DataTable ConsultarConParametro(string nombreSP, List<Parametro> parametros)
         {
             DataTable tabla = new DataTable();
             comando = new SqlCommand();
             comando.Connection = conexion;
             comando.CommandType = CommandType.StoredProcedure;
             comando.CommandText = nombreSP;
-            comando.Parameters.AddWithValue(parametro.Nombre, parametro.Valor);
+    
+                    foreach (Parametro parametroD in parametros)
+                    {
+                        comando.Parameters.AddWithValue(parametroD.Nombre, parametroD.Valor);
+                    }
+                    comando.ExecuteNonQuery();   
             try
             {
                 conexion.Open();
@@ -83,7 +86,5 @@ namespace CineBackend.Acceso_a_Datos
             }
             return tabla;
         }
-
-
     }
 }
