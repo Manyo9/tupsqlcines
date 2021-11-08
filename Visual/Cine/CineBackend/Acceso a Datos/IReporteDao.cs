@@ -5,15 +5,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CineBackend.Servicio
+namespace CineBackend.Acceso_a_Datos
 {
-    interface IReporteService
+    interface IReporteDao
     {
         public DataTable ImprimirTicket(int nroTicket, int idSucursal);
         public DataTable GetPeliSinVentas(DateTime fechaDesde, DateTime fechaHasta);
-        public DataTable GetPeliMasVistas(DateTime fechaDesde, DateTime fechaHasta);
+        public DataTable GetPeliMasVistas(DateTime fechaDesde, DateTime fechaHasta, int cant_min);
         public DataTable GetGananciasMensuales(int anio);
         public DataTable GetVentasPorSucursal(DateTime fechaDesde, DateTime fechaHasta);
         public DataTable GetPromVentasPorCajero(int anio);
+        public DataTable GetEntradasPorTicket(int nroTicket, int idSucursal);
+
     }
 }

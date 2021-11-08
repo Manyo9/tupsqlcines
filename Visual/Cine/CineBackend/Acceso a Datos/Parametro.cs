@@ -9,8 +9,8 @@ namespace CineBackend.Acceso_a_Datos
     class Parametro
     {
         public string Nombre { get; set; }
-        public string Valor { get; set; }
-        public Parametro(string nombre, string valor)
+        public object Valor { get; set; }
+        public Parametro(string nombre, object valor)
         {
             Nombre = nombre;
             Valor = valor;
