@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CineBackend.Acceso_a_Datos;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +13,11 @@ namespace Cine
 {
     public partial class Frm_Rep_PelSinVentas : Form
     {
+        private IReporteDao dao;
         public Frm_Rep_PelSinVentas()
         {
             InitializeComponent();
+            dao = new ReporteDao();
         }
     }
 }

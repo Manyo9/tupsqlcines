@@ -31,10 +31,8 @@ namespace Cine
         {
             this.lblAño = new System.Windows.Forms.Label();
             this.dgvGananciaMen = new System.Windows.Forms.DataGridView();
-            this.Mes = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Ganancia = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DTPAño = new System.Windows.Forms.DateTimePicker();
             this.BtnConsultar = new System.Windows.Forms.Button();
+            this.txtAnio = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvGananciaMen)).BeginInit();
             this.SuspendLayout();
             // 
@@ -52,34 +50,12 @@ namespace Cine
             this.dgvGananciaMen.AllowUserToAddRows = false;
             this.dgvGananciaMen.AllowUserToDeleteRows = false;
             this.dgvGananciaMen.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvGananciaMen.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Mes,
-            this.Ganancia});
             this.dgvGananciaMen.Location = new System.Drawing.Point(55, 225);
             this.dgvGananciaMen.Name = "dgvGananciaMen";
             this.dgvGananciaMen.ReadOnly = true;
             this.dgvGananciaMen.RowTemplate.Height = 25;
             this.dgvGananciaMen.Size = new System.Drawing.Size(244, 150);
             this.dgvGananciaMen.TabIndex = 2;
-            // 
-            // Mes
-            // 
-            this.Mes.HeaderText = "mes";
-            this.Mes.Name = "Mes";
-            this.Mes.ReadOnly = true;
-            // 
-            // Ganancia
-            // 
-            this.Ganancia.HeaderText = "Ganancia";
-            this.Ganancia.Name = "Ganancia";
-            this.Ganancia.ReadOnly = true;
-            // 
-            // DTPAño
-            // 
-            this.DTPAño.Location = new System.Drawing.Point(55, 91);
-            this.DTPAño.Name = "DTPAño";
-            this.DTPAño.Size = new System.Drawing.Size(200, 23);
-            this.DTPAño.TabIndex = 3;
             // 
             // BtnConsultar
             // 
@@ -89,14 +65,22 @@ namespace Cine
             this.BtnConsultar.TabIndex = 4;
             this.BtnConsultar.Text = "Generar Reporte";
             this.BtnConsultar.UseVisualStyleBackColor = true;
+            this.BtnConsultar.Click += new System.EventHandler(this.BtnConsultar_Click);
+            // 
+            // txtAnio
+            // 
+            this.txtAnio.Location = new System.Drawing.Point(55, 83);
+            this.txtAnio.Name = "txtAnio";
+            this.txtAnio.Size = new System.Drawing.Size(156, 23);
+            this.txtAnio.TabIndex = 5;
             // 
             // Frm_Rep_GanMens
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(350, 450);
+            this.Controls.Add(this.txtAnio);
             this.Controls.Add(this.BtnConsultar);
-            this.Controls.Add(this.DTPAño);
             this.Controls.Add(this.dgvGananciaMen);
             this.Controls.Add(this.lblAño);
             this.Name = "Frm_Rep_GanMens";
@@ -110,9 +94,7 @@ namespace Cine
         #endregion
         private System.Windows.Forms.Label lblAño;
         private System.Windows.Forms.DataGridView dgvGananciaMen;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Mes;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Ganancia;
-        private System.Windows.Forms.DateTimePicker DTPAño;
         private System.Windows.Forms.Button BtnConsultar;
+        private System.Windows.Forms.TextBox txtAnio;
     }
 }
