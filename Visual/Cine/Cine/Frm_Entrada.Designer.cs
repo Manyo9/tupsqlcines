@@ -235,6 +235,7 @@ namespace Cine
             this.Controls.Add(this.Sala);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lblTransaccion);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Name = "Frm_Entrada";
             this.Text = "Frm_Entrada";
             this.ResumeLayout(false);

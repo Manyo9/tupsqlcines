@@ -61,5 +61,30 @@ namespace Cine
             Frm_Rep_PromCaje nuevo = new Frm_Rep_PromCaje();
             nuevo.ShowDialog();
         }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void btnMAximizar_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Maximized;
+            btnMAximizar.Visible = false;
+            btnRestaurar.Visible = true;
+
+        }
+
+        private void btnRestaurar_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Normal;
+            btnRestaurar.Visible = false;
+            btnMAximizar.Visible = true;
+        }
     }
 }
