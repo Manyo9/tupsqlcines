@@ -71,5 +71,10 @@ namespace CineBackend.Acceso_a_Datos
             DataTable resultado = helper.ConsultarConParametro("pa_imprimir_ticket", lst);
             return resultado;
         }
+
+        public DataTable GetButacasDisponibles(int nroFuncion)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

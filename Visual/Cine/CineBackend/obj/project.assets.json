@@ -454,19 +454,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Julieta\\.nuget\\packages\\": {}
+    "C:\\Users\\agusm\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "d:\\Escritorio\\LCII TP\\scriptscineLCII\\Visual\\Cine\\CineBackend\\CineBackend.csproj",
+      "projectUniqueName": "D:\\archivos\\TUP\\2do Cuatri\\TPI\\labo\\scriptscineLCII\\Visual\\Cine\\CineBackend\\CineBackend.csproj",
       "projectName": "CineBackend",
-      "projectPath": "d:\\Escritorio\\LCII TP\\scriptscineLCII\\Visual\\Cine\\CineBackend\\CineBackend.csproj",
-      "packagesPath": "C:\\Users\\Julieta\\.nuget\\packages\\",
-      "outputPath": "d:\\Escritorio\\LCII TP\\scriptscineLCII\\Visual\\Cine\\CineBackend\\obj\\",
+      "projectPath": "D:\\archivos\\TUP\\2do Cuatri\\TPI\\labo\\scriptscineLCII\\Visual\\Cine\\CineBackend\\CineBackend.csproj",
+      "packagesPath": "C:\\Users\\agusm\\.nuget\\packages\\",
+      "outputPath": "D:\\archivos\\TUP\\2do Cuatri\\TPI\\labo\\scriptscineLCII\\Visual\\Cine\\CineBackend\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Julieta\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\agusm\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

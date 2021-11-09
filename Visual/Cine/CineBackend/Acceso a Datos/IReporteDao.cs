@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace CineBackend.Acceso_a_Datos
 {
-    interface IReporteDao
+    public interface IReporteDao
     {
         public DataTable ImprimirTicket(int nroTicket, int idSucursal);
         public DataTable GetPeliSinVentas(DateTime fechaDesde, DateTime fechaHasta);
@@ -16,6 +16,7 @@ namespace CineBackend.Acceso_a_Datos
         public DataTable GetVentasPorSucursal(DateTime fechaDesde, DateTime fechaHasta);
         public DataTable GetPromVentasPorCajero(int anio);
         public DataTable GetEntradasPorTicket(int nroTicket, int idSucursal);
+        public DataTable GetButacasDisponibles(int nroFuncion);
 
     }
 }

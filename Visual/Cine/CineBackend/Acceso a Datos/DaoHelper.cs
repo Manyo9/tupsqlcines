@@ -16,7 +16,8 @@ namespace CineBackend.Acceso_a_Datos
         private SqlCommand comando;
         public DaoHelper()
         {
-            cadenaConexion = @"";
+            // (Agus: Data Source=.\SQLEXPRESS;Initial Catalog=cine;Integrated Security=True)
+            cadenaConexion = @"Data Source=.\SQLEXPRESS;Initial Catalog=cine;Integrated Security=True";
             conexion = new SqlConnection(cadenaConexion);
         }
         public DataTable ConsultarDB(string nombreSP)

@@ -33,6 +33,7 @@ namespace Cine
             this.txtFuncion = new System.Windows.Forms.TextBox();
             this.dgvButacas = new System.Windows.Forms.DataGridView();
             this.idButaca = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnConsultar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvButacas)).BeginInit();
             this.SuspendLayout();
             // 
@@ -72,11 +73,22 @@ namespace Cine
             this.idButaca.Name = "idButaca";
             this.idButaca.ReadOnly = true;
             // 
+            // btnConsultar
+            // 
+            this.btnConsultar.Location = new System.Drawing.Point(321, 58);
+            this.btnConsultar.Name = "btnConsultar";
+            this.btnConsultar.Size = new System.Drawing.Size(75, 23);
+            this.btnConsultar.TabIndex = 3;
+            this.btnConsultar.Text = "Consultar";
+            this.btnConsultar.UseVisualStyleBackColor = true;
+            this.btnConsultar.Click += new System.EventHandler(this.btnConsultar_Click);
+            // 
             // Frm_Butacas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(460, 450);
+            this.Controls.Add(this.btnConsultar);
             this.Controls.Add(this.dgvButacas);
             this.Controls.Add(this.txtFuncion);
             this.Controls.Add(this.lblFuncion);
@@ -94,5 +106,6 @@ namespace Cine
         private System.Windows.Forms.TextBox txtFuncion;
         private System.Windows.Forms.DataGridView dgvButacas;
         private System.Windows.Forms.DataGridViewTextBoxColumn idButaca;
+        private System.Windows.Forms.Button btnConsultar;
     }
 }
