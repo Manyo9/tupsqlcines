@@ -22,7 +22,7 @@ namespace Cine
 
         private void btnConsultar_Click(object sender, EventArgs e)
         {
-            if (txtFuncion.Text.Trim().Equals(""))
+            if (nudNro_funcion.Value.Equals(0))
             {
                 MessageBox.Show("Ingresar el número de identificación de la función");
                 return;
@@ -32,7 +32,7 @@ namespace Cine
 
         private void CargarGrid() {
             DataTable tabla = new DataTable();
-            tabla = dao.GetButacasDisponibles(Convert.ToInt32(txtFuncion.Text));
+            tabla = dao.GetButacasDisponibles(Convert.ToInt32(nudNro_funcion.Value));
             
             tabla.Columns["cod_butaca"].ColumnName = "Código Butaca";
             tabla.Columns.Remove("id_butaca");
