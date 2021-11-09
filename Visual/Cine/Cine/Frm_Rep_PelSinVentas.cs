@@ -19,5 +19,21 @@ namespace Cine
             InitializeComponent();
             dao = new ReporteDao();
         }
+
+        private void btnGenerar_Click(object sender, EventArgs e)
+        {
+            if (dtpFecha1.Value > dtpFecha2.Value)
+            {
+                MessageBox.Show("La fecha de inicio debe ser anterior a la de fin.");
+                return;
+            }
+            CargarGrid();
+        }
+        private void CargarGrid()
+        {
+            DataTable tabla = new DataTable();
+            tabla = dao.GetPeliSinVentas(dtpFecha1.Value, dtpFecha2.Value);
+            dgvPelSinVentas.DataSource = tabla;
+        }
     }
 }

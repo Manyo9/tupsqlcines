@@ -7,14 +7,33 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using CineBackend.Acceso_a_Datos;
 
 namespace Cine
 {
     public partial class Frm_Rep_PromCaje : Form
     {
+        private IReporteDao dao;
         public Frm_Rep_PromCaje()
         {
             InitializeComponent();
+            dao = new ReporteDao();
+        }
+
+        private void btnGenerar_Click(object sender, EventArgs e)
+        {
+            if (txtAnio.Text.Trim().Equals("") || Convert.ToInt32(txtAnio.Text) > DateTime.Now.Year)
+            {
+                MessageBox.Show("Ingresar un año válido");
+                return;
+            }
+            CargarGrid();
+        }
+        private void CargarGrid()
+        {
+            DataTable tabla = new DataTable();
+            tabla = dao.GetPromVentasPorCajero(Convert.ToInt32(txtAnio.Text));
+            dgvPromCaje.DataSource = tabla;
         }
     }
 }
