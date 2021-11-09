@@ -34,6 +34,7 @@ namespace Cine
             this.Mes = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Ganancia = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DTPAño = new System.Windows.Forms.DateTimePicker();
+            this.BtnConsultar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvGananciaMen)).BeginInit();
             this.SuspendLayout();
             // 
@@ -54,7 +55,7 @@ namespace Cine
             this.dgvGananciaMen.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Mes,
             this.Ganancia});
-            this.dgvGananciaMen.Location = new System.Drawing.Point(55, 161);
+            this.dgvGananciaMen.Location = new System.Drawing.Point(55, 225);
             this.dgvGananciaMen.Name = "dgvGananciaMen";
             this.dgvGananciaMen.ReadOnly = true;
             this.dgvGananciaMen.RowTemplate.Height = 25;
@@ -80,11 +81,21 @@ namespace Cine
             this.DTPAño.Size = new System.Drawing.Size(200, 23);
             this.DTPAño.TabIndex = 3;
             // 
+            // BtnConsultar
+            // 
+            this.BtnConsultar.Location = new System.Drawing.Point(55, 151);
+            this.BtnConsultar.Name = "BtnConsultar";
+            this.BtnConsultar.Size = new System.Drawing.Size(156, 23);
+            this.BtnConsultar.TabIndex = 4;
+            this.BtnConsultar.Text = "Generar Reporte";
+            this.BtnConsultar.UseVisualStyleBackColor = true;
+            // 
             // Frm_Rep_GanMens
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(350, 450);
+            this.Controls.Add(this.BtnConsultar);
             this.Controls.Add(this.DTPAño);
             this.Controls.Add(this.dgvGananciaMen);
             this.Controls.Add(this.lblAño);
@@ -102,5 +113,6 @@ namespace Cine
         private System.Windows.Forms.DataGridViewTextBoxColumn Mes;
         private System.Windows.Forms.DataGridViewTextBoxColumn Ganancia;
         private System.Windows.Forms.DateTimePicker DTPAño;
+        private System.Windows.Forms.Button BtnConsultar;
     }
 }

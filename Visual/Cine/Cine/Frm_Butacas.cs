@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CineBackend.Acceso_a_Datos;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +13,34 @@ namespace Cine
 {
     public partial class Frm_Butacas : Form
     {
+        private IReporteDao dao;
         public Frm_Butacas()
         {
             InitializeComponent();
+            dao = new ReporteDao();
+        }
+
+        private void btnConsultar_Click(object sender, EventArgs e)
+        {
+            if (txtFuncion.Text.Trim().Equals(""))
+            {
+                MessageBox.Show("Ingresar el número de identificación de la función");
+                return;
+            }
+            CargarGrid();
+        }
+
+        private void CargarGrid() {
+            DataTable tabla = new DataTable();
+            tabla = dao.GetButacasDisponibles(Convert.ToInt32(txtFuncion.Text));
+            
+            tabla.Columns["cod_butaca"].ColumnName = "Código Butaca";
+            tabla.Columns.Remove("id_butaca");
+            dgvButacas.DataSource = tabla;
+            //foreach (DataRow fila in tabla.Rows)
+            //{
+            //    dgvButacas.Rows.Add(new object[] {String.Empty, fila["cod_butaca"].ToString()});
+            //}
         }
     }
 }

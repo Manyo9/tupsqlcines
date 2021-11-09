@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace CineBackend.Acceso_a_Datos
 {
-    class ReporteDao : IReporteDao
+    public class ReporteDao : IReporteDao
     {
         private DaoHelper helper;
 
@@ -69,6 +69,14 @@ namespace CineBackend.Acceso_a_Datos
             lst.Add(new Parametro("@nro_ticket", nroTicket));
             lst.Add(new Parametro("@id_sucursal", idSucursal));
             DataTable resultado = helper.ConsultarConParametro("pa_imprimir_ticket", lst);
+            return resultado;
+        }
+
+        public DataTable GetButacasDisponibles(int nroFuncion)
+        {
+            List<Parametro> lst = new List<Parametro>();
+            lst.Add(new Parametro("@funcion", nroFuncion));
+            DataTable resultado = helper.ConsultarConParametro("pa_butacas_disp_funcion", lst);
             return resultado;
         }
     }

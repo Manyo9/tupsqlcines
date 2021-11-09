@@ -41,6 +41,7 @@ namespace Cine
             this.label4 = new System.Windows.Forms.Label();
             this.txtCantMin = new System.Windows.Forms.TextBox();
             this.lblCantidadMinima = new System.Windows.Forms.Label();
+            this.BtnGenerar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.DGVPelMasVistas)).BeginInit();
             this.SuspendLayout();
             // 
@@ -93,7 +94,7 @@ namespace Cine
             this.DGVPelMasVistas.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.NombrePelicula,
             this.CantButacasVendidas});
-            this.DGVPelMasVistas.Location = new System.Drawing.Point(64, 203);
+            this.DGVPelMasVistas.Location = new System.Drawing.Point(64, 237);
             this.DGVPelMasVistas.Name = "DGVPelMasVistas";
             this.DGVPelMasVistas.ReadOnly = true;
             this.DGVPelMasVistas.RowTemplate.Height = 25;
@@ -138,11 +139,21 @@ namespace Cine
             this.lblCantidadMinima.TabIndex = 8;
             this.lblCantidadMinima.Text = "Cantidad minima de entradas";
             // 
+            // BtnGenerar
+            // 
+            this.BtnGenerar.Location = new System.Drawing.Point(64, 199);
+            this.BtnGenerar.Name = "BtnGenerar";
+            this.BtnGenerar.Size = new System.Drawing.Size(199, 23);
+            this.BtnGenerar.TabIndex = 9;
+            this.BtnGenerar.Text = "Generar Reporte";
+            this.BtnGenerar.UseVisualStyleBackColor = true;
+            // 
             // Frm_Rep_PelMasVis
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(672, 450);
+            this.Controls.Add(this.BtnGenerar);
             this.Controls.Add(this.lblCantidadMinima);
             this.Controls.Add(this.txtCantMin);
             this.Controls.Add(this.label4);
@@ -173,5 +184,6 @@ namespace Cine
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtCantMin;
         private System.Windows.Forms.Label lblCantidadMinima;
+        private System.Windows.Forms.Button BtnGenerar;
     }
 }

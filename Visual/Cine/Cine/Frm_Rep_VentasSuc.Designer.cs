@@ -34,6 +34,7 @@ namespace Cine
             this.dgvVentasSuc = new System.Windows.Forms.DataGridView();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.btnGenerar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvVentasSuc)).BeginInit();
             this.SuspendLayout();
             // 
@@ -78,11 +79,21 @@ namespace Cine
             this.dateTimePicker2.Size = new System.Drawing.Size(200, 23);
             this.dateTimePicker2.TabIndex = 6;
             // 
+            // btnGenerar
+            // 
+            this.btnGenerar.Location = new System.Drawing.Point(58, 148);
+            this.btnGenerar.Name = "btnGenerar";
+            this.btnGenerar.Size = new System.Drawing.Size(143, 23);
+            this.btnGenerar.TabIndex = 7;
+            this.btnGenerar.Text = "Generar Reporte";
+            this.btnGenerar.UseVisualStyleBackColor = true;
+            // 
             // Frm_Rep_VentasSuc
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(556, 416);
+            this.Controls.Add(this.btnGenerar);
             this.Controls.Add(this.dateTimePicker2);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.dgvVentasSuc);
@@ -103,5 +114,6 @@ namespace Cine
         private System.Windows.Forms.DataGridView dgvVentasSuc;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.DateTimePicker dateTimePicker2;
+        private System.Windows.Forms.Button btnGenerar;
     }
 }

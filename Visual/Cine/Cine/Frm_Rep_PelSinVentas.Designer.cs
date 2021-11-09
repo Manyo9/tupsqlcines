@@ -34,6 +34,7 @@ namespace Cine
             this.dgvPelSinVentas = new System.Windows.Forms.DataGridView();
             this.DTPFecha1 = new System.Windows.Forms.DateTimePicker();
             this.dtpFecha2 = new System.Windows.Forms.DateTimePicker();
+            this.btnGenerar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPelSinVentas)).BeginInit();
             this.SuspendLayout();
             // 
@@ -78,11 +79,21 @@ namespace Cine
             this.dtpFecha2.Size = new System.Drawing.Size(200, 23);
             this.dtpFecha2.TabIndex = 6;
             // 
+            // btnGenerar
+            // 
+            this.btnGenerar.Location = new System.Drawing.Point(41, 142);
+            this.btnGenerar.Name = "btnGenerar";
+            this.btnGenerar.Size = new System.Drawing.Size(180, 23);
+            this.btnGenerar.TabIndex = 7;
+            this.btnGenerar.Text = "Generar Reporte";
+            this.btnGenerar.UseVisualStyleBackColor = true;
+            // 
             // Frm_Rep_PelSinVentas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(642, 413);
+            this.Controls.Add(this.btnGenerar);
             this.Controls.Add(this.dtpFecha2);
             this.Controls.Add(this.DTPFecha1);
             this.Controls.Add(this.dgvPelSinVentas);
@@ -103,5 +114,6 @@ namespace Cine
         private System.Windows.Forms.DataGridView dgvPelSinVentas;
         private System.Windows.Forms.DateTimePicker DTPFecha1;
         private System.Windows.Forms.DateTimePicker dtpFecha2;
+        private System.Windows.Forms.Button btnGenerar;
     }
 }
