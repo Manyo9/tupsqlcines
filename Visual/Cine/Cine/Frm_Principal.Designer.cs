@@ -63,6 +63,7 @@
             this.btnRestaurar = new System.Windows.Forms.PictureBox();
             this.menuStrip1.SuspendLayout();
             this.toolStripContainer1.ContentPanel.SuspendLayout();
+            this.toolStripContainer1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
@@ -93,28 +94,28 @@
             this.reportesToolStripMenuItem,
             this.acercaDeToolStripMenuItem});
             this.menuStrip1.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.VerticalStackWithOverflow;
-            this.menuStrip1.Location = new System.Drawing.Point(4, 84);
+            this.menuStrip1.Location = new System.Drawing.Point(3, 84);
             this.menuStrip1.Margin = new System.Windows.Forms.Padding(5, 30, 0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(0);
+            this.menuStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.System;
             this.menuStrip1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.menuStrip1.Size = new System.Drawing.Size(181, 274);
+            this.menuStrip1.Size = new System.Drawing.Size(182, 293);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
-            this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
             // 
             // funcionesToolStripMenuItem
             // 
             this.funcionesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.butacasVendidasPorFuncionToolStripMenuItem});
-            this.funcionesToolStripMenuItem.Font = new System.Drawing.Font("LEMON MILK", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.funcionesToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(58)))), ((int)(((byte)(213)))));
+            this.funcionesToolStripMenuItem.Font = new System.Drawing.Font("LEMON MILK Light", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.funcionesToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.funcionesToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("funcionesToolStripMenuItem.Image")));
             this.funcionesToolStripMenuItem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.funcionesToolStripMenuItem.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.funcionesToolStripMenuItem.Name = "funcionesToolStripMenuItem";
             this.funcionesToolStripMenuItem.Padding = new System.Windows.Forms.Padding(20, 10, 20, 30);
-            this.funcionesToolStripMenuItem.Size = new System.Drawing.Size(170, 68);
+            this.funcionesToolStripMenuItem.Size = new System.Drawing.Size(171, 68);
             this.funcionesToolStripMenuItem.Text = "Funciones";
             this.funcionesToolStripMenuItem.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
@@ -125,7 +126,7 @@
             this.butacasVendidasPorFuncionToolStripMenuItem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.butacasVendidasPorFuncionToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(58)))), ((int)(((byte)(213)))));
             this.butacasVendidasPorFuncionToolStripMenuItem.Name = "butacasVendidasPorFuncionToolStripMenuItem";
-            this.butacasVendidasPorFuncionToolStripMenuItem.Size = new System.Drawing.Size(381, 28);
+            this.butacasVendidasPorFuncionToolStripMenuItem.Size = new System.Drawing.Size(382, 28);
             this.butacasVendidasPorFuncionToolStripMenuItem.Text = "Butacas vendidas por funcion";
             this.butacasVendidasPorFuncionToolStripMenuItem.Click += new System.EventHandler(this.butacasVendidasPorFuncionToolStripMenuItem_Click);
             // 
@@ -133,14 +134,14 @@
             // 
             this.ticketsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.imprimirTicketToolStripMenuItem});
-            this.ticketsToolStripMenuItem.Font = new System.Drawing.Font("LEMON MILK", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.ticketsToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(58)))), ((int)(((byte)(213)))));
+            this.ticketsToolStripMenuItem.Font = new System.Drawing.Font("LEMON MILK Light", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.ticketsToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.ticketsToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("ticketsToolStripMenuItem.Image")));
             this.ticketsToolStripMenuItem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.ticketsToolStripMenuItem.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.ticketsToolStripMenuItem.Name = "ticketsToolStripMenuItem";
             this.ticketsToolStripMenuItem.Padding = new System.Windows.Forms.Padding(20, 10, 20, 30);
-            this.ticketsToolStripMenuItem.Size = new System.Drawing.Size(170, 68);
+            this.ticketsToolStripMenuItem.Size = new System.Drawing.Size(171, 68);
             this.ticketsToolStripMenuItem.Text = "Tickets";
             this.ticketsToolStripMenuItem.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
@@ -150,7 +151,7 @@
             this.imprimirTicketToolStripMenuItem.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("imprimirTicketToolStripMenuItem.BackgroundImage")));
             this.imprimirTicketToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(58)))), ((int)(((byte)(213)))));
             this.imprimirTicketToolStripMenuItem.Name = "imprimirTicketToolStripMenuItem";
-            this.imprimirTicketToolStripMenuItem.Size = new System.Drawing.Size(224, 28);
+            this.imprimirTicketToolStripMenuItem.Size = new System.Drawing.Size(220, 28);
             this.imprimirTicketToolStripMenuItem.Text = "Imprimir Ticket";
             this.imprimirTicketToolStripMenuItem.Click += new System.EventHandler(this.imprimirTicketToolStripMenuItem_Click);
             // 
@@ -163,14 +164,14 @@
             this.gananciasMensualesToolStripMenuItem,
             this.ventasPorSucursalToolStripMenuItem,
             this.promVentasPorCajeroToolStripMenuItem});
-            this.reportesToolStripMenuItem.Font = new System.Drawing.Font("LEMON MILK", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.reportesToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(58)))), ((int)(((byte)(213)))));
+            this.reportesToolStripMenuItem.Font = new System.Drawing.Font("LEMON MILK Light", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.reportesToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.reportesToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("reportesToolStripMenuItem.Image")));
             this.reportesToolStripMenuItem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.reportesToolStripMenuItem.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.reportesToolStripMenuItem.Name = "reportesToolStripMenuItem";
             this.reportesToolStripMenuItem.Padding = new System.Windows.Forms.Padding(20, 10, 20, 30);
-            this.reportesToolStripMenuItem.Size = new System.Drawing.Size(170, 68);
+            this.reportesToolStripMenuItem.Size = new System.Drawing.Size(171, 68);
             this.reportesToolStripMenuItem.Text = "Reportes";
             this.reportesToolStripMenuItem.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
@@ -223,14 +224,14 @@
             // 
             this.acercaDeToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.mostrarIntegrantesToolStripMenuItem});
-            this.acercaDeToolStripMenuItem.Font = new System.Drawing.Font("LEMON MILK", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.acercaDeToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(58)))), ((int)(((byte)(213)))));
+            this.acercaDeToolStripMenuItem.Font = new System.Drawing.Font("LEMON MILK Light", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.acercaDeToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.acercaDeToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("acercaDeToolStripMenuItem.Image")));
             this.acercaDeToolStripMenuItem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.acercaDeToolStripMenuItem.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.acercaDeToolStripMenuItem.Name = "acercaDeToolStripMenuItem";
             this.acercaDeToolStripMenuItem.Padding = new System.Windows.Forms.Padding(20, 10, 20, 30);
-            this.acercaDeToolStripMenuItem.Size = new System.Drawing.Size(170, 68);
+            this.acercaDeToolStripMenuItem.Size = new System.Drawing.Size(171, 68);
             this.acercaDeToolStripMenuItem.Text = "Acerca de";
             this.acercaDeToolStripMenuItem.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
@@ -240,57 +241,29 @@
             this.mostrarIntegrantesToolStripMenuItem.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("mostrarIntegrantesToolStripMenuItem.BackgroundImage")));
             this.mostrarIntegrantesToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.mostrarIntegrantesToolStripMenuItem.Name = "mostrarIntegrantesToolStripMenuItem";
-            this.mostrarIntegrantesToolStripMenuItem.Size = new System.Drawing.Size(291, 28);
+            this.mostrarIntegrantesToolStripMenuItem.Size = new System.Drawing.Size(292, 28);
             this.mostrarIntegrantesToolStripMenuItem.Text = "Mostrar integrantes";
             // 
             // toolStripContainer1
             // 
             // 
-            // 
-            // 
-            this.toolStripContainer1.BottomToolStripPanel.Location = new System.Drawing.Point(0, 0);
-            this.toolStripContainer1.BottomToolStripPanel.Name = "";
-            this.toolStripContainer1.BottomToolStripPanel.Orientation = System.Windows.Forms.Orientation.Horizontal;
-            this.toolStripContainer1.BottomToolStripPanel.RowMargin = new System.Windows.Forms.Padding(3, 0, 0, 0);
-            // 
-            // 
+            // toolStripContainer1.ContentPanel
             // 
             this.toolStripContainer1.ContentPanel.Controls.Add(this.pictureBox6);
             this.toolStripContainer1.ContentPanel.Controls.Add(this.panel2);
             this.toolStripContainer1.ContentPanel.Controls.Add(this.panel1);
             this.toolStripContainer1.ContentPanel.Size = new System.Drawing.Size(758, 436);
             this.toolStripContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            // 
-            // 
-            // 
-            this.toolStripContainer1.LeftToolStripPanel.Location = new System.Drawing.Point(0, 0);
-            this.toolStripContainer1.LeftToolStripPanel.Name = "";
-            this.toolStripContainer1.LeftToolStripPanel.Orientation = System.Windows.Forms.Orientation.Horizontal;
-            this.toolStripContainer1.LeftToolStripPanel.RowMargin = new System.Windows.Forms.Padding(3, 0, 0, 0);
             this.toolStripContainer1.Location = new System.Drawing.Point(0, 0);
             this.toolStripContainer1.Name = "toolStripContainer1";
-            // 
-            // 
-            // 
-            this.toolStripContainer1.RightToolStripPanel.Location = new System.Drawing.Point(0, 0);
-            this.toolStripContainer1.RightToolStripPanel.Name = "";
-            this.toolStripContainer1.RightToolStripPanel.Orientation = System.Windows.Forms.Orientation.Horizontal;
-            this.toolStripContainer1.RightToolStripPanel.RowMargin = new System.Windows.Forms.Padding(3, 0, 0, 0);
             this.toolStripContainer1.Size = new System.Drawing.Size(758, 436);
             this.toolStripContainer1.TabIndex = 1;
             this.toolStripContainer1.Text = "toolStripContainer1";
             // 
-            // 
-            // 
-            this.toolStripContainer1.TopToolStripPanel.Location = new System.Drawing.Point(0, 0);
-            this.toolStripContainer1.TopToolStripPanel.Name = "";
-            this.toolStripContainer1.TopToolStripPanel.Orientation = System.Windows.Forms.Orientation.Horizontal;
-            this.toolStripContainer1.TopToolStripPanel.RowMargin = new System.Windows.Forms.Padding(3, 0, 0, 0);
-            // 
             // pictureBox6
             // 
             this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(193, 64);
+            this.pictureBox6.Location = new System.Drawing.Point(197, 58);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(558, 341);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -316,11 +289,10 @@
             // 
             // panel4
             // 
-            this.panel4.Location = new System.Drawing.Point(-2, 341);
+            this.panel4.Location = new System.Drawing.Point(-2, 351);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(173, 26);
             this.panel4.TabIndex = 7;
-            this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
             // 
             // pictureBox5
             // 
@@ -512,6 +484,8 @@
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.toolStripContainer1.ContentPanel.ResumeLayout(false);
+            this.toolStripContainer1.ResumeLayout(false);
+            this.toolStripContainer1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
