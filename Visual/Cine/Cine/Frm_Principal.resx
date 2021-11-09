@@ -116,11 +116,11 @@
   </data>
   <data name="btnMinimizar.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAYAAADDPmHLAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAADBSURBVHhe7dLLCcNADEXRqSv9t5BOvM8PGewgMPZ4IcE5cPeaxwwAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAoIvl+fjvpUvtdmxjc3T2KJ2v5QfIHqLrxboNJMfrhmLe+rLjNV/MW192vOaLeevL
-        jtd8MW992fGaL+atLzte88W89X2O9QnuL9Zt4HtslD1E5/vt2cZ68KbsUTputyMAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAA0MMYb3z7BOGlcq7TAAAAAElFTkSuQmCC
+        iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAYAAADDPmHLAAAABGdBTUEAALGPC/xhBQAAAMFJREFUeF7t
+        0ssJw0AMRdGpK/23kE68zw8Z7CAw9nghwTlw95rHDAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACg
+        i+X5+O+lS+12bGNzdPYona/lB8geouvFug0kx+uGYt76suM1X8xbX3a85ot568uO13wxb33Z8Zov5q0v
+        O17zxbz1fY71Ce4v1m3ge2yUPUTn++3ZxnrwpuxROm63IwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AADQwxhvfPsE4aVyrtMAAAAASUVORK5CYII=
 </value>
   </data>
   <data name="btnRestaurar.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">

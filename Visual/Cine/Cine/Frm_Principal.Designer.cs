@@ -61,6 +61,7 @@
             // 
             // menuStrip1
             // 
+            this.menuStrip1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(59)))), ((int)(((byte)(99)))));
             this.menuStrip1.Dock = System.Windows.Forms.DockStyle.None;
             this.menuStrip1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -74,7 +75,7 @@
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(20);
             this.menuStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.System;
-            this.menuStrip1.Size = new System.Drawing.Size(132, 326);
+            this.menuStrip1.Size = new System.Drawing.Size(160, 351);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -83,7 +84,7 @@
             this.funcionesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.butacasVendidasPorFuncionToolStripMenuItem});
             this.funcionesToolStripMenuItem.Name = "funcionesToolStripMenuItem";
-            this.funcionesToolStripMenuItem.Size = new System.Drawing.Size(91, 25);
+            this.funcionesToolStripMenuItem.Size = new System.Drawing.Size(119, 25);
             this.funcionesToolStripMenuItem.Text = "Funciones";
             // 
             // butacasVendidasPorFuncionToolStripMenuItem
@@ -98,7 +99,7 @@
             this.ticketsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.imprimirTicketToolStripMenuItem});
             this.ticketsToolStripMenuItem.Name = "ticketsToolStripMenuItem";
-            this.ticketsToolStripMenuItem.Size = new System.Drawing.Size(91, 25);
+            this.ticketsToolStripMenuItem.Size = new System.Drawing.Size(119, 25);
             this.ticketsToolStripMenuItem.Text = "Tickets";
             // 
             // imprimirTicketToolStripMenuItem
@@ -117,7 +118,7 @@
             this.ventasPorSucursalToolStripMenuItem,
             this.promVentasPorCajeroToolStripMenuItem});
             this.reportesToolStripMenuItem.Name = "reportesToolStripMenuItem";
-            this.reportesToolStripMenuItem.Size = new System.Drawing.Size(91, 25);
+            this.reportesToolStripMenuItem.Size = new System.Drawing.Size(119, 25);
             this.reportesToolStripMenuItem.Text = "Reportes";
             // 
             // peliculasSinVentasToolStripMenuItem
@@ -160,7 +161,7 @@
             this.acercaDeToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.mostrarIntegrantesToolStripMenuItem});
             this.acercaDeToolStripMenuItem.Name = "acercaDeToolStripMenuItem";
-            this.acercaDeToolStripMenuItem.Size = new System.Drawing.Size(91, 25);
+            this.acercaDeToolStripMenuItem.Size = new System.Drawing.Size(119, 25);
             this.acercaDeToolStripMenuItem.Text = "Acerca de";
             // 
             // mostrarIntegrantesToolStripMenuItem
@@ -175,7 +176,7 @@
             // toolStripContainer1.ContentPanel
             // 
             this.toolStripContainer1.ContentPanel.Controls.Add(this.panel1);
-            this.toolStripContainer1.ContentPanel.Size = new System.Drawing.Size(530, 326);
+            this.toolStripContainer1.ContentPanel.Size = new System.Drawing.Size(502, 351);
             this.toolStripContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
             // 
             // toolStripContainer1.LeftToolStripPanel
@@ -196,16 +197,16 @@
             this.panel1.Controls.Add(this.btnMAximizar);
             this.panel1.Controls.Add(this.btnMinimizar);
             this.panel1.Controls.Add(this.btnRestaurar);
-            this.panel1.Location = new System.Drawing.Point(3, 3);
+            this.panel1.Location = new System.Drawing.Point(-8, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(527, 37);
+            this.panel1.Size = new System.Drawing.Size(510, 33);
             this.panel1.TabIndex = 4;
             // 
             // btnClose
             // 
             this.btnClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnClose.Image = ((System.Drawing.Image)(resources.GetObject("btnClose.Image")));
-            this.btnClose.Location = new System.Drawing.Point(499, 3);
+            this.btnClose.Location = new System.Drawing.Point(482, 3);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(25, 27);
             this.btnClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -217,7 +218,7 @@
             // 
             this.btnMAximizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnMAximizar.Image = ((System.Drawing.Image)(resources.GetObject("btnMAximizar.Image")));
-            this.btnMAximizar.Location = new System.Drawing.Point(466, 4);
+            this.btnMAximizar.Location = new System.Drawing.Point(449, 4);
             this.btnMAximizar.Name = "btnMAximizar";
             this.btnMAximizar.Size = new System.Drawing.Size(29, 27);
             this.btnMAximizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -229,7 +230,7 @@
             // 
             this.btnMinimizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnMinimizar.Image = ((System.Drawing.Image)(resources.GetObject("btnMinimizar.Image")));
-            this.btnMinimizar.Location = new System.Drawing.Point(431, 6);
+            this.btnMinimizar.Location = new System.Drawing.Point(414, 6);
             this.btnMinimizar.Name = "btnMinimizar";
             this.btnMinimizar.Size = new System.Drawing.Size(29, 28);
             this.btnMinimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -241,7 +242,7 @@
             // 
             this.btnRestaurar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnRestaurar.Image = ((System.Drawing.Image)(resources.GetObject("btnRestaurar.Image")));
-            this.btnRestaurar.Location = new System.Drawing.Point(466, 3);
+            this.btnRestaurar.Location = new System.Drawing.Point(449, 3);
             this.btnRestaurar.Name = "btnRestaurar";
             this.btnRestaurar.Size = new System.Drawing.Size(27, 29);
             this.btnRestaurar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;

@@ -36,8 +36,6 @@ namespace Cine
             this.label2 = new System.Windows.Forms.Label();
             this.lblFechaInicio = new System.Windows.Forms.Label();
             this.DGVPelMasVistas = new System.Windows.Forms.DataGridView();
-            this.NombrePelicula = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CantButacasVendidas = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label4 = new System.Windows.Forms.Label();
             this.txtCantMin = new System.Windows.Forms.TextBox();
             this.lblCantidadMinima = new System.Windows.Forms.Label();
@@ -91,28 +89,12 @@ namespace Cine
             this.DGVPelMasVistas.AllowUserToAddRows = false;
             this.DGVPelMasVistas.AllowUserToDeleteRows = false;
             this.DGVPelMasVistas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DGVPelMasVistas.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.NombrePelicula,
-            this.CantButacasVendidas});
             this.DGVPelMasVistas.Location = new System.Drawing.Point(64, 237);
             this.DGVPelMasVistas.Name = "DGVPelMasVistas";
             this.DGVPelMasVistas.ReadOnly = true;
             this.DGVPelMasVistas.RowTemplate.Height = 25;
             this.DGVPelMasVistas.Size = new System.Drawing.Size(511, 150);
             this.DGVPelMasVistas.TabIndex = 5;
-            // 
-            // NombrePelicula
-            // 
-            this.NombrePelicula.HeaderText = "Pelicula";
-            this.NombrePelicula.Name = "NombrePelicula";
-            this.NombrePelicula.ReadOnly = true;
-            // 
-            // CantButacasVendidas
-            // 
-            this.CantButacasVendidas.HeaderText = "Cantidad de Butacas Vendidas";
-            this.CantButacasVendidas.Name = "CantButacasVendidas";
-            this.CantButacasVendidas.ReadOnly = true;
-            this.CantButacasVendidas.Width = 250;
             // 
             // label4
             // 
@@ -125,9 +107,9 @@ namespace Cine
             // 
             // txtCantMin
             // 
-            this.txtCantMin.Location = new System.Drawing.Point(272, 147);
+            this.txtCantMin.Location = new System.Drawing.Point(283, 148);
             this.txtCantMin.Name = "txtCantMin";
-            this.txtCantMin.Size = new System.Drawing.Size(100, 23);
+            this.txtCantMin.Size = new System.Drawing.Size(89, 23);
             this.txtCantMin.TabIndex = 7;
             // 
             // lblCantidadMinima
@@ -135,9 +117,9 @@ namespace Cine
             this.lblCantidadMinima.AutoSize = true;
             this.lblCantidadMinima.Location = new System.Drawing.Point(64, 151);
             this.lblCantidadMinima.Name = "lblCantidadMinima";
-            this.lblCantidadMinima.Size = new System.Drawing.Size(163, 15);
+            this.lblCantidadMinima.Size = new System.Drawing.Size(213, 15);
             this.lblCantidadMinima.TabIndex = 8;
-            this.lblCantidadMinima.Text = "Cantidad minima de entradas";
+            this.lblCantidadMinima.Text = "Cantidad minima de entradas vendidas";
             // 
             // BtnGenerar
             // 
@@ -147,6 +129,7 @@ namespace Cine
             this.BtnGenerar.TabIndex = 9;
             this.BtnGenerar.Text = "Generar Reporte";
             this.BtnGenerar.UseVisualStyleBackColor = true;
+            this.BtnGenerar.Click += new System.EventHandler(this.BtnGenerar_Click);
             // 
             // Frm_Rep_PelMasVis
             // 
@@ -179,8 +162,6 @@ namespace Cine
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label lblFechaInicio;
         private System.Windows.Forms.DataGridView DGVPelMasVistas;
-        private System.Windows.Forms.DataGridViewTextBoxColumn NombrePelicula;
-        private System.Windows.Forms.DataGridViewTextBoxColumn CantButacasVendidas;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtCantMin;
         private System.Windows.Forms.Label lblCantidadMinima;

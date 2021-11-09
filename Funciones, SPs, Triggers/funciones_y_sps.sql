@@ -169,10 +169,11 @@ create procedure pa_reporte_entradas_sucursal
 @fecha_2 datetime)
 as
 begin 
-    select t.id_sucursal, COUNT (dt.id_detalle) 'Cantidad de entradas vendidas'
+    select t.id_sucursal, suc.nombre 'Nombre de la sucursal', COUNT (dt.id_detalle) 'Cantidad de entradas vendidas'
     from ticket t join detalles_ticket dt on dt.nro_ticket=t.nro_ticket
+	join sucursales suc on suc.id_sucursal = t.id_sucursal
     where fecha between @fecha_1 and @fecha_2
-    group by t.id_sucursal
+    group by t.id_sucursal, suc.nombre
     order by 1 
 end
 go
