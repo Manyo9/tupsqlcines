@@ -86,5 +86,10 @@ namespace Cine
             btnRestaurar.Visible = false;
             btnMAximizar.Visible = true;
         }
+
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
     }
 }

@@ -48,15 +48,26 @@
             this.btnMAximizar = new System.Windows.Forms.PictureBox();
             this.btnMinimizar = new System.Windows.Forms.PictureBox();
             this.btnRestaurar = new System.Windows.Forms.PictureBox();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.menuStrip1.SuspendLayout();
             this.toolStripContainer1.ContentPanel.SuspendLayout();
-            this.toolStripContainer1.LeftToolStripPanel.SuspendLayout();
             this.toolStripContainer1.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnClose)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMAximizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnRestaurar)).BeginInit();
+            this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -70,27 +81,37 @@
             this.reportesToolStripMenuItem,
             this.acercaDeToolStripMenuItem});
             this.menuStrip1.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.VerticalStackWithOverflow;
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Margin = new System.Windows.Forms.Padding(5, 20, 0, 0);
+            this.menuStrip1.Location = new System.Drawing.Point(14, 113);
+            this.menuStrip1.Margin = new System.Windows.Forms.Padding(5, 30, 0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(20);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(0);
             this.menuStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.System;
-            this.menuStrip1.Size = new System.Drawing.Size(160, 351);
+            this.menuStrip1.Size = new System.Drawing.Size(153, 170);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
+            this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
             // 
             // funcionesToolStripMenuItem
             // 
             this.funcionesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.butacasVendidasPorFuncionToolStripMenuItem});
+            this.funcionesToolStripMenuItem.Font = new System.Drawing.Font("Gilroy Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.funcionesToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.funcionesToolStripMenuItem.Image = global::CineFrontend.Properties.Resources.director_96958;
+            this.funcionesToolStripMenuItem.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.funcionesToolStripMenuItem.Name = "funcionesToolStripMenuItem";
-            this.funcionesToolStripMenuItem.Size = new System.Drawing.Size(119, 25);
+            this.funcionesToolStripMenuItem.Padding = new System.Windows.Forms.Padding(20, 10, 20, 10);
+            this.funcionesToolStripMenuItem.Size = new System.Drawing.Size(142, 42);
             this.funcionesToolStripMenuItem.Text = "Funciones";
+            this.funcionesToolStripMenuItem.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // butacasVendidasPorFuncionToolStripMenuItem
             // 
+            this.butacasVendidasPorFuncionToolStripMenuItem.BackColor = System.Drawing.Color.DarkRed;
+            this.butacasVendidasPorFuncionToolStripMenuItem.BackgroundImage = global::CineFrontend.Properties.Resources.Sin_titulo_1;
+            this.butacasVendidasPorFuncionToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.butacasVendidasPorFuncionToolStripMenuItem.Name = "butacasVendidasPorFuncionToolStripMenuItem";
-            this.butacasVendidasPorFuncionToolStripMenuItem.Size = new System.Drawing.Size(283, 26);
+            this.butacasVendidasPorFuncionToolStripMenuItem.Size = new System.Drawing.Size(294, 22);
             this.butacasVendidasPorFuncionToolStripMenuItem.Text = "Butacas vendidas por funcion";
             this.butacasVendidasPorFuncionToolStripMenuItem.Click += new System.EventHandler(this.butacasVendidasPorFuncionToolStripMenuItem_Click);
             // 
@@ -98,61 +119,86 @@
             // 
             this.ticketsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.imprimirTicketToolStripMenuItem});
+            this.ticketsToolStripMenuItem.Font = new System.Drawing.Font("Gilroy Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.ticketsToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.ticketsToolStripMenuItem.Image = global::CineFrontend.Properties.Resources.tickets;
+            this.ticketsToolStripMenuItem.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.ticketsToolStripMenuItem.Name = "ticketsToolStripMenuItem";
-            this.ticketsToolStripMenuItem.Size = new System.Drawing.Size(119, 25);
+            this.ticketsToolStripMenuItem.Padding = new System.Windows.Forms.Padding(20, 10, 20, 10);
+            this.ticketsToolStripMenuItem.Size = new System.Drawing.Size(142, 42);
             this.ticketsToolStripMenuItem.Text = "Tickets";
+            this.ticketsToolStripMenuItem.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // imprimirTicketToolStripMenuItem
             // 
+            this.imprimirTicketToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.imprimirTicketToolStripMenuItem.BackgroundImage = global::CineFrontend.Properties.Resources.Sin_titulo_1;
+            this.imprimirTicketToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.imprimirTicketToolStripMenuItem.Name = "imprimirTicketToolStripMenuItem";
-            this.imprimirTicketToolStripMenuItem.Size = new System.Drawing.Size(185, 26);
+            this.imprimirTicketToolStripMenuItem.Size = new System.Drawing.Size(181, 22);
             this.imprimirTicketToolStripMenuItem.Text = "Imprimir Ticket";
             this.imprimirTicketToolStripMenuItem.Click += new System.EventHandler(this.imprimirTicketToolStripMenuItem_Click);
             // 
             // reportesToolStripMenuItem
             // 
+            this.reportesToolStripMenuItem.BackgroundImage = global::CineFrontend.Properties.Resources.Sin_titulo_1;
             this.reportesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.peliculasSinVentasToolStripMenuItem,
             this.peliculasMásVistasToolStripMenuItem,
             this.gananciasMensualesToolStripMenuItem,
             this.ventasPorSucursalToolStripMenuItem,
             this.promVentasPorCajeroToolStripMenuItem});
+            this.reportesToolStripMenuItem.Font = new System.Drawing.Font("Gilroy Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.reportesToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.reportesToolStripMenuItem.Image = global::CineFrontend.Properties.Resources.btnMax2;
+            this.reportesToolStripMenuItem.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.reportesToolStripMenuItem.Name = "reportesToolStripMenuItem";
-            this.reportesToolStripMenuItem.Size = new System.Drawing.Size(119, 25);
+            this.reportesToolStripMenuItem.Padding = new System.Windows.Forms.Padding(20, 10, 20, 10);
+            this.reportesToolStripMenuItem.Size = new System.Drawing.Size(142, 42);
             this.reportesToolStripMenuItem.Text = "Reportes";
             // 
             // peliculasSinVentasToolStripMenuItem
             // 
+            this.peliculasSinVentasToolStripMenuItem.BackgroundImage = global::CineFrontend.Properties.Resources.Sin_titulo_1;
+            this.peliculasSinVentasToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.peliculasSinVentasToolStripMenuItem.Name = "peliculasSinVentasToolStripMenuItem";
-            this.peliculasSinVentasToolStripMenuItem.Size = new System.Drawing.Size(244, 26);
+            this.peliculasSinVentasToolStripMenuItem.Size = new System.Drawing.Size(250, 22);
             this.peliculasSinVentasToolStripMenuItem.Text = "Peliculas sin ventas";
             this.peliculasSinVentasToolStripMenuItem.Click += new System.EventHandler(this.peliculasSinVentasToolStripMenuItem_Click);
             // 
             // peliculasMásVistasToolStripMenuItem
             // 
+            this.peliculasMásVistasToolStripMenuItem.BackgroundImage = global::CineFrontend.Properties.Resources.Sin_titulo_1;
+            this.peliculasMásVistasToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.peliculasMásVistasToolStripMenuItem.Name = "peliculasMásVistasToolStripMenuItem";
-            this.peliculasMásVistasToolStripMenuItem.Size = new System.Drawing.Size(244, 26);
+            this.peliculasMásVistasToolStripMenuItem.Size = new System.Drawing.Size(250, 22);
             this.peliculasMásVistasToolStripMenuItem.Text = "Peliculas más vistas";
             this.peliculasMásVistasToolStripMenuItem.Click += new System.EventHandler(this.peliculasMásVistasToolStripMenuItem_Click);
             // 
             // gananciasMensualesToolStripMenuItem
             // 
+            this.gananciasMensualesToolStripMenuItem.BackgroundImage = global::CineFrontend.Properties.Resources.Sin_titulo_1;
+            this.gananciasMensualesToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.gananciasMensualesToolStripMenuItem.Name = "gananciasMensualesToolStripMenuItem";
-            this.gananciasMensualesToolStripMenuItem.Size = new System.Drawing.Size(244, 26);
+            this.gananciasMensualesToolStripMenuItem.Size = new System.Drawing.Size(250, 22);
             this.gananciasMensualesToolStripMenuItem.Text = "Ganancias mensuales";
             this.gananciasMensualesToolStripMenuItem.Click += new System.EventHandler(this.gananciasMensualesToolStripMenuItem_Click);
             // 
             // ventasPorSucursalToolStripMenuItem
             // 
+            this.ventasPorSucursalToolStripMenuItem.BackgroundImage = global::CineFrontend.Properties.Resources.Sin_titulo_1;
+            this.ventasPorSucursalToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.ventasPorSucursalToolStripMenuItem.Name = "ventasPorSucursalToolStripMenuItem";
-            this.ventasPorSucursalToolStripMenuItem.Size = new System.Drawing.Size(244, 26);
+            this.ventasPorSucursalToolStripMenuItem.Size = new System.Drawing.Size(250, 22);
             this.ventasPorSucursalToolStripMenuItem.Text = "Ventas por sucursal";
             this.ventasPorSucursalToolStripMenuItem.Click += new System.EventHandler(this.ventasPorSucursalToolStripMenuItem_Click);
             // 
             // promVentasPorCajeroToolStripMenuItem
             // 
+            this.promVentasPorCajeroToolStripMenuItem.BackgroundImage = global::CineFrontend.Properties.Resources.Sin_titulo_1;
+            this.promVentasPorCajeroToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.promVentasPorCajeroToolStripMenuItem.Name = "promVentasPorCajeroToolStripMenuItem";
-            this.promVentasPorCajeroToolStripMenuItem.Size = new System.Drawing.Size(244, 26);
+            this.promVentasPorCajeroToolStripMenuItem.Size = new System.Drawing.Size(250, 22);
             this.promVentasPorCajeroToolStripMenuItem.Text = "Prom. ventas por cajero";
             this.promVentasPorCajeroToolStripMenuItem.Click += new System.EventHandler(this.promVentasPorCajeroToolStripMenuItem_Click);
             // 
@@ -160,14 +206,21 @@
             // 
             this.acercaDeToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.mostrarIntegrantesToolStripMenuItem});
+            this.acercaDeToolStripMenuItem.Font = new System.Drawing.Font("Gilroy Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.acercaDeToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.acercaDeToolStripMenuItem.Image = global::CineFrontend.Properties.Resources.ticket_2;
+            this.acercaDeToolStripMenuItem.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.acercaDeToolStripMenuItem.Name = "acercaDeToolStripMenuItem";
-            this.acercaDeToolStripMenuItem.Size = new System.Drawing.Size(119, 25);
+            this.acercaDeToolStripMenuItem.Padding = new System.Windows.Forms.Padding(20, 10, 20, 10);
+            this.acercaDeToolStripMenuItem.Size = new System.Drawing.Size(142, 42);
             this.acercaDeToolStripMenuItem.Text = "Acerca de";
             // 
             // mostrarIntegrantesToolStripMenuItem
             // 
+            this.mostrarIntegrantesToolStripMenuItem.BackgroundImage = global::CineFrontend.Properties.Resources.Sin_titulo_1;
+            this.mostrarIntegrantesToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.mostrarIntegrantesToolStripMenuItem.Name = "mostrarIntegrantesToolStripMenuItem";
-            this.mostrarIntegrantesToolStripMenuItem.Size = new System.Drawing.Size(217, 26);
+            this.mostrarIntegrantesToolStripMenuItem.Size = new System.Drawing.Size(219, 22);
             this.mostrarIntegrantesToolStripMenuItem.Text = "Mostrar integrantes";
             // 
             // toolStripContainer1
@@ -175,13 +228,10 @@
             // 
             // toolStripContainer1.ContentPanel
             // 
+            this.toolStripContainer1.ContentPanel.Controls.Add(this.panel2);
             this.toolStripContainer1.ContentPanel.Controls.Add(this.panel1);
-            this.toolStripContainer1.ContentPanel.Size = new System.Drawing.Size(502, 351);
+            this.toolStripContainer1.ContentPanel.Size = new System.Drawing.Size(662, 351);
             this.toolStripContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            // 
-            // toolStripContainer1.LeftToolStripPanel
-            // 
-            this.toolStripContainer1.LeftToolStripPanel.Controls.Add(this.menuStrip1);
             this.toolStripContainer1.Location = new System.Drawing.Point(0, 0);
             this.toolStripContainer1.Name = "toolStripContainer1";
             this.toolStripContainer1.Size = new System.Drawing.Size(662, 351);
@@ -199,14 +249,14 @@
             this.panel1.Controls.Add(this.btnRestaurar);
             this.panel1.Location = new System.Drawing.Point(-8, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(510, 33);
+            this.panel1.Size = new System.Drawing.Size(670, 33);
             this.panel1.TabIndex = 4;
             // 
             // btnClose
             // 
             this.btnClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnClose.Image = ((System.Drawing.Image)(resources.GetObject("btnClose.Image")));
-            this.btnClose.Location = new System.Drawing.Point(482, 3);
+            this.btnClose.Location = new System.Drawing.Point(642, 3);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(25, 27);
             this.btnClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -218,7 +268,7 @@
             // 
             this.btnMAximizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnMAximizar.Image = ((System.Drawing.Image)(resources.GetObject("btnMAximizar.Image")));
-            this.btnMAximizar.Location = new System.Drawing.Point(449, 4);
+            this.btnMAximizar.Location = new System.Drawing.Point(609, 4);
             this.btnMAximizar.Name = "btnMAximizar";
             this.btnMAximizar.Size = new System.Drawing.Size(29, 27);
             this.btnMAximizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -230,7 +280,7 @@
             // 
             this.btnMinimizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnMinimizar.Image = ((System.Drawing.Image)(resources.GetObject("btnMinimizar.Image")));
-            this.btnMinimizar.Location = new System.Drawing.Point(414, 6);
+            this.btnMinimizar.Location = new System.Drawing.Point(574, 6);
             this.btnMinimizar.Name = "btnMinimizar";
             this.btnMinimizar.Size = new System.Drawing.Size(29, 28);
             this.btnMinimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -242,13 +292,83 @@
             // 
             this.btnRestaurar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnRestaurar.Image = ((System.Drawing.Image)(resources.GetObject("btnRestaurar.Image")));
-            this.btnRestaurar.Location = new System.Drawing.Point(449, 3);
+            this.btnRestaurar.Location = new System.Drawing.Point(609, 3);
             this.btnRestaurar.Name = "btnRestaurar";
             this.btnRestaurar.Size = new System.Drawing.Size(27, 29);
             this.btnRestaurar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnRestaurar.TabIndex = 0;
             this.btnRestaurar.TabStop = false;
             this.btnRestaurar.Click += new System.EventHandler(this.btnRestaurar_Click);
+            // 
+            // panel2
+            // 
+            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(59)))), ((int)(((byte)(99)))));
+            this.panel2.Controls.Add(this.pictureBox5);
+            this.panel2.Controls.Add(this.pictureBox1);
+            this.panel2.Controls.Add(this.menuStrip1);
+            this.panel2.Controls.Add(this.pictureBox2);
+            this.panel2.Controls.Add(this.pictureBox3);
+            this.panel2.Controls.Add(this.pictureBox4);
+            this.panel2.Location = new System.Drawing.Point(0, 3);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(173, 364);
+            this.panel2.TabIndex = 5;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(615, 3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(25, 27);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(582, 4);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(29, 27);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 3;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(547, 6);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(29, 28);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 2;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
+            this.pictureBox4.Location = new System.Drawing.Point(582, 3);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(27, 29);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox4.TabIndex = 0;
+            this.pictureBox4.TabStop = false;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = global::CineFrontend.Properties.Resources.LOGO_CHANGOCINEMA1;
+            this.pictureBox5.Location = new System.Drawing.Point(-2, 4);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(169, 85);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox5.TabIndex = 6;
+            this.pictureBox5.TabStop = false;
             // 
             // Frm_Principal
             // 
@@ -257,14 +377,13 @@
             this.ClientSize = new System.Drawing.Size(662, 351);
             this.Controls.Add(this.toolStripContainer1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Frm_Principal";
             this.Text = "Form1";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.toolStripContainer1.ContentPanel.ResumeLayout(false);
-            this.toolStripContainer1.LeftToolStripPanel.ResumeLayout(false);
-            this.toolStripContainer1.LeftToolStripPanel.PerformLayout();
             this.toolStripContainer1.ResumeLayout(false);
             this.toolStripContainer1.PerformLayout();
             this.panel1.ResumeLayout(false);
@@ -272,6 +391,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.btnMAximizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnRestaurar)).EndInit();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -297,6 +423,12 @@
         private System.Windows.Forms.PictureBox btnMinimizar;
         private System.Windows.Forms.PictureBox btnMAximizar;
         private System.Windows.Forms.PictureBox btnRestaurar;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.PictureBox pictureBox5;
     }
 }
 
