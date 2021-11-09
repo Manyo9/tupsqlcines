@@ -157,7 +157,7 @@ as
 begin
     select month(t.fecha)'Mes', sum(dbo.f_calcular_total(t.nro_ticket,t.id_sucursal)) 'Ganancias del mes'
 	from ticket t
-    where year(t.fecha)=year(GETDATE())
+    where year(t.fecha)= @año
     group by month(t.fecha)
     order by 1 asc
 end
