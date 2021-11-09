@@ -32,7 +32,7 @@ namespace Cine
             this.lblFechaUno = new System.Windows.Forms.Label();
             this.lblFechaDos = new System.Windows.Forms.Label();
             this.dgvPelSinVentas = new System.Windows.Forms.DataGridView();
-            this.DTPFecha1 = new System.Windows.Forms.DateTimePicker();
+            this.dtpFecha1 = new System.Windows.Forms.DateTimePicker();
             this.dtpFecha2 = new System.Windows.Forms.DateTimePicker();
             this.btnGenerar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPelSinVentas)).BeginInit();
@@ -65,12 +65,12 @@ namespace Cine
             this.dgvPelSinVentas.Size = new System.Drawing.Size(485, 150);
             this.dgvPelSinVentas.TabIndex = 4;
             // 
-            // DTPFecha1
+            // dtpFecha1
             // 
-            this.DTPFecha1.Location = new System.Drawing.Point(127, 54);
-            this.DTPFecha1.Name = "DTPFecha1";
-            this.DTPFecha1.Size = new System.Drawing.Size(200, 23);
-            this.DTPFecha1.TabIndex = 5;
+            this.dtpFecha1.Location = new System.Drawing.Point(127, 54);
+            this.dtpFecha1.Name = "dtpFecha1";
+            this.dtpFecha1.Size = new System.Drawing.Size(200, 23);
+            this.dtpFecha1.TabIndex = 5;
             // 
             // dtpFecha2
             // 
@@ -87,6 +87,7 @@ namespace Cine
             this.btnGenerar.TabIndex = 7;
             this.btnGenerar.Text = "Generar Reporte";
             this.btnGenerar.UseVisualStyleBackColor = true;
+            this.btnGenerar.Click += new System.EventHandler(this.btnGenerar_Click);
             // 
             // Frm_Rep_PelSinVentas
             // 
@@ -95,7 +96,7 @@ namespace Cine
             this.ClientSize = new System.Drawing.Size(642, 413);
             this.Controls.Add(this.btnGenerar);
             this.Controls.Add(this.dtpFecha2);
-            this.Controls.Add(this.DTPFecha1);
+            this.Controls.Add(this.dtpFecha1);
             this.Controls.Add(this.dgvPelSinVentas);
             this.Controls.Add(this.lblFechaDos);
             this.Controls.Add(this.lblFechaUno);
@@ -112,7 +113,7 @@ namespace Cine
         private System.Windows.Forms.Label lblFechaUno;
         private System.Windows.Forms.Label lblFechaDos;
         private System.Windows.Forms.DataGridView dgvPelSinVentas;
-        private System.Windows.Forms.DateTimePicker DTPFecha1;
+        private System.Windows.Forms.DateTimePicker dtpFecha1;
         private System.Windows.Forms.DateTimePicker dtpFecha2;
         private System.Windows.Forms.Button btnGenerar;
     }
