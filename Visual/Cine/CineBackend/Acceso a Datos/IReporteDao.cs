@@ -18,5 +18,6 @@ namespace CineBackend.Acceso_a_Datos
         public DataTable GetEntradasPorTicket(int nroTicket, int idSucursal);
         public DataTable GetButacasDisponibles(int nroFuncion);
 
+
     }
 }
