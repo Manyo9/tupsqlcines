@@ -47,11 +47,11 @@ namespace CineBackend.Acceso_a_Datos
             comando.CommandType = CommandType.StoredProcedure;
             comando.CommandText = nombreSP;
     
-                    foreach (Parametro parametroD in parametros)
-                    {
-                        comando.Parameters.AddWithValue(parametroD.Nombre, parametroD.Valor);
-                    }
-                    comando.ExecuteNonQuery();   
+            foreach (Parametro parametroD in parametros)
+            {
+               comando.Parameters.AddWithValue(parametroD.Nombre, parametroD.Valor);
+            }
+                    //comando.ExecuteNonQuery();   
             try
             {
                 conexion.Open();

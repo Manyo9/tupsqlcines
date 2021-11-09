@@ -22,3 +22,15 @@ d:\Escritorio\LCII TP\scriptscineLCII\Visual\Cine\CineBackend\obj\Debug\net5.0\C
 d:\Escritorio\LCII TP\scriptscineLCII\Visual\Cine\CineBackend\obj\Debug\net5.0\CineBackend.dll
 d:\Escritorio\LCII TP\scriptscineLCII\Visual\Cine\CineBackend\obj\Debug\net5.0\ref\CineBackend.dll
 d:\Escritorio\LCII TP\scriptscineLCII\Visual\Cine\CineBackend\obj\Debug\net5.0\CineBackend.pdb
+D:\archivos\TUP\2do Cuatri\TPI\labo\scriptscineLCII\Visual\Cine\CineBackend\bin\Debug\net5.0\CineBackend.deps.json
+D:\archivos\TUP\2do Cuatri\TPI\labo\scriptscineLCII\Visual\Cine\CineBackend\bin\Debug\net5.0\CineBackend.dll
+D:\archivos\TUP\2do Cuatri\TPI\labo\scriptscineLCII\Visual\Cine\CineBackend\bin\Debug\net5.0\ref\CineBackend.dll
+D:\archivos\TUP\2do Cuatri\TPI\labo\scriptscineLCII\Visual\Cine\CineBackend\bin\Debug\net5.0\CineBackend.pdb
+D:\archivos\TUP\2do Cuatri\TPI\labo\scriptscineLCII\Visual\Cine\CineBackend\obj\Debug\net5.0\CineBackend.csproj.AssemblyReference.cache
+D:\archivos\TUP\2do Cuatri\TPI\labo\scriptscineLCII\Visual\Cine\CineBackend\obj\Debug\net5.0\CineBackend.GeneratedMSBuildEditorConfig.editorconfig
+D:\archivos\TUP\2do Cuatri\TPI\labo\scriptscineLCII\Visual\Cine\CineBackend\obj\Debug\net5.0\CineBackend.AssemblyInfoInputs.cache
+D:\archivos\TUP\2do Cuatri\TPI\labo\scriptscineLCII\Visual\Cine\CineBackend\obj\Debug\net5.0\CineBackend.AssemblyInfo.cs
+D:\archivos\TUP\2do Cuatri\TPI\labo\scriptscineLCII\Visual\Cine\CineBackend\obj\Debug\net5.0\CineBackend.csproj.CoreCompileInputs.cache
+D:\archivos\TUP\2do Cuatri\TPI\labo\scriptscineLCII\Visual\Cine\CineBackend\obj\Debug\net5.0\CineBackend.dll
+D:\archivos\TUP\2do Cuatri\TPI\labo\scriptscineLCII\Visual\Cine\CineBackend\obj\Debug\net5.0\ref\CineBackend.dll
+D:\archivos\TUP\2do Cuatri\TPI\labo\scriptscineLCII\Visual\Cine\CineBackend\obj\Debug\net5.0\CineBackend.pdb

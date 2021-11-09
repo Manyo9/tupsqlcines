@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace CineBackend.Acceso_a_Datos
 {
-    class ReporteDao : IReporteDao
+    public class ReporteDao : IReporteDao
     {
         private DaoHelper helper;
 

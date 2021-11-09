@@ -17,6 +17,7 @@ namespace Cine
         public Frm_Butacas()
         {
             InitializeComponent();
+            dao = new ReporteDao();
         }
 
         private void btnConsultar_Click(object sender, EventArgs e)
@@ -29,8 +30,17 @@ namespace Cine
             CargarGrid();
         }
 
-        private void CargarGrid() { 
+        private void CargarGrid() {
+            DataTable tabla = new DataTable();
+            tabla = dao.GetButacasDisponibles(Convert.ToInt32(txtFuncion.Text));
             
+            tabla.Columns["cod_butaca"].ColumnName = "Código Butaca";
+            tabla.Columns.Remove("id_butaca");
+            dgvButacas.DataSource = tabla;
+            //foreach (DataRow fila in tabla.Rows)
+            //{
+            //    dgvButacas.Rows.Add(new object[] {String.Empty, fila["cod_butaca"].ToString()});
+            //}
         }
     }
 }
