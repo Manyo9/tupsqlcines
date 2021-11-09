@@ -12,6 +12,22 @@ namespace Cine
 {
     public partial class Frm_Principal : Form
     {
+
+
+        private const int WM_NCHITTEST = 0x84;
+        private const int HTCLIENT = 0x1;
+        private const int HTCAPTION = 0x2;
+
+        ///
+        /// para mover el form con el mouse
+        ///
+        protected override void WndProc(ref Message message)
+        {
+            base.WndProc(ref message);
+
+            if (message.Msg == WM_NCHITTEST && (int)message.Result == HTCLIENT)
+                message.Result = (IntPtr)HTCAPTION;
+        }
         public Frm_Principal()
         {
             InitializeComponent();
@@ -87,10 +103,9 @@ namespace Cine
             btnMAximizar.Visible = true;
         }
 
-     
+        private void toolStripContainer1_ContentPanel_Load(object sender, EventArgs e)
+        {
 
-        
-
-       
+        }
     }
 }
