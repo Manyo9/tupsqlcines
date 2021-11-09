@@ -74,7 +74,10 @@ namespace CineBackend.Acceso_a_Datos
 
         public DataTable GetButacasDisponibles(int nroFuncion)
         {
-            throw new NotImplementedException();
+            List<Parametro> lst = new List<Parametro>();
+            lst.Add(new Parametro("@funcion", nroFuncion));
+            DataTable resultado = helper.ConsultarConParametro("pa_butacas_disp_funcion", lst);
+            return resultado;
         }
     }
 }
