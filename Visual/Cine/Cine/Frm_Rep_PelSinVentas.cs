@@ -24,7 +24,7 @@ namespace Cine
         {
             if (dtpFecha1.Value > dtpFecha2.Value)
             {
-                MessageBox.Show("La fecha de inicio debe ser anterior a la de fin. No sea imbécil");
+                MessageBox.Show("La fecha de inicio debe ser anterior a la de fin.");
                 return;
             }
             CargarGrid();

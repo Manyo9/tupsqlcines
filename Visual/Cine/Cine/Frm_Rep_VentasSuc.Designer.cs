@@ -32,8 +32,8 @@ namespace Cine
             this.lblFechaUno = new System.Windows.Forms.Label();
             this.lblFechaDos = new System.Windows.Forms.Label();
             this.dgvVentasSuc = new System.Windows.Forms.DataGridView();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.dtpFechaInicio = new System.Windows.Forms.DateTimePicker();
+            this.dtpFechaFin = new System.Windows.Forms.DateTimePicker();
             this.btnGenerar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvVentasSuc)).BeginInit();
             this.SuspendLayout();
@@ -43,18 +43,18 @@ namespace Cine
             this.lblFechaUno.AutoSize = true;
             this.lblFechaUno.Location = new System.Drawing.Point(58, 61);
             this.lblFechaUno.Name = "lblFechaUno";
-            this.lblFechaUno.Size = new System.Drawing.Size(63, 15);
+            this.lblFechaUno.Size = new System.Drawing.Size(70, 15);
             this.lblFechaUno.TabIndex = 0;
-            this.lblFechaUno.Text = "Fecha Uno";
+            this.lblFechaUno.Text = "Fecha inicio";
             // 
             // lblFechaDos
             // 
             this.lblFechaDos.AutoSize = true;
             this.lblFechaDos.Location = new System.Drawing.Point(58, 99);
             this.lblFechaDos.Name = "lblFechaDos";
-            this.lblFechaDos.Size = new System.Drawing.Size(61, 15);
+            this.lblFechaDos.Size = new System.Drawing.Size(55, 15);
             this.lblFechaDos.TabIndex = 1;
-            this.lblFechaDos.Text = "Fecha Dos";
+            this.lblFechaDos.Text = "Fecha fin";
             // 
             // dgvVentasSuc
             // 
@@ -65,19 +65,19 @@ namespace Cine
             this.dgvVentasSuc.Size = new System.Drawing.Size(467, 150);
             this.dgvVentasSuc.TabIndex = 4;
             // 
-            // dateTimePicker1
+            // dtpFechaInicio
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(156, 61);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 23);
-            this.dateTimePicker1.TabIndex = 5;
+            this.dtpFechaInicio.Location = new System.Drawing.Point(156, 61);
+            this.dtpFechaInicio.Name = "dtpFechaInicio";
+            this.dtpFechaInicio.Size = new System.Drawing.Size(200, 23);
+            this.dtpFechaInicio.TabIndex = 5;
             // 
-            // dateTimePicker2
+            // dtpFechaFin
             // 
-            this.dateTimePicker2.Location = new System.Drawing.Point(156, 99);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(200, 23);
-            this.dateTimePicker2.TabIndex = 6;
+            this.dtpFechaFin.Location = new System.Drawing.Point(156, 99);
+            this.dtpFechaFin.Name = "dtpFechaFin";
+            this.dtpFechaFin.Size = new System.Drawing.Size(200, 23);
+            this.dtpFechaFin.TabIndex = 6;
             // 
             // btnGenerar
             // 
@@ -87,6 +87,7 @@ namespace Cine
             this.btnGenerar.TabIndex = 7;
             this.btnGenerar.Text = "Generar Reporte";
             this.btnGenerar.UseVisualStyleBackColor = true;
+            this.btnGenerar.Click += new System.EventHandler(this.btnGenerar_Click);
             // 
             // Frm_Rep_VentasSuc
             // 
@@ -94,8 +95,8 @@ namespace Cine
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(556, 416);
             this.Controls.Add(this.btnGenerar);
-            this.Controls.Add(this.dateTimePicker2);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.dtpFechaFin);
+            this.Controls.Add(this.dtpFechaInicio);
             this.Controls.Add(this.dgvVentasSuc);
             this.Controls.Add(this.lblFechaDos);
             this.Controls.Add(this.lblFechaUno);
@@ -112,8 +113,8 @@ namespace Cine
         private System.Windows.Forms.Label lblFechaUno;
         private System.Windows.Forms.Label lblFechaDos;
         private System.Windows.Forms.DataGridView dgvVentasSuc;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
+        private System.Windows.Forms.DateTimePicker dtpFechaInicio;
+        private System.Windows.Forms.DateTimePicker dtpFechaFin;
         private System.Windows.Forms.Button btnGenerar;
     }
 }
