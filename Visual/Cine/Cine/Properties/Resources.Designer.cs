@@ -63,6 +63,16 @@ namespace CineFrontend.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _18786029401541068758_128 {
+            get {
+                object obj = ResourceManager.GetObject("18786029401541068758-128", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _93631 {
             get {
                 object obj = ResourceManager.GetObject("93631", resourceCulture);
@@ -146,6 +156,16 @@ namespace CineFrontend.Properties {
         internal static System.Drawing.Bitmap LOGO_CHANGOCINEMA1 {
             get {
                 object obj = ResourceManager.GetObject("LOGO_CHANGOCINEMA1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap max {
+            get {
+                object obj = ResourceManager.GetObject("max", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
