@@ -85,6 +85,7 @@ namespace Cine
             this.Controls.Add(this.lblAño);
             this.Name = "Frm_Rep_GanMens";
             this.Text = "Frm_Rep_GanMens";
+            this.Load += new System.EventHandler(this.Frm_Rep_GanMens_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvGananciaMen)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

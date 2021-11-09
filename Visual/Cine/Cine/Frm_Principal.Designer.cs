@@ -98,6 +98,7 @@
             this.menuStrip1.Margin = new System.Windows.Forms.Padding(5, 30, 0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(0);
+            this.menuStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.System;
             this.menuStrip1.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.menuStrip1.Size = new System.Drawing.Size(163, 266);
             this.menuStrip1.TabIndex = 0;
