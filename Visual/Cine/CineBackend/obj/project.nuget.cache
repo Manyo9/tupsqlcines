@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "xm1dNRrJTEmtg5u0gZUWHsYxmkbMBtOPcNrlaOLrS6xuC3A1cAhxwGmmTizeweCdzaoeKqWgTmMCeyXrLYjyGQ==",
+  "dgSpecHash": "W04tJtdvmwk+sxceddpHPHpateleWbPYmeLNioDqVWxFIErk8JLxVOMbVYAp/WcjeqPSnwKZ4T6fyslCSIsLSg==",
   "success": true,
-  "projectFilePath": "d:\\Escritorio\\LCII TP\\scriptscineLCII\\Visual\\Cine\\CineBackend\\CineBackend.csproj",
+  "projectFilePath": "d:\\Escritorio\\LCII TP\\Nueva carpeta\\scriptscineLCII\\Visual\\Cine\\CineBackend\\CineBackend.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Julieta\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\Julieta\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",

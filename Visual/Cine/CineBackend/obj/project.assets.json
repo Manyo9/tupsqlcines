@@ -459,11 +459,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "d:\\Escritorio\\LCII TP\\scriptscineLCII\\Visual\\Cine\\CineBackend\\CineBackend.csproj",
+      "projectUniqueName": "d:\\Escritorio\\LCII TP\\Nueva carpeta\\scriptscineLCII\\Visual\\Cine\\CineBackend\\CineBackend.csproj",
       "projectName": "CineBackend",
-      "projectPath": "d:\\Escritorio\\LCII TP\\scriptscineLCII\\Visual\\Cine\\CineBackend\\CineBackend.csproj",
+      "projectPath": "d:\\Escritorio\\LCII TP\\Nueva carpeta\\scriptscineLCII\\Visual\\Cine\\CineBackend\\CineBackend.csproj",
       "packagesPath": "C:\\Users\\Julieta\\.nuget\\packages\\",
-      "outputPath": "d:\\Escritorio\\LCII TP\\scriptscineLCII\\Visual\\Cine\\CineBackend\\obj\\",
+      "outputPath": "d:\\Escritorio\\LCII TP\\Nueva carpeta\\scriptscineLCII\\Visual\\Cine\\CineBackend\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Julieta\\AppData\\Roaming\\NuGet\\NuGet.Config",
