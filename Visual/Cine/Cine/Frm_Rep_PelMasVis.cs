@@ -23,7 +23,7 @@ namespace Cine
 
         private void BtnGenerar_Click(object sender, EventArgs e)
         {
-            if (txtCantMin.Text.Trim().Equals("") || Convert.ToInt32(txtCantMin.Text) < 0)
+            if (nudCant_min_entradas.Value < 0)
             {
                 MessageBox.Show("Ingrese un número mínimo de ventas válido. Puede ser cero.");
                 return;
@@ -33,7 +33,7 @@ namespace Cine
         private void CargarGrid()
         {
             DataTable tabla;
-            tabla = dao.GetPeliMasVistas(dateTimePicker1.Value, dateTimePicker2.Value, Convert.ToInt32(txtCantMin.Text));
+            tabla = dao.GetPeliMasVistas(dateTimePicker1.Value, dateTimePicker2.Value, Convert.ToInt32(nudCant_min_entradas.Value - 1));
             DGVPelMasVistas.DataSource = tabla;
         }
     }

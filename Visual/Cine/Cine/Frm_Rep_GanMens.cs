@@ -23,7 +23,7 @@ namespace Cine
 
         private void BtnConsultar_Click(object sender, EventArgs e)
         {
-            if (txtAnio.Text.Trim().Equals("") || Convert.ToInt32(txtAnio.Text) > DateTime.Now.Year)
+            if (nudGan_mens.Value.Equals(0) || Convert.ToInt32(nudGan_mens.Value) > DateTime.Now.Year)
             {
                 MessageBox.Show("Ingresar un año válido");
                 return;
@@ -34,8 +34,13 @@ namespace Cine
         private void CargarGrid()
         {
             DataTable tabla = new DataTable();
-            tabla = dao.GetGananciasMensuales(Convert.ToInt32(txtAnio.Text));
+            tabla = dao.GetGananciasMensuales(Convert.ToInt32(nudGan_mens.Value));
             dgvGananciaMen.DataSource = tabla;
+        }
+
+        private void Frm_Rep_GanMens_Load(object sender, EventArgs e)
+        {
+            nudGan_mens.Value = DateTime.Now.Year;  
         }
     }
 }

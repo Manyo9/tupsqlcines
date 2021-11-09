@@ -32,8 +32,9 @@ namespace Cine
             this.lblAño = new System.Windows.Forms.Label();
             this.dgvPromCaje = new System.Windows.Forms.DataGridView();
             this.btnGenerar = new System.Windows.Forms.Button();
-            this.txtAnio = new System.Windows.Forms.TextBox();
+            this.nud_Año_Prom_caje = new System.Windows.Forms.NumericUpDown();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPromCaje)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nud_Año_Prom_caje)).BeginInit();
             this.SuspendLayout();
             // 
             // lblAño
@@ -64,25 +65,32 @@ namespace Cine
             this.btnGenerar.UseVisualStyleBackColor = true;
             this.btnGenerar.Click += new System.EventHandler(this.btnGenerar_Click);
             // 
-            // txtAnio
+            // nud_Año_Prom_caje
             // 
-            this.txtAnio.Location = new System.Drawing.Point(70, 45);
-            this.txtAnio.Name = "txtAnio";
-            this.txtAnio.Size = new System.Drawing.Size(143, 23);
-            this.txtAnio.TabIndex = 5;
+            this.nud_Año_Prom_caje.Location = new System.Drawing.Point(87, 48);
+            this.nud_Año_Prom_caje.Maximum = new decimal(new int[] {
+            2100,
+            0,
+            0,
+            0});
+            this.nud_Año_Prom_caje.Name = "nud_Año_Prom_caje";
+            this.nud_Año_Prom_caje.Size = new System.Drawing.Size(120, 23);
+            this.nud_Año_Prom_caje.TabIndex = 5;
             // 
             // Frm_Rep_PromCaje
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(547, 391);
-            this.Controls.Add(this.txtAnio);
+            this.Controls.Add(this.nud_Año_Prom_caje);
             this.Controls.Add(this.btnGenerar);
             this.Controls.Add(this.dgvPromCaje);
             this.Controls.Add(this.lblAño);
             this.Name = "Frm_Rep_PromCaje";
             this.Text = "Frm_Rep_PromCaje";
+            this.Load += new System.EventHandler(this.Frm_Rep_PromCaje_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvPromCaje)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nud_Año_Prom_caje)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -93,6 +101,6 @@ namespace Cine
         private System.Windows.Forms.Label lblAño;
         private System.Windows.Forms.DataGridView dgvPromCaje;
         private System.Windows.Forms.Button btnGenerar;
-        private System.Windows.Forms.TextBox txtAnio;
+        private System.Windows.Forms.NumericUpDown nud_Año_Prom_caje;
     }
 }

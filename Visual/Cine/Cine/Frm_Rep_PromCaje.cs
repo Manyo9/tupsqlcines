@@ -22,7 +22,7 @@ namespace Cine
 
         private void btnGenerar_Click(object sender, EventArgs e)
         {
-            if (txtAnio.Text.Trim().Equals("") || Convert.ToInt32(txtAnio.Text) > DateTime.Now.Year)
+            if (nud_Año_Prom_caje.Value.Equals(0) || Convert.ToInt32(nud_Año_Prom_caje.Value) > DateTime.Now.Year)
             {
                 MessageBox.Show("Ingresar un año válido");
                 return;
@@ -32,8 +32,13 @@ namespace Cine
         private void CargarGrid()
         {
             DataTable tabla = new DataTable();
-            tabla = dao.GetPromVentasPorCajero(Convert.ToInt32(txtAnio.Text));
+            tabla = dao.GetPromVentasPorCajero(Convert.ToInt32(nud_Año_Prom_caje.Value));
             dgvPromCaje.DataSource = tabla;
+        }
+
+        private void Frm_Rep_PromCaje_Load(object sender, EventArgs e)
+        {
+           nud_Año_Prom_caje.Value = DateTime.Now.Year;
         }
     }
 }

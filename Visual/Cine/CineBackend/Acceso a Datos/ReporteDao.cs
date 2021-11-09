@@ -60,16 +60,16 @@ namespace CineBackend.Acceso_a_Datos
             lst.Add(new Parametro("@año", anio));
             DataTable resultado = helper.ConsultarConParametro("pa_ventas_promedio_por_cajero", lst);
             DataTable dtClon = resultado.Clone();
-            dtClon.Columns[0].DataType = typeof(String);
+            dtClon.Columns[1].DataType = typeof(String);
             foreach (DataRow f in resultado.Rows)
             {
                 dtClon.ImportRow(f);
             }
             foreach (DataRow fila in dtClon.Rows)
             {
-                string nombreMes = new DateTime(2021, Convert.ToInt32(fila["Mes"]), 1).ToString("MMMM", CultureInfo.CreateSpecificCulture("es"));
+                string nombreMes = new DateTime(2021, Convert.ToInt32(fila["Mes del año"]), 1).ToString("MMMM", CultureInfo.CreateSpecificCulture("es"));
                 nombreMes = nombreMes[0].ToString().ToUpper() + nombreMes.Remove(0, 1);
-                fila["Mes"] = nombreMes;
+                fila["Mes del año"] = nombreMes;
             }
             return dtClon;
         }

@@ -37,10 +37,11 @@ namespace Cine
             this.lblFechaInicio = new System.Windows.Forms.Label();
             this.DGVPelMasVistas = new System.Windows.Forms.DataGridView();
             this.label4 = new System.Windows.Forms.Label();
-            this.txtCantMin = new System.Windows.Forms.TextBox();
             this.lblCantidadMinima = new System.Windows.Forms.Label();
             this.BtnGenerar = new System.Windows.Forms.Button();
+            this.nudCant_min_entradas = new System.Windows.Forms.NumericUpDown();
             ((System.ComponentModel.ISupportInitialize)(this.DGVPelMasVistas)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudCant_min_entradas)).BeginInit();
             this.SuspendLayout();
             // 
             // dateTimePicker1
@@ -105,13 +106,6 @@ namespace Cine
             this.label4.TabIndex = 6;
             this.label4.Text = "Ingrese Fecha";
             // 
-            // txtCantMin
-            // 
-            this.txtCantMin.Location = new System.Drawing.Point(283, 148);
-            this.txtCantMin.Name = "txtCantMin";
-            this.txtCantMin.Size = new System.Drawing.Size(89, 23);
-            this.txtCantMin.TabIndex = 7;
-            // 
             // lblCantidadMinima
             // 
             this.lblCantidadMinima.AutoSize = true;
@@ -131,14 +125,21 @@ namespace Cine
             this.BtnGenerar.UseVisualStyleBackColor = true;
             this.BtnGenerar.Click += new System.EventHandler(this.BtnGenerar_Click);
             // 
+            // nudCant_min_entradas
+            // 
+            this.nudCant_min_entradas.Location = new System.Drawing.Point(294, 142);
+            this.nudCant_min_entradas.Name = "nudCant_min_entradas";
+            this.nudCant_min_entradas.Size = new System.Drawing.Size(120, 23);
+            this.nudCant_min_entradas.TabIndex = 10;
+            // 
             // Frm_Rep_PelMasVis
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(672, 450);
+            this.Controls.Add(this.nudCant_min_entradas);
             this.Controls.Add(this.BtnGenerar);
             this.Controls.Add(this.lblCantidadMinima);
-            this.Controls.Add(this.txtCantMin);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.DGVPelMasVistas);
             this.Controls.Add(this.lblFechaInicio);
@@ -149,6 +150,7 @@ namespace Cine
             this.Name = "Frm_Rep_PelMasVis";
             this.Text = "Frm_Rep_PelMasVis";
             ((System.ComponentModel.ISupportInitialize)(this.DGVPelMasVistas)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudCant_min_entradas)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -163,8 +165,8 @@ namespace Cine
         private System.Windows.Forms.Label lblFechaInicio;
         private System.Windows.Forms.DataGridView DGVPelMasVistas;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox txtCantMin;
         private System.Windows.Forms.Label lblCantidadMinima;
         private System.Windows.Forms.Button BtnGenerar;
+        private System.Windows.Forms.NumericUpDown nudCant_min_entradas;
     }
 }
