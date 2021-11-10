@@ -31,9 +31,7 @@ namespace Cine
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_Ticket));
             this.lblNroTicket = new System.Windows.Forms.Label();
-            this.txtNroTicket = new System.Windows.Forms.TextBox();
             this.IdSucursal = new System.Windows.Forms.Label();
-            this.txtID = new System.Windows.Forms.TextBox();
             this.btnImprimirTicket = new System.Windows.Forms.Button();
             this.lblNroTransaccion = new System.Windows.Forms.Label();
             this.lblNombreSuc = new System.Windows.Forms.Label();
@@ -49,6 +47,8 @@ namespace Cine
             this.btnCancelar = new System.Windows.Forms.PictureBox();
             this.btnRestaurar = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.nudNroTicket = new System.Windows.Forms.NumericUpDown();
+            this.nudIdSucursal = new System.Windows.Forms.NumericUpDown();
             ((System.ComponentModel.ISupportInitialize)(this.DGVEntradas)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -57,6 +57,8 @@ namespace Cine
             ((System.ComponentModel.ISupportInitialize)(this.btnCancelar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnRestaurar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudNroTicket)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudIdSucursal)).BeginInit();
             this.SuspendLayout();
             // 
             // lblNroTicket
@@ -70,17 +72,6 @@ namespace Cine
             this.lblNroTicket.TabIndex = 0;
             this.lblNroTicket.Text = "NroTicket";
             // 
-            // txtNroTicket
-            // 
-            this.txtNroTicket.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.txtNroTicket.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtNroTicket.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtNroTicket.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(27)))), ((int)(((byte)(47)))));
-            this.txtNroTicket.Location = new System.Drawing.Point(133, 67);
-            this.txtNroTicket.Name = "txtNroTicket";
-            this.txtNroTicket.Size = new System.Drawing.Size(113, 19);
-            this.txtNroTicket.TabIndex = 1;
-            // 
             // IdSucursal
             // 
             this.IdSucursal.AutoSize = true;
@@ -91,17 +82,6 @@ namespace Cine
             this.IdSucursal.Size = new System.Drawing.Size(86, 21);
             this.IdSucursal.TabIndex = 2;
             this.IdSucursal.Text = "Id Sucursal";
-            // 
-            // txtID
-            // 
-            this.txtID.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.txtID.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtID.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtID.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(27)))), ((int)(((byte)(47)))));
-            this.txtID.Location = new System.Drawing.Point(133, 99);
-            this.txtID.Name = "txtID";
-            this.txtID.Size = new System.Drawing.Size(113, 19);
-            this.txtID.TabIndex = 3;
             // 
             // btnImprimirTicket
             // 
@@ -283,12 +263,28 @@ namespace Cine
             this.pictureBox1.TabIndex = 13;
             this.pictureBox1.TabStop = false;
             // 
+            // nudNroTicket
+            // 
+            this.nudNroTicket.Location = new System.Drawing.Point(128, 68);
+            this.nudNroTicket.Name = "nudNroTicket";
+            this.nudNroTicket.Size = new System.Drawing.Size(120, 23);
+            this.nudNroTicket.TabIndex = 14;
+            // 
+            // nudIdSucursal
+            // 
+            this.nudIdSucursal.Location = new System.Drawing.Point(128, 102);
+            this.nudIdSucursal.Name = "nudIdSucursal";
+            this.nudIdSucursal.Size = new System.Drawing.Size(120, 23);
+            this.nudIdSucursal.TabIndex = 15;
+            // 
             // Frm_Ticket
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(39)))), ((int)(((byte)(71)))));
             this.ClientSize = new System.Drawing.Size(800, 603);
+            this.Controls.Add(this.nudIdSucursal);
+            this.Controls.Add(this.nudNroTicket);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.lblEntradas);
@@ -299,9 +295,7 @@ namespace Cine
             this.Controls.Add(this.lblNombreSuc);
             this.Controls.Add(this.lblNroTransaccion);
             this.Controls.Add(this.btnImprimirTicket);
-            this.Controls.Add(this.txtID);
             this.Controls.Add(this.IdSucursal);
-            this.Controls.Add(this.txtNroTicket);
             this.Controls.Add(this.lblNroTicket);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -316,6 +310,8 @@ namespace Cine
             ((System.ComponentModel.ISupportInitialize)(this.btnCancelar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnRestaurar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudNroTicket)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudIdSucursal)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -324,9 +320,7 @@ namespace Cine
         #endregion
 
         private System.Windows.Forms.Label lblNroTicket;
-        private System.Windows.Forms.TextBox txtNroTicket;
         private System.Windows.Forms.Label IdSucursal;
-        private System.Windows.Forms.TextBox txtID;
         private System.Windows.Forms.Button btnImprimirTicket;
         private System.Windows.Forms.Label lblNroTransaccion;
         private System.Windows.Forms.Label lblNombreSuc;
@@ -342,5 +336,7 @@ namespace Cine
         private System.Windows.Forms.PictureBox btnCancelar;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.NumericUpDown nudNroTicket;
+        private System.Windows.Forms.NumericUpDown nudIdSucursal;
     }
 }

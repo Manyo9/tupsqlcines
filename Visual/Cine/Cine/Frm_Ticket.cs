@@ -76,7 +76,7 @@ namespace Cine
 
         private void btnImprimirTicket_Click(object sender, EventArgs e)
         {
-            DataTable tablaTicket = dao.ImprimirTicket(Convert.ToInt32(txtNroTicket.Text), Convert.ToInt32(txtID.Text));
+            DataTable tablaTicket = dao.ImprimirTicket(Convert.ToInt32(nudNroTicket.Value), Convert.ToInt32(nudIdSucursal.Value));
             if (tablaTicket.Rows.Count.Equals(0))
             {
                 MessageBox.Show("No se encontró la transacción con los datos provistos.");
@@ -91,7 +91,7 @@ namespace Cine
             lblTotalPagar.Text = "Total a Pagar: " + total.ToString("c", CultureInfo.GetCultureInfo("es_AR"));
 
             DGVEntradas.Columns.Clear();
-            DGVEntradas.DataSource = dao.GetEntradasPorTicket(Convert.ToInt32(txtNroTicket.Text), Convert.ToInt32(txtID.Text));
+            DGVEntradas.DataSource = dao.GetEntradasPorTicket(Convert.ToInt32(nudIdSucursal.Value), Convert.ToInt32(nudIdSucursal.Value));
             DataGridViewButtonColumn colAccion = new DataGridViewButtonColumn();
             DGVEntradas.Columns["Subtotal"].DefaultCellStyle.Format = "c2";
             DGVEntradas.Columns["Subtotal"].DefaultCellStyle.FormatProvider = CultureInfo.GetCultureInfo("es_AR");
@@ -113,9 +113,9 @@ namespace Cine
         {
             if (e.ColumnIndex.Equals(12))
             {
-                int detalle = Convert.ToInt32(DGVEntradas.CurrentRow.Cells["id_detalle"].Value);
-                Frm_Entrada nuevo = new Frm_Entrada(detalle);
-                nuevo.ShowDialog();
+            
+                 //Frm_Entrada nuevo = new Frm_Entrada(Convert.ToInt32(DGVEntradas.Columns[10]["id_detalle"]));
+                // nuevo.ShowDialog();
             }
         }
     }
