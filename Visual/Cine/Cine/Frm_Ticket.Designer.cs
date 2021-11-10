@@ -62,11 +62,11 @@ namespace Cine
             // lblNroTicket
             // 
             this.lblNroTicket.AutoSize = true;
-            this.lblNroTicket.Font = new System.Drawing.Font("Poppins Light", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblNroTicket.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblNroTicket.ForeColor = System.Drawing.Color.White;
             this.lblNroTicket.Location = new System.Drawing.Point(49, 67);
             this.lblNroTicket.Name = "lblNroTicket";
-            this.lblNroTicket.Size = new System.Drawing.Size(78, 26);
+            this.lblNroTicket.Size = new System.Drawing.Size(73, 18);
             this.lblNroTicket.TabIndex = 0;
             this.lblNroTicket.Text = "NroTicket";
             // 
@@ -74,11 +74,11 @@ namespace Cine
             // 
             this.txtNroTicket.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.txtNroTicket.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtNroTicket.Font = new System.Drawing.Font("Poppins Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtNroTicket.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtNroTicket.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(27)))), ((int)(((byte)(47)))));
             this.txtNroTicket.Location = new System.Drawing.Point(133, 67);
             this.txtNroTicket.Name = "txtNroTicket";
-            this.txtNroTicket.Size = new System.Drawing.Size(113, 24);
+            this.txtNroTicket.Size = new System.Drawing.Size(113, 19);
             this.txtNroTicket.TabIndex = 1;
             // 
             // IdSucursal
@@ -96,11 +96,11 @@ namespace Cine
             // 
             this.txtID.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.txtID.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtID.Font = new System.Drawing.Font("Poppins Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtID.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtID.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(27)))), ((int)(((byte)(47)))));
             this.txtID.Location = new System.Drawing.Point(133, 99);
             this.txtID.Name = "txtID";
-            this.txtID.Size = new System.Drawing.Size(113, 24);
+            this.txtID.Size = new System.Drawing.Size(113, 19);
             this.txtID.TabIndex = 3;
             // 
             // btnImprimirTicket
@@ -108,7 +108,7 @@ namespace Cine
             this.btnImprimirTicket.BackColor = System.Drawing.Color.HotPink;
             this.btnImprimirTicket.FlatAppearance.BorderSize = 0;
             this.btnImprimirTicket.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnImprimirTicket.Font = new System.Drawing.Font("Poppins Light", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnImprimirTicket.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnImprimirTicket.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(39)))), ((int)(((byte)(71)))));
             this.btnImprimirTicket.Location = new System.Drawing.Point(268, 81);
             this.btnImprimirTicket.Name = "btnImprimirTicket";
@@ -116,59 +116,60 @@ namespace Cine
             this.btnImprimirTicket.TabIndex = 4;
             this.btnImprimirTicket.Text = "Imprimir Ticket";
             this.btnImprimirTicket.UseVisualStyleBackColor = false;
+            this.btnImprimirTicket.Click += new System.EventHandler(this.btnImprimirTicket_Click);
             // 
             // lblNroTransaccion
             // 
             this.lblNroTransaccion.AutoSize = true;
-            this.lblNroTransaccion.Font = new System.Drawing.Font("Poppins Light", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblNroTransaccion.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblNroTransaccion.ForeColor = System.Drawing.Color.White;
             this.lblNroTransaccion.Location = new System.Drawing.Point(37, 155);
             this.lblNroTransaccion.Name = "lblNroTransaccion";
-            this.lblNroTransaccion.Size = new System.Drawing.Size(134, 26);
+            this.lblNroTransaccion.Size = new System.Drawing.Size(123, 18);
             this.lblNroTransaccion.TabIndex = 5;
             this.lblNroTransaccion.Text = "Nro Transaccion:";
             // 
             // lblNombreSuc
             // 
             this.lblNombreSuc.AutoSize = true;
-            this.lblNombreSuc.Font = new System.Drawing.Font("Poppins Light", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblNombreSuc.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblNombreSuc.ForeColor = System.Drawing.Color.White;
             this.lblNombreSuc.Location = new System.Drawing.Point(37, 190);
             this.lblNombreSuc.Name = "lblNombreSuc";
-            this.lblNombreSuc.Size = new System.Drawing.Size(140, 26);
+            this.lblNombreSuc.Size = new System.Drawing.Size(128, 18);
             this.lblNombreSuc.TabIndex = 6;
             this.lblNombreSuc.Text = "Nombre Sucursal:";
             // 
             // lblFormaPago
             // 
             this.lblFormaPago.AutoSize = true;
-            this.lblFormaPago.Font = new System.Drawing.Font("Poppins Light", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblFormaPago.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblFormaPago.ForeColor = System.Drawing.Color.White;
             this.lblFormaPago.Location = new System.Drawing.Point(37, 226);
             this.lblFormaPago.Name = "lblFormaPago";
-            this.lblFormaPago.Size = new System.Drawing.Size(127, 26);
+            this.lblFormaPago.Size = new System.Drawing.Size(115, 18);
             this.lblFormaPago.TabIndex = 7;
             this.lblFormaPago.Text = "Forma de Pago:";
             // 
             // lblCantidadEntradas
             // 
             this.lblCantidadEntradas.AutoSize = true;
-            this.lblCantidadEntradas.Font = new System.Drawing.Font("Poppins Light", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblCantidadEntradas.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblCantidadEntradas.ForeColor = System.Drawing.Color.White;
             this.lblCantidadEntradas.Location = new System.Drawing.Point(37, 291);
             this.lblCantidadEntradas.Name = "lblCantidadEntradas";
-            this.lblCantidadEntradas.Size = new System.Drawing.Size(177, 26);
+            this.lblCantidadEntradas.Size = new System.Drawing.Size(151, 18);
             this.lblCantidadEntradas.TabIndex = 8;
             this.lblCantidadEntradas.Text = "Cantidad de entradas:";
             // 
             // lblTotalPagar
             // 
             this.lblTotalPagar.AutoSize = true;
-            this.lblTotalPagar.Font = new System.Drawing.Font("Poppins Light", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblTotalPagar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblTotalPagar.ForeColor = System.Drawing.Color.White;
             this.lblTotalPagar.Location = new System.Drawing.Point(517, 568);
             this.lblTotalPagar.Name = "lblTotalPagar";
-            this.lblTotalPagar.Size = new System.Drawing.Size(112, 26);
+            this.lblTotalPagar.Size = new System.Drawing.Size(100, 18);
             this.lblTotalPagar.TabIndex = 9;
             this.lblTotalPagar.Text = "Total a Pagar:";
             // 
@@ -189,11 +190,11 @@ namespace Cine
             // lblEntradas
             // 
             this.lblEntradas.AutoSize = true;
-            this.lblEntradas.Font = new System.Drawing.Font("Poppins", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblEntradas.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblEntradas.ForeColor = System.Drawing.Color.White;
             this.lblEntradas.Location = new System.Drawing.Point(35, 326);
             this.lblEntradas.Name = "lblEntradas";
-            this.lblEntradas.Size = new System.Drawing.Size(92, 26);
+            this.lblEntradas.Size = new System.Drawing.Size(96, 18);
             this.lblEntradas.TabIndex = 11;
             this.lblEntradas.Text = "ENTRADAS";
             // 

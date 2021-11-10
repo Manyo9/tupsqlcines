@@ -82,6 +82,7 @@ namespace Cine
             lblCantidadEntradas.Text = "Cantidad de entradas: " + tablaTicket.Rows[0]["Cantidad de entradas"];
             lblTotalPagar.Text = "Total a Pagar: " + tablaTicket.Rows[0]["Total a pagar"];
 
+            DGVEntradas.Columns.Clear();
             DGVEntradas.DataSource = dao.GetEntradasPorTicket(Convert.ToInt32(txtNroTicket.Text), Convert.ToInt32(txtID.Text));
             DataGridViewButtonColumn colAccion = new DataGridViewButtonColumn();
             colAccion.UseColumnTextForButtonValue = true;
