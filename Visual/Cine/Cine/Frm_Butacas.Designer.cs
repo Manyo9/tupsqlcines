@@ -30,10 +30,11 @@ namespace Cine
         private void InitializeComponent()
         {
             this.lblFuncion = new System.Windows.Forms.Label();
-            this.txtFuncion = new System.Windows.Forms.TextBox();
             this.dgvButacas = new System.Windows.Forms.DataGridView();
             this.btnConsultar = new System.Windows.Forms.Button();
+            this.nudNro_funcion = new System.Windows.Forms.NumericUpDown();
             ((System.ComponentModel.ISupportInitialize)(this.dgvButacas)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudNro_funcion)).BeginInit();
             this.SuspendLayout();
             // 
             // lblFuncion
@@ -44,13 +45,6 @@ namespace Cine
             this.lblFuncion.Size = new System.Drawing.Size(73, 15);
             this.lblFuncion.TabIndex = 0;
             this.lblFuncion.Text = "Nro Funcion";
-            // 
-            // txtFuncion
-            // 
-            this.txtFuncion.Location = new System.Drawing.Point(192, 59);
-            this.txtFuncion.Name = "txtFuncion";
-            this.txtFuncion.Size = new System.Drawing.Size(100, 23);
-            this.txtFuncion.TabIndex = 1;
             // 
             // dgvButacas
             // 
@@ -74,18 +68,31 @@ namespace Cine
             this.btnConsultar.UseVisualStyleBackColor = true;
             this.btnConsultar.Click += new System.EventHandler(this.btnConsultar_Click);
             // 
+            // nudNro_funcion
+            // 
+            this.nudNro_funcion.Location = new System.Drawing.Point(163, 57);
+            this.nudNro_funcion.Maximum = new decimal(new int[] {
+            5000,
+            0,
+            0,
+            0});
+            this.nudNro_funcion.Name = "nudNro_funcion";
+            this.nudNro_funcion.Size = new System.Drawing.Size(120, 23);
+            this.nudNro_funcion.TabIndex = 4;
+            // 
             // Frm_Butacas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(460, 450);
+            this.Controls.Add(this.nudNro_funcion);
             this.Controls.Add(this.btnConsultar);
             this.Controls.Add(this.dgvButacas);
-            this.Controls.Add(this.txtFuncion);
             this.Controls.Add(this.lblFuncion);
             this.Name = "Frm_Butacas";
             this.Text = "Frm_Butacas";
             ((System.ComponentModel.ISupportInitialize)(this.dgvButacas)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudNro_funcion)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -94,8 +101,8 @@ namespace Cine
         #endregion
 
         private System.Windows.Forms.Label lblFuncion;
-        private System.Windows.Forms.TextBox txtFuncion;
         private System.Windows.Forms.DataGridView dgvButacas;
         private System.Windows.Forms.Button btnConsultar;
+        private System.Windows.Forms.NumericUpDown nudNro_funcion;
     }
 }
