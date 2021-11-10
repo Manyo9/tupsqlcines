@@ -60,7 +60,7 @@ namespace Cine
             this.lblAño.AutoSize = true;
             this.lblAño.Font = new System.Drawing.Font("Poppins Light", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblAño.ForeColor = System.Drawing.Color.White;
-            this.lblAño.Location = new System.Drawing.Point(29, 120);
+            this.lblAño.Location = new System.Drawing.Point(37, 120);
             this.lblAño.Name = "lblAño";
             this.lblAño.Size = new System.Drawing.Size(41, 26);
             this.lblAño.TabIndex = 0;
@@ -75,21 +75,19 @@ namespace Cine
             this.dgvPromCaje.Location = new System.Drawing.Point(29, 226);
             this.dgvPromCaje.Name = "dgvPromCaje";
             this.dgvPromCaje.RowTemplate.Height = 25;
-            this.dgvPromCaje.Size = new System.Drawing.Size(481, 150);
+            this.dgvPromCaje.Size = new System.Drawing.Size(770, 150);
             this.dgvPromCaje.TabIndex = 2;
             // 
             // btnGenerar
             // 
-            this.btnGenerar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.btnGenerar.BackColor = System.Drawing.Color.HotPink;
             this.btnGenerar.FlatAppearance.BorderSize = 0;
             this.btnGenerar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnGenerar.Font = new System.Drawing.Font("Poppins Light", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnGenerar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(39)))), ((int)(((byte)(71)))));
-            this.btnGenerar.Location = new System.Drawing.Point(29, 178);
+            this.btnGenerar.Location = new System.Drawing.Point(29, 173);
             this.btnGenerar.Name = "btnGenerar";
-            this.btnGenerar.Size = new System.Drawing.Size(481, 32);
+            this.btnGenerar.Size = new System.Drawing.Size(335, 32);
             this.btnGenerar.TabIndex = 4;
             this.btnGenerar.Text = "Generar Reporte";
             this.btnGenerar.UseVisualStyleBackColor = false;
@@ -103,14 +101,14 @@ namespace Cine
             this.nud_Año_Prom_caje.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.nud_Año_Prom_caje.Font = new System.Drawing.Font("Poppins Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.nud_Año_Prom_caje.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(39)))), ((int)(((byte)(71)))));
-            this.nud_Año_Prom_caje.Location = new System.Drawing.Point(82, 120);
+            this.nud_Año_Prom_caje.Location = new System.Drawing.Point(107, 120);
             this.nud_Año_Prom_caje.Maximum = new decimal(new int[] {
             2100,
             0,
             0,
             0});
             this.nud_Año_Prom_caje.Name = "nud_Año_Prom_caje";
-            this.nud_Año_Prom_caje.Size = new System.Drawing.Size(120, 27);
+            this.nud_Año_Prom_caje.Size = new System.Drawing.Size(191, 27);
             this.nud_Año_Prom_caje.TabIndex = 5;
             this.nud_Año_Prom_caje.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.nud_Año_Prom_caje.UseWaitCursor = true;
@@ -121,9 +119,9 @@ namespace Cine
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.Location = new System.Drawing.Point(158, 405);
+            this.pictureBox1.Location = new System.Drawing.Point(158, 401);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(202, 103);
+            this.pictureBox1.Size = new System.Drawing.Size(491, 116);
             this.pictureBox1.TabIndex = 6;
             this.pictureBox1.TabStop = false;
             // 
@@ -140,7 +138,7 @@ namespace Cine
             this.panel1.Controls.Add(this.btnClose);
             this.panel1.Location = new System.Drawing.Point(-2, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(554, 36);
+            this.panel1.Size = new System.Drawing.Size(843, 36);
             this.panel1.TabIndex = 7;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -170,7 +168,7 @@ namespace Cine
             // 
             this.btnMaximizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnMaximizar.Image = ((System.Drawing.Image)(resources.GetObject("btnMaximizar.Image")));
-            this.btnMaximizar.Location = new System.Drawing.Point(489, 7);
+            this.btnMaximizar.Location = new System.Drawing.Point(778, 7);
             this.btnMaximizar.Name = "btnMaximizar";
             this.btnMaximizar.Size = new System.Drawing.Size(24, 25);
             this.btnMaximizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -182,7 +180,7 @@ namespace Cine
             // 
             this.btnRestaurar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnRestaurar.Image = ((System.Drawing.Image)(resources.GetObject("btnRestaurar.Image")));
-            this.btnRestaurar.Location = new System.Drawing.Point(488, 6);
+            this.btnRestaurar.Location = new System.Drawing.Point(777, 6);
             this.btnRestaurar.Name = "btnRestaurar";
             this.btnRestaurar.Size = new System.Drawing.Size(24, 25);
             this.btnRestaurar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -194,7 +192,7 @@ namespace Cine
             // 
             this.btnMinimizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnMinimizar.Image = ((System.Drawing.Image)(resources.GetObject("btnMinimizar.Image")));
-            this.btnMinimizar.Location = new System.Drawing.Point(459, 7);
+            this.btnMinimizar.Location = new System.Drawing.Point(748, 7);
             this.btnMinimizar.Name = "btnMinimizar";
             this.btnMinimizar.Size = new System.Drawing.Size(24, 25);
             this.btnMinimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -206,7 +204,7 @@ namespace Cine
             // 
             this.btnClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnClose.Image = ((System.Drawing.Image)(resources.GetObject("btnClose.Image")));
-            this.btnClose.Location = new System.Drawing.Point(517, 5);
+            this.btnClose.Location = new System.Drawing.Point(806, 5);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(24, 25);
             this.btnClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -219,7 +217,7 @@ namespace Cine
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(39)))), ((int)(((byte)(71)))));
-            this.ClientSize = new System.Drawing.Size(547, 541);
+            this.ClientSize = new System.Drawing.Size(836, 541);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.nud_Año_Prom_caje);
