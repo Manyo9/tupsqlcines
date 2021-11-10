@@ -73,7 +73,7 @@ begin
 end 
 go
 --Reporte: Funciones pasadas que no vendieron ninguna entrada (entre un periodo de tiempo)
-create procedure pa_peliculas_sin_ventas
+alter procedure pa_peliculas_sin_ventas
 @fecha1 date = '01/01/1900',
 @fecha2 date= '01/01/2500'
 as
@@ -85,7 +85,7 @@ as
 	from peliculas p
 	join generos g on p.id_genero = g.id_genero
 	where id_pelicula not in (select distinct pe.id_pelicula from detalles_ticket dt
-		join funciones fu on dt.id_funcion = dt.id_funcion
+		join funciones fu on fu.id_funcion = dt.id_funcion
 		join peliculas pe on fu.id_pelicula = pe.id_pelicula
 		where fu.dia between @fecha1 and @fecha2)
     end
