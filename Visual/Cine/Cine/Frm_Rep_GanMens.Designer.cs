@@ -29,29 +29,47 @@ namespace Cine
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_Rep_GanMens));
             this.lblAño = new System.Windows.Forms.Label();
             this.dgvGananciaMen = new System.Windows.Forms.DataGridView();
             this.BtnConsultar = new System.Windows.Forms.Button();
             this.nudGan_mens = new System.Windows.Forms.NumericUpDown();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.btnMaximizar = new System.Windows.Forms.PictureBox();
+            this.btnMinimizar = new System.Windows.Forms.PictureBox();
+            this.btnRestaurar = new System.Windows.Forms.PictureBox();
+            this.btnClose = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvGananciaMen)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudGan_mens)).BeginInit();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnMaximizar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnRestaurar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnClose)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // lblAño
             // 
             this.lblAño.AutoSize = true;
-            this.lblAño.Location = new System.Drawing.Point(55, 49);
+            this.lblAño.Font = new System.Drawing.Font("Poppins Light", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblAño.ForeColor = System.Drawing.Color.White;
+            this.lblAño.Location = new System.Drawing.Point(66, 229);
             this.lblAño.Name = "lblAño";
-            this.lblAño.Size = new System.Drawing.Size(70, 15);
+            this.lblAño.Size = new System.Drawing.Size(98, 26);
             this.lblAño.TabIndex = 1;
             this.lblAño.Text = "Ingrese Año";
+            this.lblAño.Click += new System.EventHandler(this.lblAño_Click);
             // 
             // dgvGananciaMen
             // 
             this.dgvGananciaMen.AllowUserToAddRows = false;
             this.dgvGananciaMen.AllowUserToDeleteRows = false;
+            this.dgvGananciaMen.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.dgvGananciaMen.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvGananciaMen.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvGananciaMen.Location = new System.Drawing.Point(55, 225);
+            this.dgvGananciaMen.Location = new System.Drawing.Point(66, 342);
             this.dgvGananciaMen.Name = "dgvGananciaMen";
             this.dgvGananciaMen.ReadOnly = true;
             this.dgvGananciaMen.RowTemplate.Height = 25;
@@ -60,40 +78,132 @@ namespace Cine
             // 
             // BtnConsultar
             // 
-            this.BtnConsultar.Location = new System.Drawing.Point(55, 151);
+            this.BtnConsultar.BackColor = System.Drawing.Color.HotPink;
+            this.BtnConsultar.FlatAppearance.BorderSize = 0;
+            this.BtnConsultar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnConsultar.Font = new System.Drawing.Font("Poppins Light", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.BtnConsultar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(27)))), ((int)(((byte)(47)))));
+            this.BtnConsultar.Location = new System.Drawing.Point(154, 280);
             this.BtnConsultar.Name = "BtnConsultar";
-            this.BtnConsultar.Size = new System.Drawing.Size(156, 23);
+            this.BtnConsultar.Size = new System.Drawing.Size(156, 39);
             this.BtnConsultar.TabIndex = 4;
             this.BtnConsultar.Text = "Generar Reporte";
-            this.BtnConsultar.UseVisualStyleBackColor = true;
+            this.BtnConsultar.UseVisualStyleBackColor = false;
             this.BtnConsultar.Click += new System.EventHandler(this.BtnConsultar_Click);
             // 
             // nudGan_mens
             // 
-            this.nudGan_mens.Location = new System.Drawing.Point(55, 90);
+            this.nudGan_mens.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.nudGan_mens.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.nudGan_mens.Font = new System.Drawing.Font("Poppins Light", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.nudGan_mens.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(27)))), ((int)(((byte)(47)))));
+            this.nudGan_mens.Location = new System.Drawing.Point(190, 230);
             this.nudGan_mens.Maximum = new decimal(new int[] {
             2100,
             0,
             0,
             0});
             this.nudGan_mens.Name = "nudGan_mens";
-            this.nudGan_mens.Size = new System.Drawing.Size(120, 23);
+            this.nudGan_mens.Size = new System.Drawing.Size(120, 26);
             this.nudGan_mens.TabIndex = 5;
+            this.nudGan_mens.ValueChanged += new System.EventHandler(this.nudGan_mens_ValueChanged);
+            // 
+            // panel1
+            // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(27)))), ((int)(((byte)(47)))));
+            this.panel1.Controls.Add(this.btnMaximizar);
+            this.panel1.Controls.Add(this.btnMinimizar);
+            this.panel1.Controls.Add(this.btnClose);
+            this.panel1.Controls.Add(this.btnRestaurar);
+            this.panel1.Location = new System.Drawing.Point(-7, -2);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(422, 45);
+            this.panel1.TabIndex = 6;
+            // 
+            // btnMaximizar
+            // 
+            this.btnMaximizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnMaximizar.Image = ((System.Drawing.Image)(resources.GetObject("btnMaximizar.Image")));
+            this.btnMaximizar.Location = new System.Drawing.Point(334, 7);
+            this.btnMaximizar.Name = "btnMaximizar";
+            this.btnMaximizar.Size = new System.Drawing.Size(31, 32);
+            this.btnMaximizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnMaximizar.TabIndex = 9;
+            this.btnMaximizar.TabStop = false;
+            this.btnMaximizar.Click += new System.EventHandler(this.btnMaximizar_Click);
+            // 
+            // btnMinimizar
+            // 
+            this.btnMinimizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnMinimizar.Image = ((System.Drawing.Image)(resources.GetObject("btnMinimizar.Image")));
+            this.btnMinimizar.Location = new System.Drawing.Point(295, 7);
+            this.btnMinimizar.Name = "btnMinimizar";
+            this.btnMinimizar.Size = new System.Drawing.Size(31, 32);
+            this.btnMinimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnMinimizar.TabIndex = 8;
+            this.btnMinimizar.TabStop = false;
+            this.btnMinimizar.Click += new System.EventHandler(this.btnMinimizar_Click);
+            // 
+            // btnRestaurar
+            // 
+            this.btnRestaurar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnRestaurar.Image = ((System.Drawing.Image)(resources.GetObject("btnRestaurar.Image")));
+            this.btnRestaurar.Location = new System.Drawing.Point(334, 7);
+            this.btnRestaurar.Name = "btnRestaurar";
+            this.btnRestaurar.Size = new System.Drawing.Size(31, 32);
+            this.btnRestaurar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnRestaurar.TabIndex = 10;
+            this.btnRestaurar.TabStop = false;
+            this.btnRestaurar.Click += new System.EventHandler(this.btnRestaurar_Click);
+            // 
+            // btnClose
+            // 
+            this.btnClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnClose.Image = ((System.Drawing.Image)(resources.GetObject("btnClose.Image")));
+            this.btnClose.Location = new System.Drawing.Point(373, 7);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(31, 32);
+            this.btnClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnClose.TabIndex = 7;
+            this.btnClose.TabStop = false;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(37, 64);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(195, 70);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 7;
+            this.pictureBox1.TabStop = false;
             // 
             // Frm_Rep_GanMens
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(350, 450);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(39)))), ((int)(((byte)(71)))));
+            this.ClientSize = new System.Drawing.Size(406, 533);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.nudGan_mens);
             this.Controls.Add(this.BtnConsultar);
             this.Controls.Add(this.dgvGananciaMen);
             this.Controls.Add(this.lblAño);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Frm_Rep_GanMens";
             this.Text = "Frm_Rep_GanMens";
             this.Load += new System.EventHandler(this.Frm_Rep_GanMens_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvGananciaMen)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudGan_mens)).EndInit();
+            this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.btnMaximizar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnRestaurar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnClose)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -104,5 +214,11 @@ namespace Cine
         private System.Windows.Forms.DataGridView dgvGananciaMen;
         private System.Windows.Forms.Button BtnConsultar;
         private System.Windows.Forms.NumericUpDown nudGan_mens;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.PictureBox btnRestaurar;
+        private System.Windows.Forms.PictureBox btnMaximizar;
+        private System.Windows.Forms.PictureBox btnMinimizar;
+        private System.Windows.Forms.PictureBox btnClose;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

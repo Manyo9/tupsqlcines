@@ -13,6 +13,23 @@ namespace Cine
 {
     public partial class Frm_Rep_GanMens : Form
     {
+
+        private const int WM_NCHITTEST = 0x84;
+        private const int HTCLIENT = 0x1;
+        private const int HTCAPTION = 0x2;
+
+        ///
+        /// para mover el form con el mouse
+        ///
+        protected override void WndProc(ref Message message)
+        {
+            base.WndProc(ref message);
+
+            if (message.Msg == WM_NCHITTEST && (int)message.Result == HTCLIENT)
+                message.Result = (IntPtr)HTCAPTION;
+        }
+
+
         private IReporteDao dao;
         
         public Frm_Rep_GanMens()
@@ -41,6 +58,41 @@ namespace Cine
         private void Frm_Rep_GanMens_Load(object sender, EventArgs e)
         {
             nudGan_mens.Value = DateTime.Now.Year;  
+        }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
+        }
+
+        private void btnMinimizar_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void btnMaximizar_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Maximized;
+            btnMaximizar.Visible = false;
+            btnRestaurar.Visible = true;
+
+        }
+
+        private void btnRestaurar_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Normal;
+            btnRestaurar.Visible = false;
+            btnMaximizar.Visible = true;
+        }
+
+        private void nudGan_mens_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblAño_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
