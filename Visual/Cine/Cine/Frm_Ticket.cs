@@ -91,7 +91,7 @@ namespace Cine
             lblTotalPagar.Text = "Total a Pagar: " + total.ToString("c", CultureInfo.GetCultureInfo("es_AR"));
 
             DGVEntradas.Columns.Clear();
-            DGVEntradas.DataSource = dao.GetEntradasPorTicket(Convert.ToInt32(nudIdSucursal.Value), Convert.ToInt32(nudIdSucursal.Value));
+            DGVEntradas.DataSource = dao.GetEntradasPorTicket(Convert.ToInt32(nudNroTicket.Value), Convert.ToInt32(nudIdSucursal.Value));
             DataGridViewButtonColumn colAccion = new DataGridViewButtonColumn();
             DGVEntradas.Columns["Subtotal"].DefaultCellStyle.Format = "c2";
             DGVEntradas.Columns["Subtotal"].DefaultCellStyle.FormatProvider = CultureInfo.GetCultureInfo("es_AR");

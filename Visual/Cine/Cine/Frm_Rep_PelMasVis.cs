@@ -54,6 +54,7 @@ namespace Cine
             DataTable tabla;
             tabla = dao.GetPeliMasVistas(dateTimePicker1.Value, dateTimePicker2.Value, Convert.ToInt32(nudCant_min_entradas.Value - 1));
             DGVPelMasVistas.DataSource = tabla;
+            DGVPelMasVistas.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
         }
 
         private void btnClose_Click(object sender, EventArgs e)
