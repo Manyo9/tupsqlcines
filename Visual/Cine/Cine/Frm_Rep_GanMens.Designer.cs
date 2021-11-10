@@ -35,13 +35,13 @@ namespace Cine
             this.BtnConsultar = new System.Windows.Forms.Button();
             this.nudGan_mens = new System.Windows.Forms.NumericUpDown();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.btnMaximizar = new System.Windows.Forms.PictureBox();
             this.btnMinimizar = new System.Windows.Forms.PictureBox();
             this.btnClose = new System.Windows.Forms.PictureBox();
             this.btnRestaurar = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvGananciaMen)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudGan_mens)).BeginInit();
             this.panel1.SuspendLayout();
@@ -117,6 +117,7 @@ namespace Cine
             this.nudGan_mens.Name = "nudGan_mens";
             this.nudGan_mens.Size = new System.Drawing.Size(120, 26);
             this.nudGan_mens.TabIndex = 5;
+            this.nudGan_mens.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.nudGan_mens.ValueChanged += new System.EventHandler(this.nudGan_mens_ValueChanged);
             // 
             // panel1
@@ -134,6 +135,19 @@ namespace Cine
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(534, 45);
             this.panel1.TabIndex = 6;
+            // 
+            // label1
+            // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("LEMON MILK Light", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.ForeColor = System.Drawing.Color.Yellow;
+            this.label1.Location = new System.Drawing.Point(55, 15);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(139, 17);
+            this.label1.TabIndex = 8;
+            this.label1.Text = "Ganancia Mensual";
             // 
             // pictureBox2
             // 
@@ -204,19 +218,6 @@ namespace Cine
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 7;
             this.pictureBox1.TabStop = false;
-            // 
-            // label1
-            // 
-            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("LEMON MILK Light", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.ForeColor = System.Drawing.Color.Yellow;
-            this.label1.Location = new System.Drawing.Point(55, 15);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(139, 17);
-            this.label1.TabIndex = 8;
-            this.label1.Text = "Ganancia Mensual";
             // 
             // Frm_Rep_GanMens
             // 

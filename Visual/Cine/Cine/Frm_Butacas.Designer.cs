@@ -41,6 +41,7 @@ namespace Cine
             this.btnRestaurar = new System.Windows.Forms.PictureBox();
             this.btnClose = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvButacas)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudNro_funcion)).BeginInit();
             this.panel1.SuspendLayout();
@@ -59,9 +60,9 @@ namespace Cine
             this.lblFuncion.ForeColor = System.Drawing.Color.White;
             this.lblFuncion.Location = new System.Drawing.Point(33, 85);
             this.lblFuncion.Name = "lblFuncion";
-            this.lblFuncion.Size = new System.Drawing.Size(105, 28);
+            this.lblFuncion.Size = new System.Drawing.Size(228, 28);
             this.lblFuncion.TabIndex = 0;
-            this.lblFuncion.Text = "Nro Funcion";
+            this.lblFuncion.Text = "Ingrese número de Funcion";
             // 
             // dgvButacas
             // 
@@ -97,7 +98,7 @@ namespace Cine
             this.nudNro_funcion.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.nudNro_funcion.Font = new System.Drawing.Font("Poppins Light", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.nudNro_funcion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(27)))), ((int)(((byte)(47)))));
-            this.nudNro_funcion.Location = new System.Drawing.Point(154, 85);
+            this.nudNro_funcion.Location = new System.Drawing.Point(298, 85);
             this.nudNro_funcion.Maximum = new decimal(new int[] {
             5000,
             0,
@@ -106,12 +107,14 @@ namespace Cine
             this.nudNro_funcion.Name = "nudNro_funcion";
             this.nudNro_funcion.Size = new System.Drawing.Size(120, 26);
             this.nudNro_funcion.TabIndex = 4;
+            this.nudNro_funcion.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // panel1
             // 
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(27)))), ((int)(((byte)(47)))));
+            this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Controls.Add(this.btnMaximizar);
             this.panel1.Controls.Add(this.btnMinimizar);
@@ -190,6 +193,17 @@ namespace Cine
             this.pictureBox1.TabIndex = 6;
             this.pictureBox1.TabStop = false;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("LEMON MILK Light", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.label1.Location = new System.Drawing.Point(49, 10);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(228, 17);
+            this.label1.TabIndex = 7;
+            this.label1.Text = "Butacas vendidas por funcion ";
+            // 
             // Frm_Butacas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -209,6 +223,7 @@ namespace Cine
             ((System.ComponentModel.ISupportInitialize)(this.dgvButacas)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudNro_funcion)).EndInit();
             this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMaximizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).EndInit();
@@ -233,5 +248,6 @@ namespace Cine
         private System.Windows.Forms.PictureBox btnClose;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Label label1;
     }
 }
