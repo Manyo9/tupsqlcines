@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -54,6 +55,8 @@ namespace Cine
             tabla = dao.GetGananciasMensuales(Convert.ToInt32(nudGan_mens.Value));
             dgvGananciaMen.DataSource = tabla;
             dgvGananciaMen.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dgvGananciaMen.Columns["Ganancias del mes"].DefaultCellStyle.Format = "c2";
+            dgvGananciaMen.Columns["Ganancias del mes"].DefaultCellStyle.FormatProvider = CultureInfo.GetCultureInfo("es_AR");
         }
 
         private void Frm_Rep_GanMens_Load(object sender, EventArgs e)

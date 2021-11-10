@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -52,6 +53,8 @@ namespace Cine
             tabla = dao.GetPromVentasPorCajero(Convert.ToInt32(nud_Año_Prom_caje.Value));
             dgvPromCaje.DataSource = tabla;
             dgvPromCaje.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dgvPromCaje.Columns["Importe promedio de venta"].DefaultCellStyle.Format = "c2";
+            dgvPromCaje.Columns["Importe promedio de venta"].DefaultCellStyle.FormatProvider = CultureInfo.GetCultureInfo("es_AR");
         }
 
         private void Frm_Rep_PromCaje_Load(object sender, EventArgs e)

@@ -58,16 +58,18 @@ namespace Cine
             this.lblAño.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblAño.AutoSize = true;
-            this.lblAño.Font = new System.Drawing.Font("Poppins Light", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblAño.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblAño.ForeColor = System.Drawing.Color.White;
             this.lblAño.Location = new System.Drawing.Point(29, 120);
             this.lblAño.Name = "lblAño";
-            this.lblAño.Size = new System.Drawing.Size(41, 26);
+            this.lblAño.Size = new System.Drawing.Size(34, 18);
             this.lblAño.TabIndex = 0;
             this.lblAño.Text = "Año";
             // 
             // dgvPromCaje
             // 
+            this.dgvPromCaje.AllowUserToAddRows = false;
+            this.dgvPromCaje.AllowUserToDeleteRows = false;
             this.dgvPromCaje.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvPromCaje.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
@@ -85,7 +87,7 @@ namespace Cine
             this.btnGenerar.BackColor = System.Drawing.Color.HotPink;
             this.btnGenerar.FlatAppearance.BorderSize = 0;
             this.btnGenerar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnGenerar.Font = new System.Drawing.Font("Poppins Light", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnGenerar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnGenerar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(39)))), ((int)(((byte)(71)))));
             this.btnGenerar.Location = new System.Drawing.Point(29, 178);
             this.btnGenerar.Name = "btnGenerar";
@@ -101,7 +103,7 @@ namespace Cine
             | System.Windows.Forms.AnchorStyles.Right)));
             this.nud_Año_Prom_caje.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.nud_Año_Prom_caje.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.nud_Año_Prom_caje.Font = new System.Drawing.Font("Poppins Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.nud_Año_Prom_caje.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.nud_Año_Prom_caje.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(39)))), ((int)(((byte)(71)))));
             this.nud_Año_Prom_caje.Location = new System.Drawing.Point(82, 120);
             this.nud_Año_Prom_caje.Maximum = new decimal(new int[] {
@@ -110,7 +112,7 @@ namespace Cine
             0,
             0});
             this.nud_Año_Prom_caje.Name = "nud_Año_Prom_caje";
-            this.nud_Año_Prom_caje.Size = new System.Drawing.Size(120, 27);
+            this.nud_Año_Prom_caje.Size = new System.Drawing.Size(120, 22);
             this.nud_Año_Prom_caje.TabIndex = 5;
             this.nud_Año_Prom_caje.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.nud_Año_Prom_caje.UseWaitCursor = true;
@@ -147,11 +149,11 @@ namespace Cine
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("LEMON MILK Light", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.label1.Location = new System.Drawing.Point(39, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(241, 17);
+            this.label1.Size = new System.Drawing.Size(229, 15);
             this.label1.TabIndex = 8;
             this.label1.Text = "PROMEDIO DE VENTAS POR CAJEROS";
             this.label1.Click += new System.EventHandler(this.label1_Click);
