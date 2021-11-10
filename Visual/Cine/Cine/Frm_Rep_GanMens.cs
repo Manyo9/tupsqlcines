@@ -53,6 +53,7 @@ namespace Cine
             DataTable tabla = new DataTable();
             tabla = dao.GetGananciasMensuales(Convert.ToInt32(nudGan_mens.Value));
             dgvGananciaMen.DataSource = tabla;
+            dgvGananciaMen.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
         }
 
         private void Frm_Rep_GanMens_Load(object sender, EventArgs e)
