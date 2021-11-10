@@ -41,18 +41,22 @@ namespace Cine
             // lblFechaUno
             // 
             this.lblFechaUno.AutoSize = true;
+            this.lblFechaUno.Font = new System.Drawing.Font("Poppins Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblFechaUno.ForeColor = System.Drawing.Color.White;
             this.lblFechaUno.Location = new System.Drawing.Point(30, 54);
             this.lblFechaUno.Name = "lblFechaUno";
-            this.lblFechaUno.Size = new System.Drawing.Size(62, 15);
+            this.lblFechaUno.Size = new System.Drawing.Size(95, 28);
             this.lblFechaUno.TabIndex = 0;
             this.lblFechaUno.Text = "Fecha uno";
             // 
             // lblFechaDos
             // 
             this.lblFechaDos.AutoSize = true;
+            this.lblFechaDos.Font = new System.Drawing.Font("Poppins Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblFechaDos.ForeColor = System.Drawing.Color.White;
             this.lblFechaDos.Location = new System.Drawing.Point(30, 96);
             this.lblFechaDos.Name = "lblFechaDos";
-            this.lblFechaDos.Size = new System.Drawing.Size(60, 15);
+            this.lblFechaDos.Size = new System.Drawing.Size(94, 28);
             this.lblFechaDos.TabIndex = 2;
             this.lblFechaDos.Text = "Fecha dos";
             // 
@@ -67,16 +71,26 @@ namespace Cine
             // 
             // dtpFecha1
             // 
+            this.dtpFecha1.CalendarFont = new System.Drawing.Font("Poppins Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.dtpFecha1.CalendarForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(39)))), ((int)(((byte)(71)))));
+            this.dtpFecha1.CalendarTitleBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.dtpFecha1.CalendarTitleForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(39)))), ((int)(((byte)(71)))));
+            this.dtpFecha1.Font = new System.Drawing.Font("Poppins Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.dtpFecha1.Location = new System.Drawing.Point(127, 54);
             this.dtpFecha1.Name = "dtpFecha1";
-            this.dtpFecha1.Size = new System.Drawing.Size(200, 23);
+            this.dtpFecha1.Size = new System.Drawing.Size(200, 31);
             this.dtpFecha1.TabIndex = 5;
             // 
             // dtpFecha2
             // 
+            this.dtpFecha2.CalendarFont = new System.Drawing.Font("Poppins Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.dtpFecha2.CalendarForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(39)))), ((int)(((byte)(71)))));
+            this.dtpFecha2.CalendarTitleBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.dtpFecha2.CalendarTitleForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(39)))), ((int)(((byte)(71)))));
+            this.dtpFecha2.Font = new System.Drawing.Font("Poppins Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.dtpFecha2.Location = new System.Drawing.Point(127, 96);
             this.dtpFecha2.Name = "dtpFecha2";
-            this.dtpFecha2.Size = new System.Drawing.Size(200, 23);
+            this.dtpFecha2.Size = new System.Drawing.Size(200, 31);
             this.dtpFecha2.TabIndex = 6;
             // 
             // btnGenerar
@@ -93,6 +107,7 @@ namespace Cine
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(39)))), ((int)(((byte)(71)))));
             this.ClientSize = new System.Drawing.Size(642, 413);
             this.Controls.Add(this.btnGenerar);
             this.Controls.Add(this.dtpFecha2);
@@ -102,6 +117,7 @@ namespace Cine
             this.Controls.Add(this.lblFechaUno);
             this.Name = "Frm_Rep_PelSinVentas";
             this.Text = "Frm_Rep_PelSinVentas";
+            this.Load += new System.EventHandler(this.Frm_Rep_PelSinVentas_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvPelSinVentas)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

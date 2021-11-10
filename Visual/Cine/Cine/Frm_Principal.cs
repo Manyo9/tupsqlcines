@@ -103,6 +103,14 @@ namespace Cine
             btnMAximizar.Visible = true;
         }
 
-        
+        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void toolStripContainer1_ContentPanel_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

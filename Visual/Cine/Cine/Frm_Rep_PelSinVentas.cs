@@ -35,5 +35,10 @@ namespace Cine
             tabla = dao.GetPeliSinVentas(dtpFecha1.Value, dtpFecha2.Value);
             dgvPelSinVentas.DataSource = tabla;
         }
+
+        private void Frm_Rep_PelSinVentas_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
