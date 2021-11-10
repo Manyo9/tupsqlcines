@@ -17,6 +17,7 @@ namespace CineBackend.Acceso_a_Datos
         public DataTable GetPromVentasPorCajero(int anio);
         public DataTable GetEntradasPorTicket(int nroTicket, int idSucursal);
         public DataTable GetButacasDisponibles(int nroFuncion);
+        public DataTable GetEntrada(int idDetalle);
 
 
     }

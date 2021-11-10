@@ -89,6 +89,13 @@ namespace CineBackend.Acceso_a_Datos
             DataTable resultado = helper.ConsultarConParametro("pa_entradas_por_ticket", lst);
             return resultado;
         }
+        public DataTable GetEntrada(int idDetalle)
+        {
+            List<Parametro> lst = new List<Parametro>();
+            lst.Add(new Parametro("@id_detalle", idDetalle));
+            DataTable resultado = helper.ConsultarConParametro("pa_traer_entrada", lst);
+            return resultado;
+        }
         public DataTable ImprimirTicket(int nroTicket, int idSucursal)
         {
             List<Parametro> lst = new List<Parametro>();
