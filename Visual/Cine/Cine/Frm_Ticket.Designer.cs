@@ -114,7 +114,7 @@ namespace Cine
             this.btnImprimirTicket.Name = "btnImprimirTicket";
             this.btnImprimirTicket.Size = new System.Drawing.Size(136, 29);
             this.btnImprimirTicket.TabIndex = 4;
-            this.btnImprimirTicket.Text = "Imprimir Ticket";
+            this.btnImprimirTicket.Text = "Consultar Ticket";
             this.btnImprimirTicket.UseVisualStyleBackColor = false;
             this.btnImprimirTicket.Click += new System.EventHandler(this.btnImprimirTicket_Click);
             // 

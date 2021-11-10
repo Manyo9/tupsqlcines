@@ -18,7 +18,7 @@ namespace CineBackend.Acceso_a_Datos
         {
             // (Agus: Data Source=.\SQLEXPRESS;Initial Catalog=cine;Integrated Security=True)
             // @"Data Source=DESKTOP-OPJRSO7;Initial Catalog=cine;Integrated Security=True"(mati)
-            cadenaConexion = @"Data Source=DESKTOP-OPJRSO7;Initial Catalog=cine;Integrated Security=True";
+            cadenaConexion = @"Data Source=.\SQLEXPRESS;Initial Catalog=cine;Integrated Security=True";
             conexion = new SqlConnection(cadenaConexion);
         }
         public DataTable ConsultarDB(string nombreSP)

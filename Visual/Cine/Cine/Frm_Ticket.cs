@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -76,20 +77,35 @@ namespace Cine
         private void btnImprimirTicket_Click(object sender, EventArgs e)
         {
             DataTable tablaTicket = dao.ImprimirTicket(Convert.ToInt32(txtNroTicket.Text), Convert.ToInt32(txtID.Text));
+            if (tablaTicket.Rows.Count.Equals(0))
+            {
+                MessageBox.Show("No se encontró la transacción con los datos provistos.");
+                return;
+            }
+
             lblNroTransaccion.Text = "Nro Transaccion: " + tablaTicket.Rows[0]["Nro de transacción"];
             lblNombreSuc.Text = "Nombre Sucursal: " + tablaTicket.Rows[0]["Sucursal"];
             lblFormaPago.Text = "Forma de Pago: " + tablaTicket.Rows[0]["Forma de pago"];
             lblCantidadEntradas.Text = "Cantidad de entradas: " + tablaTicket.Rows[0]["Cantidad de entradas"];
-            lblTotalPagar.Text = "Total a Pagar: " + tablaTicket.Rows[0]["Total a pagar"];
+            double total = Convert.ToDouble(tablaTicket.Rows[0]["Total a pagar"]);
+            lblTotalPagar.Text = "Total a Pagar: " + total.ToString("c", CultureInfo.GetCultureInfo("es_AR"));
 
             DGVEntradas.Columns.Clear();
             DGVEntradas.DataSource = dao.GetEntradasPorTicket(Convert.ToInt32(txtNroTicket.Text), Convert.ToInt32(txtID.Text));
             DataGridViewButtonColumn colAccion = new DataGridViewButtonColumn();
+            DGVEntradas.Columns["Subtotal"].DefaultCellStyle.Format = "c2";
+            DGVEntradas.Columns["Subtotal"].DefaultCellStyle.FormatProvider = CultureInfo.GetCultureInfo("es_AR");
+            DGVEntradas.Columns["Subtotal con descuento aplicado"].DefaultCellStyle.Format = "c2";
+            DGVEntradas.Columns["Subtotal con descuento aplicado"].DefaultCellStyle.FormatProvider = CultureInfo.GetCultureInfo("es_AR");
             colAccion.UseColumnTextForButtonValue = true;
             colAccion.Text = "Imprimir";
             colAccion.Name = "Accion";
             DGVEntradas.Columns.Add(colAccion);
             DGVEntradas.Columns["id_sucursal"].Visible = false;
+            DGVEntradas.Columns["Nro de transacción"].Visible = false;
+            DGVEntradas.Columns["Nombre sucursal"].Visible = false;
+            DGVEntradas.Columns["Nombre sala"].Visible = false;
+            DGVEntradas.Columns["Código butaca"].Visible = false;
         }
     }
 }
