@@ -133,6 +133,9 @@
   <data name="93631" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\93631.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="LOGO_CHANGOCINEMA2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LOGO_CHANGOCINEMA2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="btnSalir" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\btnSalir.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -157,10 +160,13 @@
   <data name="LOGO_CHANGOCINEMA1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\LOGO_CHANGOCINEMA1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="18786029401541068758-1281" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\18786029401541068758-1281.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="btnMax1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\btnMax1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="18786029401541068758-1281" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\18786029401541068758-1281.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="LOGO_CHANGOCINEMA3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LOGO_CHANGOCINEMA3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

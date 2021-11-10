@@ -12,6 +12,8 @@ using System.Windows.Forms;
 
 namespace Cine
 {
+
+
     public partial class Frm_Rep_PelMasVis : Form
     {
         private IReporteDao dao;
@@ -35,6 +37,26 @@ namespace Cine
             DataTable tabla;
             tabla = dao.GetPeliMasVistas(dateTimePicker1.Value, dateTimePicker2.Value, Convert.ToInt32(nudCant_min_entradas.Value - 1));
             DGVPelMasVistas.DataSource = tabla;
+        }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnRestaurar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnMaximizar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
