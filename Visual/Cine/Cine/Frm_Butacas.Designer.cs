@@ -56,11 +56,11 @@ namespace Cine
             // lblFuncion
             // 
             this.lblFuncion.AutoSize = true;
-            this.lblFuncion.Font = new System.Drawing.Font("Poppins Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblFuncion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblFuncion.ForeColor = System.Drawing.Color.White;
             this.lblFuncion.Location = new System.Drawing.Point(33, 85);
             this.lblFuncion.Name = "lblFuncion";
-            this.lblFuncion.Size = new System.Drawing.Size(228, 28);
+            this.lblFuncion.Size = new System.Drawing.Size(204, 20);
             this.lblFuncion.TabIndex = 0;
             this.lblFuncion.Text = "Ingrese número de Funcion";
             // 
@@ -82,7 +82,7 @@ namespace Cine
             // 
             this.btnConsultar.BackColor = System.Drawing.Color.HotPink;
             this.btnConsultar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnConsultar.Font = new System.Drawing.Font("Poppins Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnConsultar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnConsultar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(27)))), ((int)(((byte)(47)))));
             this.btnConsultar.Location = new System.Drawing.Point(33, 144);
             this.btnConsultar.Name = "btnConsultar";
@@ -96,7 +96,7 @@ namespace Cine
             // 
             this.nudNro_funcion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.nudNro_funcion.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.nudNro_funcion.Font = new System.Drawing.Font("Poppins Light", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.nudNro_funcion.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.nudNro_funcion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(27)))), ((int)(((byte)(47)))));
             this.nudNro_funcion.Location = new System.Drawing.Point(298, 85);
             this.nudNro_funcion.Maximum = new decimal(new int[] {
@@ -105,7 +105,7 @@ namespace Cine
             0,
             0});
             this.nudNro_funcion.Name = "nudNro_funcion";
-            this.nudNro_funcion.Size = new System.Drawing.Size(120, 26);
+            this.nudNro_funcion.Size = new System.Drawing.Size(120, 20);
             this.nudNro_funcion.TabIndex = 4;
             this.nudNro_funcion.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
@@ -128,13 +128,13 @@ namespace Cine
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("LEMON MILK Light", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.label1.Location = new System.Drawing.Point(49, 10);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(228, 17);
+            this.label1.Size = new System.Drawing.Size(184, 15);
             this.label1.TabIndex = 7;
-            this.label1.Text = "Butacas vendidas por funcion ";
+            this.label1.Text = "Butacas disponibles por funcion ";
             // 
             // pictureBox2
             // 

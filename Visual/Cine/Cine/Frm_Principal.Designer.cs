@@ -254,7 +254,7 @@
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(0);
             this.menuStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.System;
             this.menuStrip1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.menuStrip1.Size = new System.Drawing.Size(182, 293);
+            this.menuStrip1.Size = new System.Drawing.Size(156, 277);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -262,14 +262,14 @@
             // 
             this.funcionesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.butacasVendidasPorFuncionToolStripMenuItem});
-            this.funcionesToolStripMenuItem.Font = new System.Drawing.Font("LEMON MILK Light", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.funcionesToolStripMenuItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.funcionesToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.funcionesToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("funcionesToolStripMenuItem.Image")));
             this.funcionesToolStripMenuItem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.funcionesToolStripMenuItem.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.funcionesToolStripMenuItem.Name = "funcionesToolStripMenuItem";
             this.funcionesToolStripMenuItem.Padding = new System.Windows.Forms.Padding(20, 10, 20, 30);
-            this.funcionesToolStripMenuItem.Size = new System.Drawing.Size(171, 68);
+            this.funcionesToolStripMenuItem.Size = new System.Drawing.Size(145, 64);
             this.funcionesToolStripMenuItem.Text = "Funciones";
             this.funcionesToolStripMenuItem.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
@@ -278,25 +278,25 @@
             this.butacasVendidasPorFuncionToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(39)))), ((int)(((byte)(71)))));
             this.butacasVendidasPorFuncionToolStripMenuItem.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("butacasVendidasPorFuncionToolStripMenuItem.BackgroundImage")));
             this.butacasVendidasPorFuncionToolStripMenuItem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.butacasVendidasPorFuncionToolStripMenuItem.Font = new System.Drawing.Font("Poppins Light", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.butacasVendidasPorFuncionToolStripMenuItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.butacasVendidasPorFuncionToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.butacasVendidasPorFuncionToolStripMenuItem.Name = "butacasVendidasPorFuncionToolStripMenuItem";
-            this.butacasVendidasPorFuncionToolStripMenuItem.Size = new System.Drawing.Size(335, 34);
-            this.butacasVendidasPorFuncionToolStripMenuItem.Text = "Butacas vendidas por funcion";
+            this.butacasVendidasPorFuncionToolStripMenuItem.Size = new System.Drawing.Size(317, 24);
+            this.butacasVendidasPorFuncionToolStripMenuItem.Text = "Butacas disponibles por funcion";
             this.butacasVendidasPorFuncionToolStripMenuItem.Click += new System.EventHandler(this.butacasVendidasPorFuncionToolStripMenuItem_Click);
             // 
             // ticketsToolStripMenuItem
             // 
             this.ticketsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.imprimirTicketToolStripMenuItem});
-            this.ticketsToolStripMenuItem.Font = new System.Drawing.Font("LEMON MILK Light", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.ticketsToolStripMenuItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.ticketsToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.ticketsToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("ticketsToolStripMenuItem.Image")));
             this.ticketsToolStripMenuItem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.ticketsToolStripMenuItem.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.ticketsToolStripMenuItem.Name = "ticketsToolStripMenuItem";
             this.ticketsToolStripMenuItem.Padding = new System.Windows.Forms.Padding(20, 10, 20, 30);
-            this.ticketsToolStripMenuItem.Size = new System.Drawing.Size(171, 68);
+            this.ticketsToolStripMenuItem.Size = new System.Drawing.Size(145, 64);
             this.ticketsToolStripMenuItem.Text = "Tickets";
             this.ticketsToolStripMenuItem.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
@@ -304,10 +304,10 @@
             // 
             this.imprimirTicketToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.imprimirTicketToolStripMenuItem.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("imprimirTicketToolStripMenuItem.BackgroundImage")));
-            this.imprimirTicketToolStripMenuItem.Font = new System.Drawing.Font("Poppins Light", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.imprimirTicketToolStripMenuItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.imprimirTicketToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.imprimirTicketToolStripMenuItem.Name = "imprimirTicketToolStripMenuItem";
-            this.imprimirTicketToolStripMenuItem.Size = new System.Drawing.Size(205, 34);
+            this.imprimirTicketToolStripMenuItem.Size = new System.Drawing.Size(189, 24);
             this.imprimirTicketToolStripMenuItem.Text = "Imprimir Ticket";
             this.imprimirTicketToolStripMenuItem.Click += new System.EventHandler(this.imprimirTicketToolStripMenuItem_Click);
             // 
@@ -320,64 +320,64 @@
             this.gananciasMensualesToolStripMenuItem,
             this.ventasPorSucursalToolStripMenuItem,
             this.promVentasPorCajeroToolStripMenuItem});
-            this.reportesToolStripMenuItem.Font = new System.Drawing.Font("LEMON MILK Light", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.reportesToolStripMenuItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.reportesToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.reportesToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("reportesToolStripMenuItem.Image")));
             this.reportesToolStripMenuItem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.reportesToolStripMenuItem.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.reportesToolStripMenuItem.Name = "reportesToolStripMenuItem";
             this.reportesToolStripMenuItem.Padding = new System.Windows.Forms.Padding(20, 10, 20, 30);
-            this.reportesToolStripMenuItem.Size = new System.Drawing.Size(171, 68);
+            this.reportesToolStripMenuItem.Size = new System.Drawing.Size(145, 64);
             this.reportesToolStripMenuItem.Text = "Reportes";
             this.reportesToolStripMenuItem.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // peliculasSinVentasToolStripMenuItem
             // 
             this.peliculasSinVentasToolStripMenuItem.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("peliculasSinVentasToolStripMenuItem.BackgroundImage")));
-            this.peliculasSinVentasToolStripMenuItem.Font = new System.Drawing.Font("Poppins Light", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.peliculasSinVentasToolStripMenuItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.peliculasSinVentasToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.peliculasSinVentasToolStripMenuItem.Name = "peliculasSinVentasToolStripMenuItem";
-            this.peliculasSinVentasToolStripMenuItem.Size = new System.Drawing.Size(283, 34);
+            this.peliculasSinVentasToolStripMenuItem.Size = new System.Drawing.Size(256, 24);
             this.peliculasSinVentasToolStripMenuItem.Text = "Peliculas sin ventas";
             this.peliculasSinVentasToolStripMenuItem.Click += new System.EventHandler(this.peliculasSinVentasToolStripMenuItem_Click);
             // 
             // peliculasMásVistasToolStripMenuItem
             // 
             this.peliculasMásVistasToolStripMenuItem.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("peliculasMásVistasToolStripMenuItem.BackgroundImage")));
-            this.peliculasMásVistasToolStripMenuItem.Font = new System.Drawing.Font("Poppins Light", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.peliculasMásVistasToolStripMenuItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.peliculasMásVistasToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.peliculasMásVistasToolStripMenuItem.Name = "peliculasMásVistasToolStripMenuItem";
-            this.peliculasMásVistasToolStripMenuItem.Size = new System.Drawing.Size(283, 34);
+            this.peliculasMásVistasToolStripMenuItem.Size = new System.Drawing.Size(256, 24);
             this.peliculasMásVistasToolStripMenuItem.Text = "Peliculas más vistas";
             this.peliculasMásVistasToolStripMenuItem.Click += new System.EventHandler(this.peliculasMásVistasToolStripMenuItem_Click);
             // 
             // gananciasMensualesToolStripMenuItem
             // 
             this.gananciasMensualesToolStripMenuItem.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("gananciasMensualesToolStripMenuItem.BackgroundImage")));
-            this.gananciasMensualesToolStripMenuItem.Font = new System.Drawing.Font("Poppins Light", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.gananciasMensualesToolStripMenuItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.gananciasMensualesToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.gananciasMensualesToolStripMenuItem.Name = "gananciasMensualesToolStripMenuItem";
-            this.gananciasMensualesToolStripMenuItem.Size = new System.Drawing.Size(283, 34);
+            this.gananciasMensualesToolStripMenuItem.Size = new System.Drawing.Size(256, 24);
             this.gananciasMensualesToolStripMenuItem.Text = "Ganancias mensuales";
             this.gananciasMensualesToolStripMenuItem.Click += new System.EventHandler(this.gananciasMensualesToolStripMenuItem_Click);
             // 
             // ventasPorSucursalToolStripMenuItem
             // 
             this.ventasPorSucursalToolStripMenuItem.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ventasPorSucursalToolStripMenuItem.BackgroundImage")));
-            this.ventasPorSucursalToolStripMenuItem.Font = new System.Drawing.Font("Poppins Light", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.ventasPorSucursalToolStripMenuItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.ventasPorSucursalToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.ventasPorSucursalToolStripMenuItem.Name = "ventasPorSucursalToolStripMenuItem";
-            this.ventasPorSucursalToolStripMenuItem.Size = new System.Drawing.Size(283, 34);
+            this.ventasPorSucursalToolStripMenuItem.Size = new System.Drawing.Size(256, 24);
             this.ventasPorSucursalToolStripMenuItem.Text = "Ventas por sucursal";
             this.ventasPorSucursalToolStripMenuItem.Click += new System.EventHandler(this.ventasPorSucursalToolStripMenuItem_Click);
             // 
             // promVentasPorCajeroToolStripMenuItem
             // 
             this.promVentasPorCajeroToolStripMenuItem.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("promVentasPorCajeroToolStripMenuItem.BackgroundImage")));
-            this.promVentasPorCajeroToolStripMenuItem.Font = new System.Drawing.Font("Poppins Light", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.promVentasPorCajeroToolStripMenuItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.promVentasPorCajeroToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.promVentasPorCajeroToolStripMenuItem.Name = "promVentasPorCajeroToolStripMenuItem";
-            this.promVentasPorCajeroToolStripMenuItem.Size = new System.Drawing.Size(283, 34);
+            this.promVentasPorCajeroToolStripMenuItem.Size = new System.Drawing.Size(256, 24);
             this.promVentasPorCajeroToolStripMenuItem.Text = "Prom. ventas por cajero";
             this.promVentasPorCajeroToolStripMenuItem.Click += new System.EventHandler(this.promVentasPorCajeroToolStripMenuItem_Click);
             // 
@@ -385,14 +385,14 @@
             // 
             this.acercaDeToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.mostrarIntegrantesToolStripMenuItem});
-            this.acercaDeToolStripMenuItem.Font = new System.Drawing.Font("LEMON MILK Light", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.acercaDeToolStripMenuItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.acercaDeToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.acercaDeToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("acercaDeToolStripMenuItem.Image")));
             this.acercaDeToolStripMenuItem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.acercaDeToolStripMenuItem.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.acercaDeToolStripMenuItem.Name = "acercaDeToolStripMenuItem";
             this.acercaDeToolStripMenuItem.Padding = new System.Windows.Forms.Padding(20, 10, 20, 30);
-            this.acercaDeToolStripMenuItem.Size = new System.Drawing.Size(171, 68);
+            this.acercaDeToolStripMenuItem.Size = new System.Drawing.Size(145, 64);
             this.acercaDeToolStripMenuItem.Text = "Acerca de";
             this.acercaDeToolStripMenuItem.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.acercaDeToolStripMenuItem.Click += new System.EventHandler(this.acercaDeToolStripMenuItem_Click);
@@ -401,10 +401,10 @@
             // 
             this.mostrarIntegrantesToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(39)))), ((int)(((byte)(71)))));
             this.mostrarIntegrantesToolStripMenuItem.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("mostrarIntegrantesToolStripMenuItem.BackgroundImage")));
-            this.mostrarIntegrantesToolStripMenuItem.Font = new System.Drawing.Font("Poppins Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.mostrarIntegrantesToolStripMenuItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.mostrarIntegrantesToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.mostrarIntegrantesToolStripMenuItem.Name = "mostrarIntegrantesToolStripMenuItem";
-            this.mostrarIntegrantesToolStripMenuItem.Size = new System.Drawing.Size(238, 32);
+            this.mostrarIntegrantesToolStripMenuItem.Size = new System.Drawing.Size(216, 24);
             this.mostrarIntegrantesToolStripMenuItem.Text = "Mostrar integrantes";
             this.mostrarIntegrantesToolStripMenuItem.Click += new System.EventHandler(this.mostrarIntegrantesToolStripMenuItem_Click);
             // 
