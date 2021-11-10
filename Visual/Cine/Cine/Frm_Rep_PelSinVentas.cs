@@ -51,6 +51,7 @@ namespace Cine
             DataTable tabla = new DataTable();
             tabla = dao.GetPeliSinVentas(dtpFecha1.Value, dtpFecha2.Value);
             dgvPelSinVentas.DataSource = tabla;
+            dgvPelSinVentas.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
         }
 
         private void Frm_Rep_PelSinVentas_Load(object sender, EventArgs e)
