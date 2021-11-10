@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CineBackend.Acceso_a_Datos;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,6 +14,7 @@ namespace Cine
     public partial class Frm_Ticket : Form
     {
 
+        private IReporteDao dao;
 
         private const int WM_NCHITTEST = 0x84;
         private const int HTCLIENT = 0x1;
@@ -33,6 +35,7 @@ namespace Cine
         public Frm_Ticket()
         {
             InitializeComponent();
+            dao = new ReporteDao();
         }
 
      
@@ -68,6 +71,24 @@ namespace Cine
         private void Frm_Ticket_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnImprimirTicket_Click(object sender, EventArgs e)
+        {
+            DataTable tablaTicket = dao.ImprimirTicket(Convert.ToInt32(txtNroTicket.Text), Convert.ToInt32(txtID.Text));
+            lblNroTransaccion.Text = "Nro Transaccion: " + tablaTicket.Rows[0]["Nro de transacción"];
+            lblNombreSuc.Text = "Nombre Sucursal: " + tablaTicket.Rows[0]["Sucursal"];
+            lblFormaPago.Text = "Forma de Pago: " + tablaTicket.Rows[0]["Forma de pago"];
+            lblCantidadEntradas.Text = "Cantidad de entradas: " + tablaTicket.Rows[0]["Cantidad de entradas"];
+            lblTotalPagar.Text = "Total a Pagar: " + tablaTicket.Rows[0]["Total a pagar"];
+
+            DGVEntradas.DataSource = dao.GetEntradasPorTicket(Convert.ToInt32(txtNroTicket.Text), Convert.ToInt32(txtID.Text));
+            DataGridViewButtonColumn colAccion = new DataGridViewButtonColumn();
+            colAccion.UseColumnTextForButtonValue = true;
+            colAccion.Text = "Imprimir";
+            colAccion.Name = "Accion";
+            DGVEntradas.Columns.Add(colAccion);
+            DGVEntradas.Columns["id_sucursal"].Visible = false;
         }
     }
 }
