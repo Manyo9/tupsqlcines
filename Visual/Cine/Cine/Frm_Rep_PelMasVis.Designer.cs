@@ -42,20 +42,20 @@ namespace Cine
             this.nudCant_min_entradas = new System.Windows.Forms.NumericUpDown();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnMaximizar = new System.Windows.Forms.PictureBox();
             this.btnRestaurar = new System.Windows.Forms.PictureBox();
             this.btnClose = new System.Windows.Forms.PictureBox();
             this.btnMinimizar = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.btnMaximizar = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.DGVPelMasVistas)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudCant_min_entradas)).BeginInit();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnMaximizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnRestaurar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnClose)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnMaximizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -66,7 +66,7 @@ namespace Cine
             this.dateTimePicker1.Location = new System.Drawing.Point(295, 118);
             this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(334, 31);
+            this.dateTimePicker1.Size = new System.Drawing.Size(334, 26);
             this.dateTimePicker1.TabIndex = 0;
             this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
             // 
@@ -82,7 +82,7 @@ namespace Cine
             this.dateTimePicker2.Location = new System.Drawing.Point(295, 163);
             this.dateTimePicker2.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(334, 31);
+            this.dateTimePicker2.Size = new System.Drawing.Size(334, 26);
             this.dateTimePicker2.TabIndex = 1;
             // 
             // label2
@@ -94,7 +94,7 @@ namespace Cine
             this.label2.Location = new System.Drawing.Point(153, 166);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(62, 28);
+            this.label2.Size = new System.Drawing.Size(56, 20);
             this.label2.TabIndex = 3;
             this.label2.Text = "Hasta:";
             // 
@@ -107,7 +107,7 @@ namespace Cine
             this.lblFechaInicio.Location = new System.Drawing.Point(150, 121);
             this.lblFechaInicio.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblFechaInicio.Name = "lblFechaInicio";
-            this.lblFechaInicio.Size = new System.Drawing.Size(65, 28);
+            this.lblFechaInicio.Size = new System.Drawing.Size(60, 20);
             this.lblFechaInicio.TabIndex = 4;
             this.lblFechaInicio.Text = "Desde:";
             // 
@@ -137,7 +137,7 @@ namespace Cine
             this.label4.Location = new System.Drawing.Point(82, 69);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(133, 28);
+            this.label4.Size = new System.Drawing.Size(117, 20);
             this.label4.TabIndex = 6;
             this.label4.Text = "Elija un periodo";
             // 
@@ -150,7 +150,7 @@ namespace Cine
             this.lblCantidadMinima.Location = new System.Drawing.Point(82, 244);
             this.lblCantidadMinima.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblCantidadMinima.Name = "lblCantidadMinima";
-            this.lblCantidadMinima.Size = new System.Drawing.Size(333, 28);
+            this.lblCantidadMinima.Size = new System.Drawing.Size(283, 20);
             this.lblCantidadMinima.TabIndex = 8;
             this.lblCantidadMinima.Text = "Cantidad minima de entradas vendidas";
             // 
@@ -180,19 +180,19 @@ namespace Cine
             this.nudCant_min_entradas.Location = new System.Drawing.Point(475, 242);
             this.nudCant_min_entradas.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.nudCant_min_entradas.Name = "nudCant_min_entradas";
-            this.nudCant_min_entradas.Size = new System.Drawing.Size(154, 27);
+            this.nudCant_min_entradas.Size = new System.Drawing.Size(154, 22);
             this.nudCant_min_entradas.TabIndex = 10;
             this.nudCant_min_entradas.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("LEMON MILK Light", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.label1.Location = new System.Drawing.Point(45, 9);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(150, 17);
+            this.label1.Size = new System.Drawing.Size(116, 15);
             this.label1.TabIndex = 11;
             this.label1.Text = "películas mas vistas";
             // 
@@ -211,6 +211,18 @@ namespace Cine
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(804, 31);
             this.panel1.TabIndex = 12;
+            // 
+            // btnMaximizar
+            // 
+            this.btnMaximizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnMaximizar.Image = ((System.Drawing.Image)(resources.GetObject("btnMaximizar.Image")));
+            this.btnMaximizar.Location = new System.Drawing.Point(729, 2);
+            this.btnMaximizar.Name = "btnMaximizar";
+            this.btnMaximizar.Size = new System.Drawing.Size(25, 28);
+            this.btnMaximizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnMaximizar.TabIndex = 16;
+            this.btnMaximizar.TabStop = false;
+            this.btnMaximizar.Click += new System.EventHandler(this.btnMaximizar_Click);
             // 
             // btnRestaurar
             // 
@@ -258,18 +270,6 @@ namespace Cine
             this.pictureBox2.TabIndex = 14;
             this.pictureBox2.TabStop = false;
             // 
-            // btnMaximizar
-            // 
-            this.btnMaximizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnMaximizar.Image = ((System.Drawing.Image)(resources.GetObject("btnMaximizar.Image")));
-            this.btnMaximizar.Location = new System.Drawing.Point(729, 2);
-            this.btnMaximizar.Name = "btnMaximizar";
-            this.btnMaximizar.Size = new System.Drawing.Size(25, 28);
-            this.btnMaximizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnMaximizar.TabIndex = 16;
-            this.btnMaximizar.TabStop = false;
-            this.btnMaximizar.Click += new System.EventHandler(this.btnMaximizar_Click);
-            // 
             // pictureBox1
             // 
             this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
@@ -284,7 +284,7 @@ namespace Cine
             // 
             // Frm_Rep_PelMasVis
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 28F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(39)))), ((int)(((byte)(71)))));
             this.ClientSize = new System.Drawing.Size(795, 654);
@@ -299,7 +299,7 @@ namespace Cine
             this.Controls.Add(this.label2);
             this.Controls.Add(this.dateTimePicker2);
             this.Controls.Add(this.dateTimePicker1);
-            this.Font = new System.Drawing.Font("Poppins Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(39)))), ((int)(((byte)(71)))));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -310,11 +310,11 @@ namespace Cine
             ((System.ComponentModel.ISupportInitialize)(this.nudCant_min_entradas)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnMaximizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnRestaurar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnClose)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnMaximizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

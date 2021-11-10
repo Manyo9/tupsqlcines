@@ -51,6 +51,7 @@ namespace Cine
             DataTable tabla = new DataTable();
             tabla = dao.GetPromVentasPorCajero(Convert.ToInt32(nud_Año_Prom_caje.Value));
             dgvPromCaje.DataSource = tabla;
+            dgvPromCaje.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
         }
 
         private void Frm_Rep_PromCaje_Load(object sender, EventArgs e)

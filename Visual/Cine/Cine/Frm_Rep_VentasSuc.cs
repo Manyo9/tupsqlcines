@@ -50,6 +50,7 @@ namespace Cine
             tabla = dao.GetVentasPorSucursal(dtpFechaInicio.Value, dtpFechaFin.Value);
             tabla.Columns.Remove("id_sucursal");
             dgvVentasSuc.DataSource = tabla;
+            dgvVentasSuc.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
         }
 
 
