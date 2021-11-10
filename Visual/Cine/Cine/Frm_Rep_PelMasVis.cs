@@ -47,12 +47,17 @@ namespace Cine
                 MessageBox.Show("Ingrese un número mínimo de ventas válido. Puede ser cero.");
                 return;
             }
+            if (dtpDesde.Value > dtpHasta.Value)
+            {
+                MessageBox.Show("La fecha de inicio debe ser anterior a la de fin.");
+                return;
+            }
             CargarGrid();
         }
         private void CargarGrid()
         {
             DataTable tabla;
-            tabla = dao.GetPeliMasVistas(dateTimePicker1.Value, dateTimePicker2.Value, Convert.ToInt32(nudCant_min_entradas.Value - 1));
+            tabla = dao.GetPeliMasVistas(dtpDesde.Value, dtpHasta.Value, Convert.ToInt32(nudCant_min_entradas.Value - 1));
             DGVPelMasVistas.DataSource = tabla;
             DGVPelMasVistas.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
         }
