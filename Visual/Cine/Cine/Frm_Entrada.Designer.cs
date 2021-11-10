@@ -46,19 +46,15 @@ namespace Cine
             this.lblButaca = new System.Windows.Forms.Label();
             this.lblCliente = new System.Windows.Forms.Label();
             this.lblgracias = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // lblTransaccion
             // 
             this.lblTransaccion.AutoSize = true;
+            this.lblTransaccion.BackColor = System.Drawing.Color.Transparent;
             this.lblTransaccion.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblTransaccion.Location = new System.Drawing.Point(32, 27);
+            this.lblTransaccion.ForeColor = System.Drawing.Color.White;
+            this.lblTransaccion.Location = new System.Drawing.Point(56, 161);
             this.lblTransaccion.Name = "lblTransaccion";
             this.lblTransaccion.Size = new System.Drawing.Size(137, 17);
             this.lblTransaccion.TabIndex = 0;
@@ -67,8 +63,10 @@ namespace Cine
             // lblSucursal
             // 
             this.lblSucursal.AutoSize = true;
+            this.lblSucursal.BackColor = System.Drawing.Color.Transparent;
             this.lblSucursal.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblSucursal.Location = new System.Drawing.Point(32, 52);
+            this.lblSucursal.ForeColor = System.Drawing.Color.White;
+            this.lblSucursal.Location = new System.Drawing.Point(56, 186);
             this.lblSucursal.Name = "lblSucursal";
             this.lblSucursal.Size = new System.Drawing.Size(119, 17);
             this.lblSucursal.TabIndex = 1;
@@ -77,8 +75,10 @@ namespace Cine
             // lblSala1
             // 
             this.lblSala1.AutoSize = true;
+            this.lblSala1.BackColor = System.Drawing.Color.Transparent;
             this.lblSala1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblSala1.Location = new System.Drawing.Point(32, 77);
+            this.lblSala1.ForeColor = System.Drawing.Color.White;
+            this.lblSala1.Location = new System.Drawing.Point(56, 211);
             this.lblSala1.Name = "lblSala1";
             this.lblSala1.Size = new System.Drawing.Size(92, 17);
             this.lblSala1.TabIndex = 2;
@@ -87,8 +87,10 @@ namespace Cine
             // lblPelicula1
             // 
             this.lblPelicula1.AutoSize = true;
+            this.lblPelicula1.BackColor = System.Drawing.Color.Transparent;
             this.lblPelicula1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblPelicula1.Location = new System.Drawing.Point(32, 102);
+            this.lblPelicula1.ForeColor = System.Drawing.Color.White;
+            this.lblPelicula1.Location = new System.Drawing.Point(56, 236);
             this.lblPelicula1.Name = "lblPelicula1";
             this.lblPelicula1.Size = new System.Drawing.Size(61, 17);
             this.lblPelicula1.TabIndex = 3;
@@ -97,8 +99,10 @@ namespace Cine
             // lblDuracion1
             // 
             this.lblDuracion1.AutoSize = true;
+            this.lblDuracion1.BackColor = System.Drawing.Color.Transparent;
             this.lblDuracion1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblDuracion1.Location = new System.Drawing.Point(32, 127);
+            this.lblDuracion1.ForeColor = System.Drawing.Color.White;
+            this.lblDuracion1.Location = new System.Drawing.Point(56, 261);
             this.lblDuracion1.Name = "lblDuracion1";
             this.lblDuracion1.Size = new System.Drawing.Size(69, 17);
             this.lblDuracion1.TabIndex = 4;
@@ -107,8 +111,10 @@ namespace Cine
             // lblHora1
             // 
             this.lblHora1.AutoSize = true;
+            this.lblHora1.BackColor = System.Drawing.Color.Transparent;
             this.lblHora1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblHora1.Location = new System.Drawing.Point(32, 177);
+            this.lblHora1.ForeColor = System.Drawing.Color.White;
+            this.lblHora1.Location = new System.Drawing.Point(56, 311);
             this.lblHora1.Name = "lblHora1";
             this.lblHora1.Size = new System.Drawing.Size(99, 17);
             this.lblHora1.TabIndex = 11;
@@ -117,8 +123,10 @@ namespace Cine
             // lblDia1
             // 
             this.lblDia1.AutoSize = true;
+            this.lblDia1.BackColor = System.Drawing.Color.Transparent;
             this.lblDia1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblDia1.Location = new System.Drawing.Point(32, 152);
+            this.lblDia1.ForeColor = System.Drawing.Color.White;
+            this.lblDia1.Location = new System.Drawing.Point(56, 286);
             this.lblDia1.Name = "lblDia1";
             this.lblDia1.Size = new System.Drawing.Size(33, 17);
             this.lblDia1.TabIndex = 12;
@@ -127,8 +135,10 @@ namespace Cine
             // label14
             // 
             this.label14.AutoSize = true;
+            this.label14.BackColor = System.Drawing.Color.Transparent;
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label14.Location = new System.Drawing.Point(460, 15);
+            this.label14.ForeColor = System.Drawing.Color.White;
+            this.label14.Location = new System.Drawing.Point(374, 146);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(62, 13);
             this.label14.TabIndex = 14;
@@ -137,8 +147,10 @@ namespace Cine
             // lblSala2
             // 
             this.lblSala2.AutoSize = true;
+            this.lblSala2.BackColor = System.Drawing.Color.Transparent;
             this.lblSala2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblSala2.Location = new System.Drawing.Point(32, 272);
+            this.lblSala2.ForeColor = System.Drawing.Color.White;
+            this.lblSala2.Location = new System.Drawing.Point(667, 160);
             this.lblSala2.Name = "lblSala2";
             this.lblSala2.Size = new System.Drawing.Size(92, 17);
             this.lblSala2.TabIndex = 19;
@@ -147,8 +159,10 @@ namespace Cine
             // lblPelicula2
             // 
             this.lblPelicula2.AutoSize = true;
+            this.lblPelicula2.BackColor = System.Drawing.Color.Transparent;
             this.lblPelicula2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblPelicula2.Location = new System.Drawing.Point(32, 300);
+            this.lblPelicula2.ForeColor = System.Drawing.Color.White;
+            this.lblPelicula2.Location = new System.Drawing.Point(667, 188);
             this.lblPelicula2.Name = "lblPelicula2";
             this.lblPelicula2.Size = new System.Drawing.Size(61, 17);
             this.lblPelicula2.TabIndex = 18;
@@ -157,8 +171,10 @@ namespace Cine
             // lblDuracion2
             // 
             this.lblDuracion2.AutoSize = true;
+            this.lblDuracion2.BackColor = System.Drawing.Color.Transparent;
             this.lblDuracion2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblDuracion2.Location = new System.Drawing.Point(32, 328);
+            this.lblDuracion2.ForeColor = System.Drawing.Color.White;
+            this.lblDuracion2.Location = new System.Drawing.Point(667, 216);
             this.lblDuracion2.Name = "lblDuracion2";
             this.lblDuracion2.Size = new System.Drawing.Size(69, 17);
             this.lblDuracion2.TabIndex = 20;
@@ -167,8 +183,10 @@ namespace Cine
             // lblDia2
             // 
             this.lblDia2.AutoSize = true;
+            this.lblDia2.BackColor = System.Drawing.Color.Transparent;
             this.lblDia2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblDia2.Location = new System.Drawing.Point(32, 356);
+            this.lblDia2.ForeColor = System.Drawing.Color.White;
+            this.lblDia2.Location = new System.Drawing.Point(667, 244);
             this.lblDia2.Name = "lblDia2";
             this.lblDia2.Size = new System.Drawing.Size(33, 17);
             this.lblDia2.TabIndex = 23;
@@ -177,8 +195,10 @@ namespace Cine
             // lblHora2
             // 
             this.lblHora2.AutoSize = true;
+            this.lblHora2.BackColor = System.Drawing.Color.Transparent;
             this.lblHora2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblHora2.Location = new System.Drawing.Point(32, 384);
+            this.lblHora2.ForeColor = System.Drawing.Color.White;
+            this.lblHora2.Location = new System.Drawing.Point(667, 272);
             this.lblHora2.Name = "lblHora2";
             this.lblHora2.Size = new System.Drawing.Size(99, 17);
             this.lblHora2.TabIndex = 22;
@@ -187,8 +207,10 @@ namespace Cine
             // lblButaca
             // 
             this.lblButaca.AutoSize = true;
+            this.lblButaca.BackColor = System.Drawing.Color.Transparent;
             this.lblButaca.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblButaca.Location = new System.Drawing.Point(32, 412);
+            this.lblButaca.ForeColor = System.Drawing.Color.White;
+            this.lblButaca.Location = new System.Drawing.Point(667, 300);
             this.lblButaca.Name = "lblButaca";
             this.lblButaca.Size = new System.Drawing.Size(56, 17);
             this.lblButaca.TabIndex = 21;
@@ -197,8 +219,10 @@ namespace Cine
             // lblCliente
             // 
             this.lblCliente.AutoSize = true;
+            this.lblCliente.BackColor = System.Drawing.Color.Transparent;
             this.lblCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblCliente.Location = new System.Drawing.Point(477, 272);
+            this.lblCliente.ForeColor = System.Drawing.Color.White;
+            this.lblCliente.Location = new System.Drawing.Point(979, 142);
             this.lblCliente.Name = "lblCliente";
             this.lblCliente.Size = new System.Drawing.Size(46, 13);
             this.lblCliente.TabIndex = 24;
@@ -207,52 +231,22 @@ namespace Cine
             // lblgracias
             // 
             this.lblgracias.AutoSize = true;
+            this.lblgracias.BackColor = System.Drawing.Color.Transparent;
             this.lblgracias.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblgracias.Location = new System.Drawing.Point(157, 484);
+            this.lblgracias.ForeColor = System.Drawing.Color.White;
+            this.lblgracias.Location = new System.Drawing.Point(754, 341);
             this.lblgracias.Name = "lblgracias";
             this.lblgracias.Size = new System.Drawing.Size(208, 15);
             this.lblgracias.TabIndex = 25;
             this.lblgracias.Text = "Gracias por visitar Changocinema <3";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 197);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(629, 49);
-            this.pictureBox1.TabIndex = 26;
-            this.pictureBox1.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.BackgroundImage")));
-            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox2.Location = new System.Drawing.Point(332, 52);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(202, 115);
-            this.pictureBox2.TabIndex = 27;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox3.BackgroundImage")));
-            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox3.Location = new System.Drawing.Point(332, 294);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(202, 115);
-            this.pictureBox3.TabIndex = 28;
-            this.pictureBox3.TabStop = false;
             // 
             // Frm_Entrada
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(534, 515);
-            this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.pictureBox1);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.ClientSize = new System.Drawing.Size(1199, 447);
             this.Controls.Add(this.lblgracias);
             this.Controls.Add(this.lblCliente);
             this.Controls.Add(this.lblDia2);
@@ -274,9 +268,6 @@ namespace Cine
             this.Name = "Frm_Entrada";
             this.Text = "Frm_Entrada";
             this.Load += new System.EventHandler(this.Frm_Entrada_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -300,8 +291,5 @@ namespace Cine
         private System.Windows.Forms.Label lblButaca;
         private System.Windows.Forms.Label lblCliente;
         private System.Windows.Forms.Label lblgracias;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox3;
     }
 }
