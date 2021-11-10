@@ -265,17 +265,27 @@ namespace Cine
             // 
             // nudNroTicket
             // 
+            this.nudNroTicket.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.nudNroTicket.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.nudNroTicket.Font = new System.Drawing.Font("Poppins Light", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.nudNroTicket.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(39)))), ((int)(((byte)(71)))));
             this.nudNroTicket.Location = new System.Drawing.Point(128, 68);
             this.nudNroTicket.Name = "nudNroTicket";
-            this.nudNroTicket.Size = new System.Drawing.Size(120, 23);
+            this.nudNroTicket.Size = new System.Drawing.Size(120, 21);
             this.nudNroTicket.TabIndex = 14;
+            this.nudNroTicket.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // nudIdSucursal
             // 
+            this.nudIdSucursal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.nudIdSucursal.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.nudIdSucursal.Font = new System.Drawing.Font("Poppins Light", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.nudIdSucursal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(39)))), ((int)(((byte)(71)))));
             this.nudIdSucursal.Location = new System.Drawing.Point(128, 102);
             this.nudIdSucursal.Name = "nudIdSucursal";
-            this.nudIdSucursal.Size = new System.Drawing.Size(120, 23);
+            this.nudIdSucursal.Size = new System.Drawing.Size(120, 21);
             this.nudIdSucursal.TabIndex = 15;
+            this.nudIdSucursal.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // Frm_Ticket
             // 
