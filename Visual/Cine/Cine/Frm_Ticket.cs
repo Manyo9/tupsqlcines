@@ -113,8 +113,9 @@ namespace Cine
         {
             if (e.ColumnIndex.Equals(12))
             {
-            Frm_Entrada nuevo = new Frm_Entrada(Convert.ToInt32(DGVEntradas.Columns["id_detalle"]));
-            nuevo.ShowDialog();
+                int detalle = Convert.ToInt32(DGVEntradas.CurrentRow.Cells["id_detalle"].Value);
+                Frm_Entrada nuevo = new Frm_Entrada(detalle);
+                nuevo.ShowDialog();
             }
         }
     }

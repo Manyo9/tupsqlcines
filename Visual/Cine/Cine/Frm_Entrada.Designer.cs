@@ -31,20 +31,19 @@ namespace Cine
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_Entrada));
             this.lblTransaccion = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.Sala = new System.Windows.Forms.Label();
-            this.lblPelicula = new System.Windows.Forms.Label();
-            this.lblDuracion = new System.Windows.Forms.Label();
-            this.lblButaca = new System.Windows.Forms.Label();
-            this.lblHora = new System.Windows.Forms.Label();
-            this.lblDia = new System.Windows.Forms.Label();
+            this.lblSucursal = new System.Windows.Forms.Label();
+            this.lblSala1 = new System.Windows.Forms.Label();
+            this.lblPelicula1 = new System.Windows.Forms.Label();
+            this.lblDuracion1 = new System.Windows.Forms.Label();
+            this.lblHora1 = new System.Windows.Forms.Label();
+            this.lblDia1 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
-            this.lblSala = new System.Windows.Forms.Label();
+            this.lblSala2 = new System.Windows.Forms.Label();
             this.lblPelicula2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.lblDuracion2 = new System.Windows.Forms.Label();
             this.lblDia2 = new System.Windows.Forms.Label();
             this.lblHora2 = new System.Windows.Forms.Label();
-            this.lblButaca2 = new System.Windows.Forms.Label();
+            this.lblButaca = new System.Windows.Forms.Label();
             this.lblCliente = new System.Windows.Forms.Label();
             this.lblgracias = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -58,170 +57,160 @@ namespace Cine
             // lblTransaccion
             // 
             this.lblTransaccion.AutoSize = true;
-            this.lblTransaccion.Font = new System.Drawing.Font("Poppins Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblTransaccion.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblTransaccion.Location = new System.Drawing.Point(32, 27);
             this.lblTransaccion.Name = "lblTransaccion";
-            this.lblTransaccion.Size = new System.Drawing.Size(150, 25);
+            this.lblTransaccion.Size = new System.Drawing.Size(137, 17);
             this.lblTransaccion.TabIndex = 0;
             this.lblTransaccion.Text = "Nro de Transaccion:";
             // 
-            // label2
+            // lblSucursal
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Poppins Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(32, 52);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(134, 25);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Nombre Sucursal:";
+            this.lblSucursal.AutoSize = true;
+            this.lblSucursal.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblSucursal.Location = new System.Drawing.Point(32, 52);
+            this.lblSucursal.Name = "lblSucursal";
+            this.lblSucursal.Size = new System.Drawing.Size(119, 17);
+            this.lblSucursal.TabIndex = 1;
+            this.lblSucursal.Text = "Nombre sucursal:";
             // 
-            // Sala
+            // lblSala1
             // 
-            this.Sala.AutoSize = true;
-            this.Sala.Font = new System.Drawing.Font("Poppins Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Sala.Location = new System.Drawing.Point(32, 77);
-            this.Sala.Name = "Sala";
-            this.Sala.Size = new System.Drawing.Size(104, 25);
-            this.Sala.TabIndex = 2;
-            this.Sala.Text = "Nombre Sala:";
+            this.lblSala1.AutoSize = true;
+            this.lblSala1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblSala1.Location = new System.Drawing.Point(32, 77);
+            this.lblSala1.Name = "lblSala1";
+            this.lblSala1.Size = new System.Drawing.Size(92, 17);
+            this.lblSala1.TabIndex = 2;
+            this.lblSala1.Text = "Nombre sala:";
             // 
-            // lblPelicula
+            // lblPelicula1
             // 
-            this.lblPelicula.AutoSize = true;
-            this.lblPelicula.Font = new System.Drawing.Font("Poppins Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblPelicula.Location = new System.Drawing.Point(32, 102);
-            this.lblPelicula.Name = "lblPelicula";
-            this.lblPelicula.Size = new System.Drawing.Size(68, 25);
-            this.lblPelicula.TabIndex = 3;
-            this.lblPelicula.Text = "Pelicula:";
+            this.lblPelicula1.AutoSize = true;
+            this.lblPelicula1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblPelicula1.Location = new System.Drawing.Point(32, 102);
+            this.lblPelicula1.Name = "lblPelicula1";
+            this.lblPelicula1.Size = new System.Drawing.Size(61, 17);
+            this.lblPelicula1.TabIndex = 3;
+            this.lblPelicula1.Text = "Pelicula:";
             // 
-            // lblDuracion
+            // lblDuracion1
             // 
-            this.lblDuracion.AutoSize = true;
-            this.lblDuracion.Font = new System.Drawing.Font("Poppins Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblDuracion.Location = new System.Drawing.Point(32, 127);
-            this.lblDuracion.Name = "lblDuracion";
-            this.lblDuracion.Size = new System.Drawing.Size(78, 25);
-            this.lblDuracion.TabIndex = 4;
-            this.lblDuracion.Text = "Duracion:";
+            this.lblDuracion1.AutoSize = true;
+            this.lblDuracion1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblDuracion1.Location = new System.Drawing.Point(32, 127);
+            this.lblDuracion1.Name = "lblDuracion1";
+            this.lblDuracion1.Size = new System.Drawing.Size(69, 17);
+            this.lblDuracion1.TabIndex = 4;
+            this.lblDuracion1.Text = "Duracion:";
             // 
-            // lblButaca
+            // lblHora1
             // 
-            this.lblButaca.AutoSize = true;
-            this.lblButaca.Font = new System.Drawing.Font("Poppins Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblButaca.Location = new System.Drawing.Point(32, 202);
-            this.lblButaca.Name = "lblButaca";
-            this.lblButaca.Size = new System.Drawing.Size(64, 25);
-            this.lblButaca.TabIndex = 10;
-            this.lblButaca.Text = "Butaca:";
+            this.lblHora1.AutoSize = true;
+            this.lblHora1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblHora1.Location = new System.Drawing.Point(32, 177);
+            this.lblHora1.Name = "lblHora1";
+            this.lblHora1.Size = new System.Drawing.Size(99, 17);
+            this.lblHora1.TabIndex = 11;
+            this.lblHora1.Text = "Hora de inicio:";
             // 
-            // lblHora
+            // lblDia1
             // 
-            this.lblHora.AutoSize = true;
-            this.lblHora.Font = new System.Drawing.Font("Poppins Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblHora.Location = new System.Drawing.Point(32, 177);
-            this.lblHora.Name = "lblHora";
-            this.lblHora.Size = new System.Drawing.Size(110, 25);
-            this.lblHora.TabIndex = 11;
-            this.lblHora.Text = "Hora de inicio:";
-            // 
-            // lblDia
-            // 
-            this.lblDia.AutoSize = true;
-            this.lblDia.Font = new System.Drawing.Font("Poppins Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblDia.Location = new System.Drawing.Point(32, 152);
-            this.lblDia.Name = "lblDia";
-            this.lblDia.Size = new System.Drawing.Size(37, 25);
-            this.lblDia.TabIndex = 12;
-            this.lblDia.Text = "Día:";
+            this.lblDia1.AutoSize = true;
+            this.lblDia1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblDia1.Location = new System.Drawing.Point(32, 152);
+            this.lblDia1.Name = "lblDia1";
+            this.lblDia1.Size = new System.Drawing.Size(33, 17);
+            this.lblDia1.TabIndex = 12;
+            this.lblDia1.Text = "Día:";
             // 
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Poppins", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label14.Location = new System.Drawing.Point(460, 15);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(65, 19);
+            this.label14.Size = new System.Drawing.Size(62, 13);
             this.label14.TabIndex = 14;
             this.label14.Text = "Empleado";
             // 
-            // lblSala
+            // lblSala2
             // 
-            this.lblSala.AutoSize = true;
-            this.lblSala.Font = new System.Drawing.Font("Poppins Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblSala.Location = new System.Drawing.Point(32, 272);
-            this.lblSala.Name = "lblSala";
-            this.lblSala.Size = new System.Drawing.Size(103, 25);
-            this.lblSala.TabIndex = 19;
-            this.lblSala.Text = "Nombre sala:";
+            this.lblSala2.AutoSize = true;
+            this.lblSala2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblSala2.Location = new System.Drawing.Point(32, 272);
+            this.lblSala2.Name = "lblSala2";
+            this.lblSala2.Size = new System.Drawing.Size(92, 17);
+            this.lblSala2.TabIndex = 19;
+            this.lblSala2.Text = "Nombre sala:";
             // 
             // lblPelicula2
             // 
             this.lblPelicula2.AutoSize = true;
-            this.lblPelicula2.Font = new System.Drawing.Font("Poppins Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblPelicula2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblPelicula2.Location = new System.Drawing.Point(32, 300);
             this.lblPelicula2.Name = "lblPelicula2";
-            this.lblPelicula2.Size = new System.Drawing.Size(65, 25);
+            this.lblPelicula2.Size = new System.Drawing.Size(61, 17);
             this.lblPelicula2.TabIndex = 18;
-            this.lblPelicula2.Text = "Pelicula";
+            this.lblPelicula2.Text = "Pelicula:";
             // 
-            // label3
+            // lblDuracion2
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Poppins Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(32, 328);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(78, 25);
-            this.label3.TabIndex = 20;
-            this.label3.Text = "Duracion:";
+            this.lblDuracion2.AutoSize = true;
+            this.lblDuracion2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblDuracion2.Location = new System.Drawing.Point(32, 328);
+            this.lblDuracion2.Name = "lblDuracion2";
+            this.lblDuracion2.Size = new System.Drawing.Size(69, 17);
+            this.lblDuracion2.TabIndex = 20;
+            this.lblDuracion2.Text = "Duracion:";
             // 
             // lblDia2
             // 
             this.lblDia2.AutoSize = true;
-            this.lblDia2.Font = new System.Drawing.Font("Poppins Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblDia2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblDia2.Location = new System.Drawing.Point(32, 356);
             this.lblDia2.Name = "lblDia2";
-            this.lblDia2.Size = new System.Drawing.Size(37, 25);
+            this.lblDia2.Size = new System.Drawing.Size(33, 17);
             this.lblDia2.TabIndex = 23;
             this.lblDia2.Text = "Día:";
             // 
             // lblHora2
             // 
             this.lblHora2.AutoSize = true;
-            this.lblHora2.Font = new System.Drawing.Font("Poppins Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblHora2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblHora2.Location = new System.Drawing.Point(32, 384);
             this.lblHora2.Name = "lblHora2";
-            this.lblHora2.Size = new System.Drawing.Size(110, 25);
+            this.lblHora2.Size = new System.Drawing.Size(99, 17);
             this.lblHora2.TabIndex = 22;
             this.lblHora2.Text = "Hora de inicio:";
             // 
-            // lblButaca2
+            // lblButaca
             // 
-            this.lblButaca2.AutoSize = true;
-            this.lblButaca2.Font = new System.Drawing.Font("Poppins Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblButaca2.Location = new System.Drawing.Point(32, 412);
-            this.lblButaca2.Name = "lblButaca2";
-            this.lblButaca2.Size = new System.Drawing.Size(64, 25);
-            this.lblButaca2.TabIndex = 21;
-            this.lblButaca2.Text = "Butaca:";
+            this.lblButaca.AutoSize = true;
+            this.lblButaca.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblButaca.Location = new System.Drawing.Point(32, 412);
+            this.lblButaca.Name = "lblButaca";
+            this.lblButaca.Size = new System.Drawing.Size(56, 17);
+            this.lblButaca.TabIndex = 21;
+            this.lblButaca.Text = "Butaca:";
             // 
             // lblCliente
             // 
             this.lblCliente.AutoSize = true;
-            this.lblCliente.Font = new System.Drawing.Font("Poppins", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblCliente.Location = new System.Drawing.Point(477, 272);
             this.lblCliente.Name = "lblCliente";
-            this.lblCliente.Size = new System.Drawing.Size(48, 19);
+            this.lblCliente.Size = new System.Drawing.Size(46, 13);
             this.lblCliente.TabIndex = 24;
             this.lblCliente.Text = "Cliente";
             // 
             // lblgracias
             // 
             this.lblgracias.AutoSize = true;
-            this.lblgracias.Font = new System.Drawing.Font("Poppins Light", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblgracias.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblgracias.Location = new System.Drawing.Point(157, 484);
             this.lblgracias.Name = "lblgracias";
-            this.lblgracias.Size = new System.Drawing.Size(229, 22);
+            this.lblgracias.Size = new System.Drawing.Size(208, 15);
             this.lblgracias.TabIndex = 25;
             this.lblgracias.Text = "Gracias por visitar Changocinema <3";
             // 
@@ -229,7 +218,7 @@ namespace Cine
             // 
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.Location = new System.Drawing.Point(-3, 205);
+            this.pictureBox1.Location = new System.Drawing.Point(0, 197);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(629, 49);
             this.pictureBox1.TabIndex = 26;
@@ -268,23 +257,23 @@ namespace Cine
             this.Controls.Add(this.lblCliente);
             this.Controls.Add(this.lblDia2);
             this.Controls.Add(this.lblHora2);
-            this.Controls.Add(this.lblButaca2);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.lblSala);
+            this.Controls.Add(this.lblButaca);
+            this.Controls.Add(this.lblDuracion2);
+            this.Controls.Add(this.lblSala2);
             this.Controls.Add(this.lblPelicula2);
             this.Controls.Add(this.label14);
-            this.Controls.Add(this.lblDia);
-            this.Controls.Add(this.lblHora);
-            this.Controls.Add(this.lblButaca);
-            this.Controls.Add(this.lblDuracion);
-            this.Controls.Add(this.lblPelicula);
-            this.Controls.Add(this.Sala);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.lblDia1);
+            this.Controls.Add(this.lblHora1);
+            this.Controls.Add(this.lblDuracion1);
+            this.Controls.Add(this.lblPelicula1);
+            this.Controls.Add(this.lblSala1);
+            this.Controls.Add(this.lblSucursal);
             this.Controls.Add(this.lblTransaccion);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Frm_Entrada";
             this.Text = "Frm_Entrada";
+            this.Load += new System.EventHandler(this.Frm_Entrada_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
@@ -296,20 +285,19 @@ namespace Cine
         #endregion
 
         private System.Windows.Forms.Label lblTransaccion;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label Sala;
-        private System.Windows.Forms.Label lblPelicula;
-        private System.Windows.Forms.Label lblDuracion;
-        private System.Windows.Forms.Label lblButaca;
-        private System.Windows.Forms.Label lblHora;
-        private System.Windows.Forms.Label lblDia;
+        private System.Windows.Forms.Label lblSucursal;
+        private System.Windows.Forms.Label lblSala1;
+        private System.Windows.Forms.Label lblPelicula1;
+        private System.Windows.Forms.Label lblDuracion1;
+        private System.Windows.Forms.Label lblHora1;
+        private System.Windows.Forms.Label lblDia1;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Label lblSala;
+        private System.Windows.Forms.Label lblSala2;
         private System.Windows.Forms.Label lblPelicula2;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label lblDuracion2;
         private System.Windows.Forms.Label lblDia2;
         private System.Windows.Forms.Label lblHora2;
-        private System.Windows.Forms.Label lblButaca2;
+        private System.Windows.Forms.Label lblButaca;
         private System.Windows.Forms.Label lblCliente;
         private System.Windows.Forms.Label lblgracias;
         private System.Windows.Forms.PictureBox pictureBox1;
