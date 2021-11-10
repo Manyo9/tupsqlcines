@@ -216,3 +216,12 @@ as
 	from vista_comprobante
 	where [Id sucursal]=@id_sucursal and [Nro de transacción] = @nro_ticket
 go
+
+--SP para traer una sola entrada
+create procedure pa_traer_entrada
+(@id_detalle int)
+as
+	select *
+	from vista_entrada
+	where id_detalle=@id_detalle
+go

@@ -101,11 +101,21 @@ namespace Cine
             colAccion.Text = "Imprimir";
             colAccion.Name = "Accion";
             DGVEntradas.Columns.Add(colAccion);
+            DGVEntradas.Columns["id_detalle"].Visible = false;
             DGVEntradas.Columns["id_sucursal"].Visible = false;
             DGVEntradas.Columns["Nro de transacción"].Visible = false;
             DGVEntradas.Columns["Nombre sucursal"].Visible = false;
             DGVEntradas.Columns["Nombre sala"].Visible = false;
             DGVEntradas.Columns["Código butaca"].Visible = false;
+        }
+
+        private void DGVEntradas_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.ColumnIndex.Equals(12))
+            {
+            Frm_Entrada nuevo = new Frm_Entrada(Convert.ToInt32(DGVEntradas.Columns["id_detalle"]));
+            nuevo.ShowDialog();
+            }
         }
     }
 }

@@ -4,6 +4,7 @@ go
 create view vista_entrada
 as
 	select suc.id_sucursal, --no se usa al imprimir el ticket
+	dt.id_detalle,
 	dt.nro_ticket 'Nro de transacción',
 	suc.nombre as 'Nombre sucursal',
 	sa.nom_sala 'Nombre sala',

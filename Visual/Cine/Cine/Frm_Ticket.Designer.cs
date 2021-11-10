@@ -186,6 +186,7 @@ namespace Cine
             this.DGVEntradas.RowTemplate.Height = 25;
             this.DGVEntradas.Size = new System.Drawing.Size(734, 182);
             this.DGVEntradas.TabIndex = 10;
+            this.DGVEntradas.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DGVEntradas_CellContentClick);
             // 
             // lblEntradas
             // 
