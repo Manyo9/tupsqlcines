@@ -73,7 +73,7 @@ begin
 end 
 go
 --Reporte: Funciones pasadas que no vendieron ninguna entrada (entre un periodo de tiempo)
-alter procedure pa_peliculas_sin_ventas
+create procedure pa_peliculas_sin_ventas
 @fecha1 date = '01/01/1900',
 @fecha2 date= '01/01/2500'
 as
