@@ -40,5 +40,15 @@ namespace Cine
             lblHora2.Text = "Hora de inicio: " + tablaDetalles.Rows[0]["Hora de inicio"].ToString();
             lblButaca.Text = "Butaca: " + tablaDetalles.Rows[0]["Código butaca"].ToString();
         }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
+        }
     }
 }
