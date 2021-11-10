@@ -57,7 +57,7 @@ namespace Cine
             this.lblFuncion.AutoSize = true;
             this.lblFuncion.Font = new System.Drawing.Font("Poppins Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblFuncion.ForeColor = System.Drawing.Color.White;
-            this.lblFuncion.Location = new System.Drawing.Point(62, 231);
+            this.lblFuncion.Location = new System.Drawing.Point(33, 85);
             this.lblFuncion.Name = "lblFuncion";
             this.lblFuncion.Size = new System.Drawing.Size(105, 28);
             this.lblFuncion.TabIndex = 0;
@@ -70,11 +70,11 @@ namespace Cine
             this.dgvButacas.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.dgvButacas.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvButacas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvButacas.Location = new System.Drawing.Point(62, 357);
+            this.dgvButacas.Location = new System.Drawing.Point(33, 200);
             this.dgvButacas.Name = "dgvButacas";
             this.dgvButacas.ReadOnly = true;
             this.dgvButacas.RowTemplate.Height = 25;
-            this.dgvButacas.Size = new System.Drawing.Size(342, 150);
+            this.dgvButacas.Size = new System.Drawing.Size(439, 207);
             this.dgvButacas.TabIndex = 2;
             // 
             // btnConsultar
@@ -83,9 +83,9 @@ namespace Cine
             this.btnConsultar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnConsultar.Font = new System.Drawing.Font("Poppins Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnConsultar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(27)))), ((int)(((byte)(47)))));
-            this.btnConsultar.Location = new System.Drawing.Point(62, 288);
+            this.btnConsultar.Location = new System.Drawing.Point(33, 144);
             this.btnConsultar.Name = "btnConsultar";
-            this.btnConsultar.Size = new System.Drawing.Size(342, 46);
+            this.btnConsultar.Size = new System.Drawing.Size(439, 32);
             this.btnConsultar.TabIndex = 3;
             this.btnConsultar.Text = "Consultar";
             this.btnConsultar.UseVisualStyleBackColor = false;
@@ -97,7 +97,7 @@ namespace Cine
             this.nudNro_funcion.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.nudNro_funcion.Font = new System.Drawing.Font("Poppins Light", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.nudNro_funcion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(27)))), ((int)(((byte)(47)))));
-            this.nudNro_funcion.Location = new System.Drawing.Point(284, 233);
+            this.nudNro_funcion.Location = new System.Drawing.Point(154, 85);
             this.nudNro_funcion.Maximum = new decimal(new int[] {
             5000,
             0,
@@ -119,7 +119,7 @@ namespace Cine
             this.panel1.Controls.Add(this.btnClose);
             this.panel1.Location = new System.Drawing.Point(-6, -3);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(471, 35);
+            this.panel1.Size = new System.Drawing.Size(520, 35);
             this.panel1.TabIndex = 5;
             // 
             // pictureBox2
@@ -136,7 +136,7 @@ namespace Cine
             // 
             this.btnMaximizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnMaximizar.Image = ((System.Drawing.Image)(resources.GetObject("btnMaximizar.Image")));
-            this.btnMaximizar.Location = new System.Drawing.Point(395, 5);
+            this.btnMaximizar.Location = new System.Drawing.Point(444, 5);
             this.btnMaximizar.Name = "btnMaximizar";
             this.btnMaximizar.Size = new System.Drawing.Size(27, 27);
             this.btnMaximizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -148,7 +148,7 @@ namespace Cine
             // 
             this.btnMinimizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnMinimizar.Image = ((System.Drawing.Image)(resources.GetObject("btnMinimizar.Image")));
-            this.btnMinimizar.Location = new System.Drawing.Point(361, 5);
+            this.btnMinimizar.Location = new System.Drawing.Point(410, 5);
             this.btnMinimizar.Name = "btnMinimizar";
             this.btnMinimizar.Size = new System.Drawing.Size(28, 27);
             this.btnMinimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -160,7 +160,7 @@ namespace Cine
             // 
             this.btnRestaurar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnRestaurar.Image = ((System.Drawing.Image)(resources.GetObject("btnRestaurar.Image")));
-            this.btnRestaurar.Location = new System.Drawing.Point(395, 5);
+            this.btnRestaurar.Location = new System.Drawing.Point(444, 5);
             this.btnRestaurar.Name = "btnRestaurar";
             this.btnRestaurar.Size = new System.Drawing.Size(27, 27);
             this.btnRestaurar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -172,7 +172,7 @@ namespace Cine
             // 
             this.btnClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnClose.Image = global::CineFrontend.Properties.Resources._18786029401541068758_1281;
-            this.btnClose.Location = new System.Drawing.Point(428, 4);
+            this.btnClose.Location = new System.Drawing.Point(477, 4);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(26, 27);
             this.btnClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -183,9 +183,9 @@ namespace Cine
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(219, 77);
+            this.pictureBox1.Location = new System.Drawing.Point(145, 426);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(197, 100);
+            this.pictureBox1.Size = new System.Drawing.Size(235, 111);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 6;
             this.pictureBox1.TabStop = false;
@@ -195,7 +195,7 @@ namespace Cine
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(39)))), ((int)(((byte)(71)))));
-            this.ClientSize = new System.Drawing.Size(460, 549);
+            this.ClientSize = new System.Drawing.Size(509, 549);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.nudNro_funcion);

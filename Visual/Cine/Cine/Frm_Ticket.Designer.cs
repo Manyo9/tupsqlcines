@@ -189,11 +189,11 @@ namespace Cine
             // lblEntradas
             // 
             this.lblEntradas.AutoSize = true;
-            this.lblEntradas.Font = new System.Drawing.Font("Poppins Light", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblEntradas.Font = new System.Drawing.Font("Poppins", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblEntradas.ForeColor = System.Drawing.Color.White;
-            this.lblEntradas.Location = new System.Drawing.Point(37, 315);
+            this.lblEntradas.Location = new System.Drawing.Point(35, 326);
             this.lblEntradas.Name = "lblEntradas";
-            this.lblEntradas.Size = new System.Drawing.Size(87, 26);
+            this.lblEntradas.Size = new System.Drawing.Size(92, 26);
             this.lblEntradas.TabIndex = 11;
             this.lblEntradas.Text = "ENTRADAS";
             // 
