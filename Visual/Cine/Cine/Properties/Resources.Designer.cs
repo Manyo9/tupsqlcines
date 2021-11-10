@@ -83,6 +83,16 @@ namespace CineFrontend.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _18786029401541068758_1282 {
+            get {
+                object obj = ResourceManager.GetObject("18786029401541068758-1282", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _93631 {
             get {
                 object obj = ResourceManager.GetObject("93631", resourceCulture);

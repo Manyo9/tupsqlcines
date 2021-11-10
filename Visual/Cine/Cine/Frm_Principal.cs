@@ -112,5 +112,17 @@ namespace Cine
         {
 
         }
+
+        private void mostrarIntegrantesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+            Frm_AcercaDe nuevo = new Frm_AcercaDe();
+            nuevo.ShowDialog();
+        }
+
+        private void acercaDeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -8,13 +8,18 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace CineFrontend
+namespace Cine
 {
     public partial class Frm_AcercaDe : Form
     {
         public Frm_AcercaDe()
         {
             InitializeComponent();
+        }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
         }
     }
 }

@@ -35,13 +35,13 @@ namespace Cine
             this.btnConsultar = new System.Windows.Forms.Button();
             this.nudNro_funcion = new System.Windows.Forms.NumericUpDown();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.btnMaximizar = new System.Windows.Forms.PictureBox();
             this.btnMinimizar = new System.Windows.Forms.PictureBox();
             this.btnRestaurar = new System.Windows.Forms.PictureBox();
             this.btnClose = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvButacas)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudNro_funcion)).BeginInit();
             this.panel1.SuspendLayout();
@@ -125,6 +125,17 @@ namespace Cine
             this.panel1.Size = new System.Drawing.Size(520, 35);
             this.panel1.TabIndex = 5;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("LEMON MILK Light", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.label1.Location = new System.Drawing.Point(49, 10);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(228, 17);
+            this.label1.TabIndex = 7;
+            this.label1.Text = "Butacas vendidas por funcion ";
+            // 
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
@@ -193,17 +204,6 @@ namespace Cine
             this.pictureBox1.TabIndex = 6;
             this.pictureBox1.TabStop = false;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("LEMON MILK Light", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.label1.Location = new System.Drawing.Point(49, 10);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(228, 17);
-            this.label1.TabIndex = 7;
-            this.label1.Text = "Butacas vendidas por funcion ";
-            // 
             // Frm_Butacas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -220,6 +220,7 @@ namespace Cine
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Frm_Butacas";
             this.Text = "Frm_Butacas";
+            this.Load += new System.EventHandler(this.Frm_Butacas_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvButacas)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudNro_funcion)).EndInit();
             this.panel1.ResumeLayout(false);

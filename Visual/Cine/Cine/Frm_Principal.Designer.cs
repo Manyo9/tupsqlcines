@@ -254,7 +254,7 @@
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(0);
             this.menuStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.System;
             this.menuStrip1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.menuStrip1.Size = new System.Drawing.Size(182, 274);
+            this.menuStrip1.Size = new System.Drawing.Size(182, 293);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -395,6 +395,7 @@
             this.acercaDeToolStripMenuItem.Size = new System.Drawing.Size(171, 68);
             this.acercaDeToolStripMenuItem.Text = "Acerca de";
             this.acercaDeToolStripMenuItem.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.acercaDeToolStripMenuItem.Click += new System.EventHandler(this.acercaDeToolStripMenuItem_Click);
             // 
             // mostrarIntegrantesToolStripMenuItem
             // 
@@ -405,6 +406,7 @@
             this.mostrarIntegrantesToolStripMenuItem.Name = "mostrarIntegrantesToolStripMenuItem";
             this.mostrarIntegrantesToolStripMenuItem.Size = new System.Drawing.Size(238, 32);
             this.mostrarIntegrantesToolStripMenuItem.Text = "Mostrar integrantes";
+            this.mostrarIntegrantesToolStripMenuItem.Click += new System.EventHandler(this.mostrarIntegrantesToolStripMenuItem_Click);
             // 
             // pictureBox6
             // 

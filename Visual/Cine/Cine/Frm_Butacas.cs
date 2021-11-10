@@ -85,5 +85,10 @@ namespace Cine
             btnRestaurar.Visible = false;
             btnMaximizar.Visible = true;
         }
+
+        private void Frm_Butacas_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
